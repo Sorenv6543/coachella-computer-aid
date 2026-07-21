@@ -55,7 +55,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -190,12 +190,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "## The Approach.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of ## The Approach"
             }
           },
           {
@@ -239,7 +240,7 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "8c02f3d47fd4376b",
+  "active": "973bd47b7699d058",
   "lastOpenFiles": [
     "CLAUDE.md",
     "CLAUDE.md.tmp.52409.1985afef014d",
