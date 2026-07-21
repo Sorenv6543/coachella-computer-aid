@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Coachella Computer Aid — Brand Bible v1.0</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700;6..12,800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --cream:#FDF6EC; --sand:#F8E9D5; --sand-deep:#EED9BC;
+    --orange:#F4A259; --clay:#B95E23;      /* clay = text-safe orange */
+    --sky:#78B8D9; --sky-deep:#3B7A9B;
+    --sage:#8BAE7B; --sage-deep:#5E7E4F;
+    --charcoal:#343434; --charcoal-soft:#6E6A63;
+  }
+  @page{ size:Letter; margin:0; }
+  *{ box-sizing:border-box; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  html,body{ margin:0; padding:0; }
+  body{ font-family:"Nunito Sans",system-ui,sans-serif; color:var(--charcoal);
+        font-size:12pt; line-height:1.62; background:#fff; }
+  h1,h2,h3,h4,.disp{ font-family:"Nunito",system-ui,sans-serif; margin:0; }
+  .page{ width:8.5in; min-height:11in; page-break-after:always; position:relative;
+         overflow:hidden; padding:0.85in 0.9in; }
+  .page:last-child{ page-break-after:auto; }
+  .pad-none{ padding:0; }
+  .eyebrow{ font-family:"Nunito"; font-weight:800; letter-spacing:.18em; text-transform:uppercase;
+            font-size:9.5pt; color:var(--clay); }
+  .kicker{ font-family:"Nunito"; font-weight:800; letter-spacing:.18em; text-transform:uppercase;
+            font-size:9pt; color:var(--sage-deep); margin-bottom:.35in; }
+  h2.sec{ font-weight:900; font-size:30pt; letter-spacing:-.01em; line-height:1.02; margin-bottom:.12in; }
+  .lead{ font-size:14pt; color:var(--charcoal-soft); max-width:6in; }
+  .pnum{ position:absolute; bottom:.5in; right:.9in; font-family:"Nunito"; font-weight:800;
+         font-size:9pt; color:var(--charcoal-soft); }
+  .brandfoot{ position:absolute; bottom:.5in; left:.9in; font-family:"Nunito"; font-weight:800;
+         font-size:9pt; color:var(--sand-deep); letter-spacing:.06em; }
+  p{ margin:0 0 .16in; }
+  strong{ font-weight:800; }
+
+  /* ---------- COVER ---------- */
+  .cover{ padding:0; background:var(--cream); display:flex; flex-direction:column; }
+  .cover .top{ flex:1; padding:1.1in 0.9in 0; }
+  .cover .logo{ display:flex; align-items:center; gap:.14in; margin-bottom:.9in; }
+  .cover .logo .mark{ width:.52in; height:.52in; border-radius:.16in; background:var(--orange);
+        display:flex; align-items:center; justify-content:center; }
+  .cover .logo b{ font-family:"Nunito"; font-weight:900; font-size:15pt; letter-spacing:-.01em; }
+  .cover h1{ font-weight:900; font-size:52pt; line-height:.98; letter-spacing:-.02em; margin-bottom:.14in; }
+  .cover h1 .em{ color:var(--clay); }
+  .cover .tag{ font-size:15pt; color:var(--charcoal-soft); font-weight:600; }
+  .cover .ver{ margin-top:.5in; font-family:"Nunito"; font-weight:800; letter-spacing:.14em;
+        text-transform:uppercase; font-size:10pt; color:var(--sage-deep); }
+  .cover .art{ width:100%; line-height:0; }
+  .cover .art svg{ width:100%; display:block; }
+
+  /* ---------- shared bits ---------- */
+  .divider{ height:.06in; width:.9in; background:var(--orange); border-radius:99px; margin:.16in 0 .28in; }
+  .two{ display:grid; grid-template-columns:1fr 1fr; gap:.4in; }
+  .big-quote{ font-family:"Nunito"; font-weight:800; font-size:22pt; line-height:1.28; letter-spacing:-.01em; }
+  .big-quote .em{ color:var(--clay); }
+
+  /* values */
+  .vgrid{ display:grid; grid-template-columns:1fr 1fr; gap:.22in; margin-top:.35in; }
+  .vcard{ background:var(--cream); border-radius:.16in; padding:.24in .26in; display:flex; gap:.2in; align-items:flex-start; }
+  .vcard .ico{ width:.5in; height:.5in; border-radius:.14in; flex:0 0 auto; display:flex; align-items:center; justify-content:center; }
+  .vcard h4{ font-weight:800; font-size:13pt; margin-bottom:.02in; }
+  .vcard p{ margin:0; font-size:10.5pt; color:var(--charcoal-soft); line-height:1.45; }
+
+  /* audience */
+  .aud{ display:flex; gap:.22in; align-items:center; padding:.16in 0; border-bottom:1px solid #EFE6D6; }
+  .aud:last-child{ border-bottom:0; }
+  .aud .badge{ width:.9in; height:.9in; flex:0 0 auto; }
+  .aud .badge svg{ width:100%; height:100%; }
+  .aud h4{ font-weight:800; font-size:13.5pt; }
+  .aud p{ margin:.02in 0 0; font-size:10.5pt; color:var(--charcoal-soft); line-height:1.45; }
+
+  /* not / are */
+  .cols2{ display:grid; grid-template-columns:1fr 1fr; gap:.3in; margin-top:.3in; }
+  .listcard{ border-radius:.18in; padding:.28in .3in; }
+  .listcard.no{ background:#F3ECE2; }
+  .listcard.yes{ background:var(--sage); }
+  .listcard h4{ font-weight:900; font-size:13pt; letter-spacing:.06em; text-transform:uppercase; margin-bottom:.14in; }
+  .listcard.no h4{ color:var(--charcoal-soft); }
+  .listcard.yes h4{ color:#fff; }
+  .listcard ul{ margin:0; padding:0; list-style:none; }
+  .listcard li{ font-family:"Nunito"; font-weight:700; font-size:12.5pt; padding:.07in 0; }
+  .listcard.no li{ color:var(--charcoal); }
+  .listcard.yes li{ color:#fff; }
+
+  /* voice table */
+  .voice{ margin-top:.3in; }
+  .vrow{ display:grid; grid-template-columns:1fr 1.1fr; gap:.24in; padding:.2in 0; border-bottom:1px solid #EFE6D6; align-items:center; }
+  .vrow .no{ color:var(--charcoal-soft); }
+  .vrow .no .lbl,.vrow .yes .lbl{ font-family:"Nunito"; font-weight:800; font-size:8.5pt; letter-spacing:.12em; text-transform:uppercase; display:block; margin-bottom:.05in; }
+  .vrow .no .lbl{ color:#C98A8A; } .vrow .yes .lbl{ color:var(--sage-deep); }
+  .vrow .no .t{ font-size:12pt; text-decoration:line-through; text-decoration-color:#D9B3B3; }
+  .vrow .yes .t{ font-family:"Nunito"; font-weight:800; font-size:13pt; color:var(--charcoal); }
+
+  /* color specimen */
+  .swz{ display:grid; grid-template-columns:1fr 1fr 1fr; gap:.22in; margin-top:.3in; }
+  .swz .s{ border-radius:.16in; overflow:hidden; box-shadow:0 6px 18px -10px rgba(52,52,52,.35); }
+  .swz .s .chip{ height:1.35in; }
+  .swz .s .m{ padding:.14in .16in; background:#fff; }
+  .swz .s .m b{ font-family:"Nunito"; font-weight:800; font-size:11pt; display:block; }
+  .swz .s .m code{ font-size:9.5pt; color:var(--charcoal-soft); }
+  .swz .s .m span{ display:block; font-size:8.5pt; color:var(--charcoal-soft); margin-top:.03in; }
+  .note{ background:var(--cream); border-left:.05in solid var(--orange); border-radius:.1in;
+         padding:.2in .24in; margin-top:.3in; font-size:10.5pt; }
+  .note b{ color:var(--clay); }
+
+  /* type specimen */
+  .ty{ margin-top:.28in; }
+  .ty .row{ border-bottom:1px solid #EFE6D6; padding:.16in 0; display:flex; align-items:baseline; gap:.3in; }
+  .ty .row .meta{ width:1.5in; flex:0 0 auto; font-size:9pt; color:var(--charcoal-soft); font-family:"Nunito"; font-weight:700; }
+  .ty .d1{ font-family:"Nunito"; font-weight:900; font-size:34pt; letter-spacing:-.02em; }
+  .ty .d2{ font-family:"Nunito"; font-weight:800; font-size:22pt; }
+  .ty .b1{ font-family:"Nunito Sans"; font-weight:400; font-size:13pt; }
+  .ty .c1{ font-family:"Nunito"; font-weight:800; font-size:9.5pt; letter-spacing:.14em; text-transform:uppercase; color:var(--clay); }
+
+  /* illustration rules */
+  .ill-samples{ display:grid; grid-template-columns:repeat(3,1fr); gap:.18in; margin:.28in 0; }
+  .ill-samples .frame{ background:var(--cream); border-radius:.16in; padding:.14in; display:flex; align-items:center; justify-content:center; }
+  .ill-samples .frame svg{ width:100%; height:auto; }
+  .rules2{ display:grid; grid-template-columns:1fr 1fr; gap:.3in; }
+  .rules2 h4{ font-family:"Nunito"; font-weight:900; font-size:11pt; letter-spacing:.05em; text-transform:uppercase; margin-bottom:.1in; }
+  .rules2 .do h4{ color:var(--sage-deep); } .rules2 .dont h4{ color:#B36B6B; }
+  .rules2 ul{ margin:0; padding-left:.2in; }
+  .rules2 li{ font-size:11pt; padding:.045in 0; }
+
+  /* characters */
+  .cast{ display:grid; grid-template-columns:1fr 1fr 1fr; gap:.24in; margin-top:.3in; }
+  .char{ text-align:center; }
+  .char .av{ width:1.5in; height:1.5in; margin:0 auto .12in; }
+  .char .av svg{ width:100%; height:100%; }
+  .char b{ font-family:"Nunito"; font-weight:900; font-size:14pt; display:block; }
+  .char .role{ font-family:"Nunito"; font-weight:800; font-size:8.5pt; letter-spacing:.1em; text-transform:uppercase; color:var(--clay); margin:.02in 0 .06in; }
+  .char p{ font-size:9.5pt; color:var(--charcoal-soft); line-height:1.4; margin:0; }
+
+  /* accessibility checklist */
+  .check{ margin-top:.28in; display:grid; grid-template-columns:1fr 1fr; gap:.16in .4in; }
+  .check .c{ display:flex; gap:.14in; align-items:flex-start; }
+  .check .tick{ width:.28in; height:.28in; border-radius:.08in; background:var(--sage); flex:0 0 auto;
+        display:flex; align-items:center; justify-content:center; margin-top:.02in; }
+  .check .c b{ font-family:"Nunito"; font-weight:800; font-size:11.5pt; display:block; }
+  .check .c span{ font-size:10pt; color:var(--charcoal-soft); }
+
+  /* principles */
+  .prin{ margin-top:.34in; }
+  .prin .q{ display:flex; align-items:center; gap:.24in; padding:.2in .3in; background:var(--cream);
+        border-radius:.16in; margin-bottom:.16in; }
+  .prin .q .n{ font-family:"Nunito"; font-weight:900; font-size:20pt; color:var(--orange); width:.5in; flex:0 0 auto; }
+  .prin .q .t{ font-family:"Nunito"; font-weight:800; font-size:14pt; }
+
+  /* roadmap */
+  .road{ margin-top:.3in; }
+  .phase{ display:flex; gap:.26in; padding:.2in 0; border-bottom:1px solid #EFE6D6; }
+  .phase .tag{ width:1.5in; flex:0 0 auto; }
+  .phase .tag .n{ font-family:"Nunito"; font-weight:900; font-size:9pt; letter-spacing:.12em; text-transform:uppercase; color:var(--clay); }
+  .phase .tag .nm{ font-family:"Nunito"; font-weight:900; font-size:15pt; }
+  .phase .items{ font-size:11pt; color:var(--charcoal); }
+  .phase .items span{ display:inline-block; background:var(--cream); border-radius:99px; padding:.04in .16in; margin:.04in .06in .04in 0; font-family:"Nunito"; font-weight:700; font-size:10pt; }
+  .phase.now .tag .nm{ color:var(--sage-deep); }
+
+  /* section divider page */
+  .divp{ display:flex; flex-direction:column; justify-content:center; color:#fff; }
+  .divp .kick{ font-family:"Nunito"; font-weight:800; letter-spacing:.2em; text-transform:uppercase; font-size:10pt; opacity:.85; }
+  .divp h2{ font-weight:900; font-size:44pt; line-height:1.0; letter-spacing:-.02em; margin:.14in 0; }
+  .divp p{ font-size:13pt; max-width:5in; opacity:.92; }
+
+  /* back */
+  .back{ background:var(--charcoal); color:var(--cream); display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; }
+  .back h2{ font-weight:900; font-size:30pt; line-height:1.12; max-width:6in; letter-spacing:-.01em; }
+  .back .tag{ margin-top:.24in; color:var(--orange); font-family:"Nunito"; font-weight:800; letter-spacing:.06em; font-size:12pt; }
+  .back .mark{ width:.7in; height:.7in; border-radius:.2in; background:var(--orange); margin-bottom:.3in; display:flex; align-items:center; justify-content:center; }
+</style>
+</head>
+<body>
+
+<!-- ============================ COVER ============================ -->
+<section class="page cover">
+  <div class="top">
+    <div class="logo">
+      <div class="mark">
+        <svg width="26" height="26" viewBox="0 0 26 26"><path d="M6 13 q0-7 7-7 q4 0 6 3 l-3 2 q-1.6-2-3.6-2 q-3.6 0-3.6 4 q0 4 3.6 4 q2 0 3.6-2 l3 2 q-2 3-6 3 q-7 0-7-7Z" fill="#fff"/></svg>
+      </div>
+      <b>Coachella&nbsp;Computer&nbsp;Aid</b>
+    </div>
+    <div class="eyebrow">Brand Bible</div>
+    <h1>Help that<br>feels like<br><span class="em">a neighbor.</span></h1>
+    <div class="tag">Personalized Technology Help for Everyone</div>
+    <div class="ver">Version 1.0 · The Source of Truth</div>
+  </div>
+  <div class="art">
+    <!-- signature San Jacinto scene, official palette -->
+    <svg viewBox="0 0 850 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="San Jacinto Mountains at golden hour">
+      <defs>
+        <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#78B8D9"/><stop offset=".6" stop-color="#BFDDEB"/><stop offset="1" stop-color="#FDF6EC"/>
+        </linearGradient>
+      </defs>
+      <rect width="850" height="300" fill="url(#sky)"/>
+      <circle cx="660" cy="86" r="42" fill="#F4A259"/><circle cx="660" cy="86" r="60" fill="#F4A259" opacity=".18"/>
+      <path d="M0 190 L130 118 L230 172 L360 104 L470 178 L590 120 L710 180 L850 128 L850 300 L0 300Z" fill="#8BAE7B" opacity=".55"/>
+      <path d="M0 226 L160 156 L300 216 L450 150 L600 220 L730 168 L850 214 L850 300 L0 300Z" fill="#78B8D9" opacity=".5"/>
+      <path d="M450 150 L474 182 L426 182Z" fill="#FDF6EC" opacity=".85"/>
+      <path d="M160 156 L184 190 L136 190Z" fill="#FDF6EC" opacity=".7"/>
+      <path d="M0 250 Q210 214 430 248 T850 244 L850 300 L0 300Z" fill="#EED9BC"/>
+      <path d="M0 274 Q250 250 500 274 T850 270 L850 300 L0 300Z" fill="#F8E9D5"/>
+      <g fill="#5E7E4F"><rect x="96" y="196" width="16" height="62" rx="8"/>
+        <path d="M96 220 q-16 0-16 15 l0 10 q0 6 6 6 6 0 6-6 l0-12 q0-8 4-8z"/>
+        <path d="M112 210 q16 0 16 15 l0 14 q0 6-6 6-6 0-6-6 l0-16 q0-8-4-8z"/></g>
+      <g><rect x="740" y="176" width="10" height="82" rx="5" fill="#B98A55"/>
+        <g fill="#5E7E4F"><path d="M745 176 q-36-9-56 6 q24-3 56 5z"/><path d="M745 176 q36-9 56 6 q-24-3-56 5z"/>
+        <path d="M745 178 q-6-36 5-56 q9 24 3 58z"/><path d="M745 176 q-24-30-50-30 q20 11 50 34z"/><path d="M745 176 q24-30 50-30 q-20 11-50 34z"/></g></g>
+    </svg>
+  </div>
+</section>
+
+<!-- ============================ CONTENTS ============================ -->
+<section class="page">
+  <div class="kicker">Version 1.0</div>
+  <h2 class="sec">What's inside.</h2>
+  <div class="divider"></div>
+  <p class="lead">This book is the single source of truth for Coachella Computer Aid. Every website page, flyer, workshop handout, and Facebook post should be able to trace its choices back to a rule in here.</p>
+  <div style="margin-top:.4in; columns:2; column-gap:.5in; font-family:'Nunito'; font-weight:700; font-size:12.5pt; line-height:2.0;">
+    <div>01 &nbsp;Mission &amp; Vision</div>
+    <div>02 &nbsp;The Why</div>
+    <div>03 &nbsp;Core Values</div>
+    <div>04 &nbsp;Who We Serve</div>
+    <div>05 &nbsp;Brand Personality</div>
+    <div>06 &nbsp;Brand Voice</div>
+    <div>07 &nbsp;The Emotional Goal</div>
+    <div>08 &nbsp;Color System</div>
+    <div>09 &nbsp;Typography</div>
+    <div>10 &nbsp;Illustration Style</div>
+    <div>11 &nbsp;The Cast</div>
+    <div>12 &nbsp;Accessibility</div>
+    <div>13 &nbsp;Design Principles</div>
+    <div>14 &nbsp;Roadmap</div>
+  </div>
+  <div class="brandfoot">COACHELLA COMPUTER AID</div>
+  <div class="pnum">2</div>
+</section>
+
+<!-- ============================ MISSION / VISION ============================ -->
+<section class="page">
+  <div class="kicker">01 · Mission &amp; Vision</div>
+  <h2 class="sec">Why we exist.</h2>
+  <div class="divider"></div>
+  <p class="eyebrow" style="margin-top:.3in;">Our Mission</p>
+  <p class="big-quote">To empower people throughout the Coachella Valley by making technology <span class="em">accessible, understandable, and less intimidating</span> — with patient, personalized support for seniors, people with disabilities, immigrant families, veterans, and anyone facing digital barriers.</p>
+  <p class="eyebrow" style="margin-top:.4in;">Our Vision</p>
+  <p style="font-size:13.5pt; max-width:6in;">A community where technology creates opportunities instead of obstacles, and every person — regardless of age, income, language, or ability — has the confidence to connect, learn, work, and thrive.</p>
+  <div class="brandfoot">COACHELLA COMPUTER AID</div>
+  <div class="pnum">3</div>
+</section>
+
+<!-- ============================ THE WHY ============================ -->
+<section class="page" style="background:var(--cream);">
+  <div class="kicker">02 · The Why</div>
+  <h2 class="sec">The reason<br>underneath.</h2>
+  <div class="divider"></div>
+  <p style="font-size:13pt; max-width:6in;">Technology has become essential for everyday life — staying connected with family, accessing healthcare, applying for jobs, managing money, and taking part in the community. Yet many people are left behind, because technology can feel overwhelming or out of reach.</p>
+  <p class="big-quote" style="margin-top:.3in;">We believe no one should be excluded simply because they need <span class="em">a patient teacher.</span></p>
+  <p style="font-size:12pt; max-width:6in; margin-top:.34in; color:var(--charcoal-soft);">This page may never appear publicly — but it's the heart of everything. The work isn't repairing machines. It's teaching confidence: helping someone make their first video call, spot a scam before it costs them, or fill out a form that felt impossible an hour ago. Those are the moments this organization exists for.</p>
+  <div class="brandfoot">COACHELLA COMPUTER AID</div>
+  <div class="pnum">4</div>
+</section>
+
+<!-- ============================ VALUES ============================ -->
+<section class="page">
+  <div class="kicker">03 · Core Values</div>
+  <h2 class="sec">What we stand on.</h2>
+  <div class="divider"></div>
+  <div class="vgrid">
+    <div class="vcard"><div class="ico" style="background:#FBE3D3;"><svg width="26" height="26" viewBox="0 0 24 24"><path d="M12 20 C4 14 5 7 9 7 q2.4 0 3 2.6 Q15.6 7 15 7 c4 0 5 7-3 13Z" fill="#F4A259"/></svg></div>
+      <div><h4>Patience</h4><p>We teach at your pace. Never rush, never judge.</p></div></div>
+    <div class="vcard"><div class="ico" style="background:#D9EAF3;"><svg width="26" height="26" viewBox="0 0 24 24"><circle cx="8" cy="9" r="3" fill="#78B8D9"/><circle cx="16" cy="9" r="3" fill="#3B7A9B"/><path d="M3 19 q1-5 5-5 q4 0 5 5Z M11 19 q1-5 5-5 q4 0 5 5Z" fill="#78B8D9"/></svg></div>
+      <div><h4>Community</h4><p>Technology should bring people together.</p></div></div>
+    <div class="vcard"><div class="ico" style="background:#E1EBDA;"><svg width="26" height="26" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="#8BAE7B" stroke-width="2"/><ellipse cx="12" cy="12" rx="4" ry="9" fill="none" stroke="#8BAE7B" stroke-width="1.6"/><path d="M3 12h18M4.5 8h15M4.5 16h15" stroke="#8BAE7B" stroke-width="1.6"/></svg></div>
+      <div><h4>Inclusion</h4><p>Everyone deserves access. No exceptions.</p></div></div>
+    <div class="vcard"><div class="ico" style="background:#FBE3D3;"><svg width="26" height="26" viewBox="0 0 24 24"><path d="M4 6 h7 v13 H4Z M13 6 h7 v13 h-7Z" fill="#F4A259"/><path d="M4 6 h7 v13 H4Z" fill="#F4A259"/><rect x="10.5" y="6" width="3" height="13" fill="#B95E23"/></svg></div>
+      <div><h4>Education</h4><p>We don't just fix problems — we teach.</p></div></div>
+    <div class="vcard"><div class="ico" style="background:#E1EBDA;"><svg width="26" height="26" viewBox="0 0 24 24"><path d="M12 3 l8 3 v5 q0 7-8 10 q-8-3-8-10 V6Z" fill="#8BAE7B"/><path d="M8.5 12 l2.2 2.3 4.6-5" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div><h4>Trust</h4><p>Privacy, security, and honesty in every session.</p></div></div>
+    <div class="vcard"><div class="ico" style="background:#D9EAF3;"><svg width="26" height="26" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="#78B8D9"/><circle cx="9" cy="10" r="1.4" fill="#fff"/><circle cx="15" cy="10" r="1.4" fill="#fff"/><path d="M8 14 q4 3.4 8 0" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/></svg></div>
+      <div><h4>Kindness</h4><p>Everyone should leave more confident than they arrived.</p></div></div>
+  </div>
+  <div class="vcard" style="margin-top:.22in; background:var(--sage); ">
+    <div class="ico" style="background:rgba(255,255,255,.28);"><svg width="26" height="26" viewBox="0 0 24 24"><circle cx="12" cy="4.4" r="2.2" fill="#fff"/><path d="M12 7 q-2.6 .4-2.6 3.6 l0 3.6 M12 7 q2.6 .4 2.6 3.6 l0 3.6" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round"/><path d="M6 9.5 q6 1.6 12 0" stroke="#fff" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg></div>
+    <div><h4 style="color:#fff;">Accessibility</h4><p style="color:#fff; opacity:.95;">Large text, high contrast, and adaptive tools are the default — not an afterthought.</p></div></div>
+  <div class="brandfoot">COACHELLA COMPUTER AID</div>
+  <div class="pnum">5</div>
+</section>
+
+<!-- ============================ WHO WE SERVE ============================ -->
+<section class="page">
+  <div class="kicker">04 · Who We Serve</div>
+  <h2 class="sec">People, not<br>demographics.</h2>
+  <div class="divider"></div>
+  <div class="aud">
+    <div class="badge"><svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="84" fill="#8BAE7B" opacity=".3"/><circle cx="100" cy="100" r="66" fill="#FDF6EC"/><circle cx="100" cy="82" r="26" fill="#E8B48C"/><path d="M74 78 q0-30 26-30 q26 0 26 30 q-11-13-26-13 q-15 0-26 13Z" fill="#E9E2D6"/><circle cx="90" cy="84" r="3.4" fill="#343434"/><circle cx="110" cy="84" r="3.4" fill="#343434"/><path d="M92 95 q8 7 16 0" stroke="#343434" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M64 150 q4-38 36-42 q32 4 36 42Z" fill="#8BAE7B"/></svg></div>
+    <div><h4>Seniors</h4><p>Staying connected with family, avoiding scams, and using technology with confidence.</p></div>
+  </div>
+  <div class="aud">
+    <div class="badge"><svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="84" fill="#78B8D9" opacity=".3"/><circle cx="100" cy="100" r="66" fill="#FDF6EC"/><circle cx="100" cy="66" r="15" fill="#3B7A9B"/><path d="M100 83 q-17 2-17 25 l0 24" stroke="#3B7A9B" stroke-width="10" fill="none" stroke-linecap="round"/><path d="M92 102 l28 4" stroke="#3B7A9B" stroke-width="9" fill="none" stroke-linecap="round"/><circle cx="102" cy="138" r="24" fill="none" stroke="#3B7A9B" stroke-width="8"/></svg></div>
+    <div><h4>People with Disabilities</h4><p>Adaptive tools, accessibility features, and personalized support that meets each person where they are.</p></div>
+  </div>
+  <div class="aud">
+    <div class="badge"><svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="84" fill="#8BAE7B" opacity=".3"/><circle cx="100" cy="100" r="66" fill="#FDF6EC"/><circle cx="100" cy="100" r="40" fill="none" stroke="#5E7E4F" stroke-width="6"/><ellipse cx="100" cy="100" rx="17" ry="40" fill="none" stroke="#5E7E4F" stroke-width="5"/><path d="M60 100h80M66 82h68M66 118h68" stroke="#5E7E4F" stroke-width="5"/></svg></div>
+    <div><h4>Spanish-Speaking Families</h4><p>Bilingual help with devices, school portals, healthcare sites, and government resources.</p></div>
+  </div>
+  <div class="aud">
+    <div class="badge"><svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="84" fill="#78B8D9" opacity=".3"/><circle cx="100" cy="100" r="66" fill="#FDF6EC"/><path d="M100 56 l52 20 v30 q0 38-52 54 q-52-16-52-54 V76Z" fill="#3B7A9B"/><path d="M100 82 l7 15 16 1-12 12 4 16-15-9-15 9 4-16-12-12 16-1Z" fill="#F4A259"/></svg></div>
+    <div><h4>Veterans</h4><p>Navigating VA portals, telehealth appointments, and online benefits.</p></div>
+  </div>
+  <div class="aud">
+    <div class="badge"><svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="84" fill="#F4A259" opacity=".28"/><circle cx="100" cy="100" r="66" fill="#FDF6EC"/><path d="M58 106 l42-36 42 36v4H58Z" fill="#F4A259"/><rect x="68" y="110" width="64" height="40" rx="6" fill="#EED9BC"/><path d="M100 116 q14 0 14 14 q-14-5-14 12 q0-17-14-12 q0-14 14-14Z" fill="#B95E23"/></svg></div>
+    <div><h4>Low-Income Families</h4><p>Affordable support, plus connections to low-cost internet and device programs wherever possible.</p></div>
+  </div>
+  <div class="aud">
+    <div class="badge"><svg viewBox="0 0 200 200"><circle cx="100" cy="100" r="84" fill="#F4A259" opacity=".28"/><circle cx="100" cy="100" r="66" fill="#FDF6EC"/><path d="M100 148 C52 114 60 72 86 72 q16 0 14 18 q-2-18 14-18 c26 0 34 42-14 76Z" fill="#F4A259"/><circle cx="66" cy="74" r="9" fill="#8BAE7B"/><circle cx="134" cy="74" r="9" fill="#78B8D9"/></svg></div>
+    <div><h4>Anyone Overwhelmed by Technology</h4><p>Whether you're 18 or 98 — if technology feels confusing, we're here to help.</p></div>
+  </div>
+  <div class="brandfoot">COACHELLA COMPUTER AID</div>
+  <div class="pnum">6</div>
+</section>
+
+<!-- ============================ PERSONALITY ============================ -->
+<section class="page">
+  <div class="kicker">05 · Brand Personality</div>
+  <h2 class="sec">Who we are<br>(and aren't).</h2>
+  <div class="divider"></div>
+  <p style="font-size:12.5pt; max-width:6in;">Imagine if these four had a child — that's the feeling every touchpoint should carry: the clarity of <strong>Apple</strong>, the welcome of a <strong>public library</strong>, the calm of a <strong>national park visitor center</strong>, and the warmth of a <strong>neighborhood community center</strong>.</p>
+  <div class="cols2">
+    <div class="listcard no"><h4>We are not</h4><ul>
+      <li>Geek Squad</li><li>Best Buy</li><li>A computer repair shop</li><li>Corporate or cold</li><li>Full of jargon</li></ul></div>
+    <div class="listcard yes"><h4>We are</h4><ul>
+      <li>Friendly &amp; patient</li><li>Educational</li><li>Community-first</li><li>Warm &amp; local</li><li>Inclusive &amp; trustworthy</li></ul></div>
+  </div>
+  <p style="margin-top:.34in; font-family:'Nunito'; font-weight:800; font-size:14pt; color:var(--sage-deep);">People should feel like they're visiting a neighborhood community center — not a repair counter.</p>
+  <div class="brandfoot">COACHELLA COMPUTER AID</div>
+  <div class="pnum">7</div>
+</section>
+
+<!-- ============================ VOICE ============================ -->
+<section class="page" style="background:var(--cream);">
+  <div class="kicker">06 · Brand Voice</div>
+  <h2 class="sec">Say it warmly.</h2>
+  <div class="divider"></div>
+  <p style="max-width:6in;">Every sentence should lower a person's anxiety. We describe the <strong>outcome someone wants</strong>, never the technical process. When in doubt, write it the way you'd say it to a neighbor across the fence.</p>
+  <div class="voice">
+    <div class="vrow"><div class="no"><span class="lbl">Never say</span><span class="t">Virus removal</span></div>
+      <div class="yes"><span class="lbl">We say</span><span class="t">We'll help get your computer running smoothly again.</span></div></div>
+    <div class="vrow"><div class="no"><span class="lbl">Never say</span><span class="t">Remote desktop support</span></div>
+      <div class="yes"><span class="lbl">We say</span><span class="t">We can safely help you from home, if you'd like.</span></div></div>
+    <div class="vrow"><div class="no"><span class="lbl">Never say</span><span class="t">Computer diagnostics</span></div>
+      <div class="yes"><span class="lbl">We say</span><span class="t">We'll figure out what's going on together.</span></div></div>
+    <div class="vrow" style="border-bottom:0;"><div class="no"><span class="lbl">Never say</span><span class="t">Submit / Error 404</span></div>
+      <div class="yes"><span class="lbl">We say</span><span class="t">Send &rarr; and plain, kind guidance when something goes wrong.</span></div></div>
+  </div>
+  <div class="brandfoot">COACHELLA COMPUTER AID</div>
+  <div class="pnum">8</div>
+</section>
+
+<!-- ============================ EMOTIONAL GOAL ============================ -->
+<section class="page divp" style="background:var(--sky-deep, #3B7A9B); background:linear-gradient(160deg,#3B7A9B,#5E7E4F);">
+  <div class="kick">07 · The Emotional Goal</div>
+  <h2>When someone<br>arrives, they<br>should feel…</h2>
+  <p style="font-family:'Nunito'; font-weight:800; font-size:16pt; line-height:2.0; margin-top:.2in;">
+    Welcome &nbsp;·&nbsp; Understood &nbsp;·&nbsp; Safe to ask questions<br>
+    Encouraged &nbsp;·&nbsp; Less intimidated &nbsp;·&nbsp; Hopeful they can learn</p>
+  <p style="margin-top:.3in;">That emotional experience is as important as the information itself. If a design informs but doesn't reassure, it isn't finished.</p>
+  <div class="pnum" style="color:rgba(255,255,255,.7);">9</div>
+</section>
+
+<!-- ============================ COLOR ============================ -->
+<section class="page">
+  <div class="kicker">08 · Color System</div>
+  <h2 class="sec">Warm by default.</h2>
+  <div class="divider"></div>
+  <div class="swz">
+    <div class="s"><div class="chip" style="background:#FDF6EC;"></div><div class="m"><b>Cream</b><code>#FDF6EC</code><span>Primary background</span></div></div>
+    <div class="s"><div class="chip" style="background:#F8E9D5;"></div><div class="m"><b>Sand</b><code>#F8E9D5</code><span>Secondary surface</span></div></div>
+    <div class="s"><div class="chip" style="background:#F4A259;"></div><div class="m"><b>Warm Orange</b><code>#F4A259</code><span>Primary accent · fills</span></div></div>
+    <div class="s"><div class="chip" style="background:#78B8D9;"></div><div class="m"><b>Sky Blue</b><code>#78B8D9</code><span>Support accent</span></div></div>
+    <div class="s"><div class="chip" style="background:#8BAE7B;"></div><div class="m"><b>Sage Green</b><code>#8BAE7B</code><span>Support accent · success</span></div></div>
+    <div class="s"><div class="chip" style="background:#343434;"></div><div class="m"><b>Charcoal</b><code>#343434</code><span>Body text</span></div></div>
+  </div>
+  <div class="note"><b>Accessibility rule.</b> Warm Orange, Sky, and Sage are for <strong>fills and large shapes</strong> — they don't pass contrast as small text on cream. For orange <strong>text or links</strong>, use the deeper <strong>Clay #B95E23</strong>. Body copy is always Charcoal #343434 on Cream, which clears WCAG AA comfortably.</div>
+  <div style="display:flex; gap:.2in; margin-top:.24in;">
+    <div style="flex:1; background:#B95E23; color:#fff; border-radius:.12in; padding:.14in; text-align:center; font-family:'Nunito'; font-weight:800; font-size:10pt;">Clay #B95E23 · text-safe</div>
+    <div style="flex:1; background:#3B7A9B; color:#fff; border-radius:.12in; padding:.14in; text-align:center; font-family:'Nunito'; font-weight:800; font-size:10pt;">Sky-Deep #3B7A9B · text-safe</div>
+    <div style="flex:1; background:#5E7E4F; color:#fff; border-radius:.12in; padding:.14in; text-align:center; font-family:'Nunito'; font-weight:800; font-size:10pt;">Sage-Deep #5E7E4F · text-safe</div>
+  </div>
+  <div class="brandfoot">COACHELLA COMPUTER AID</div>
+  <div class="pnum">10</div>
+</section>
+
+<!-- ============================ TYPE ============================ -->
+<section class="page">
+  <div class="kicker">09 · Typography</div>
+  <h2 class="sec">Big, round,<br>readable.</h2>
+  <div class="divider"></div>
+  <p style="max-width:6in;">Two rounded, humanist faces — chosen because they stay friendly at large sizes and legible for older eyes. <strong>Nunito</strong> carries headlines; <strong>Nunito&nbsp;Sans</strong> carries body. Both are free and open, so the whole ecosystem can use them at no cost.</p>
+  <div class="ty">
+    <div class="row"><div class="meta">Nunito · 900<br>Display</div><div class="d1">We'll figure it out together</div></div>
+    <div class="row"><div class="meta">Nunito · 800<br>Headings</div><div class="d2">Patient help, at your pace</div></div>
+    <div class="row"><div class="meta">Nunito Sans · 400<br>Body · 18px min</div><div class="b1">Technology should make life easier — not more confusing. We'll walk through it one step at a time, as many times as you need.</div></div>
+    <div class="row"><div class="meta">Nunito · 800<br>Labels / eyebrows</div><div class="c1">Who we help</div></div>
+  </div>
+  <div class="note"><b>Size floor.</b> Body text never drops below <strong>18px</strong> on screen (16px absolute minimum for fine print). Line length caps around 70 characters, with generous line-height (1.6+) so paragraphs never feel dense.</div>
+  <div class="brandfoot">COACHELLA COMPUTER AID</div>
+  <div class="pnum">11</div>
+</section>
+
+<!-- ============================ ILLUSTRATION ============================ -->
+<section class="page" style="background:var(--cream);">
+  <div class="kicker">10 · Illustration Style</div>
+  <h2 class="sec">One warm world.</h2>
+  <div class="divider"></div>
+  <div class="ill-samples">
+    <div class="frame"><svg viewBox="0 0 200 200"><rect x="14" y="14" width="172" height="172" rx="40" fill="#F8E9D5"/><rect x="46" y="66" width="70" height="52" rx="10" fill="#78B8D9"/><path d="M116 86 l30-16 v50 l-30-16Z" fill="#3B7A9B"/><circle cx="80" cy="150" r="8" fill="#F4A259"/><circle cx="104" cy="150" r="8" fill="#8BAE7B"/><circle cx="128" cy="150" r="8" fill="#78B8D9"/></svg></div>
+    <div class="frame"><svg viewBox="0 0 200 200"><rect x="14" y="14" width="172" height="172" rx="40" fill="#F8E9D5"/><path d="M100 44 l50 20 v30 q0 40-50 62 q-50-22-50-62 v-30Z" fill="#8BAE7B"/><path d="M82 100 l14 15 26-30" stroke="#FDF6EC" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <div class="frame"><svg viewBox="0 0 200 200"><rect x="14" y="14" width="172" height="172" rx="40" fill="#F8E9D5"/><circle cx="100" cy="84" r="32" fill="#F4A259"/><path d="M84 116 h32 v9 q0 7-16 7-16 0-16-7Z" fill="#B95E23"/><path d="M100 60v-13 M100 60 q-13 11-13 24 q0 15 13 15 q13 0 13-15 q0-13-13-24Z" fill="#FDF6EC"/></svg></div>
+  </div>
+  <div class="rules2">
+    <div class="do"><h4>Always</h4><ul>
+      <li>Soft rounded edges</li><li>Flat shapes, gentle gradients</li><li>Warm natural lighting</li><li>Smiling, relaxed people</li><li>Only the six brand colors</li><li>Generous breathing room</li></ul></div>
+    <div class="dont"><h4>Never</h4><ul>
+      <li>Dark corporate colors</li><li>Hard shadows or sharp edges</li><li>Angry or stressed expressions</li><li>Stock-photo realism</li><li>Tiny text or clutter</li><li>Cold, clinical framing</li></ul></div>
+  </div>
+  <p style="margin-top:.24in; font-size:11pt; color:var(--charcoal-soft);"><strong>North star:</strong> Google Illustrations × Apple × Airbnb × a National Park visitor center. Every image should look like it came from the same hand.</p>
+  <div class="brandfoot">COACHELLA COMPUTER AID</div>
+  <div class="pnum">12</div>
+</section>
+
+<!-- ============================ CAST ============================ -->
+<section class="page">
+  <div class="kicker">11 · The Cast</div>
+  <h2 class="sec">Faces you'll<br>see again.</h2>
+  <div class="divider"></div>
+  <p style="max-width:6in;">Instead of random strangers, we build a small cast of recurring characters — our version of the Duolingo owl. Over time, the community recognizes them on sight.</p>
+  <div class="cast">
+    <div class="char"><div class="av"><svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<defs><clipPath id="cc"><circle cx="100" cy="100" r="94"/></clipPath></defs>
+<circle cx="100" cy="100" r="94" fill="#D9EAF3"/>
+<g clip-path="url(#cc)">
+<path d="M40 210 q0-52 60-58 q60 6 60 58 Z" fill="#78B8D9"/>
+<rect x="86" y="118" width="28" height="26" rx="12" fill="#EAB98F"/>
+<circle cx="100" cy="92" r="40" fill="#EAB98F"/>
+<path d="M58 84 q2-40 42-40 q40 0 42 40 q-14-16-42-16 q-20 0-32 8 q-6 4-10 8Z" fill="#E4DED2"/>
+<circle cx="86" cy="92" r="3.8" fill="#343434"/><circle cx="114" cy="92" r="3.8" fill="#343434"/>
+<circle cx="78" cy="100" r="6.5" fill="#F4A259" opacity="0.28"/><circle cx="122" cy="100" r="6.5" fill="#F4A259" opacity="0.28"/>
+<path d="M88 112 q12 10 24 0" stroke="#343434" stroke-width="3.6" fill="none" stroke-linecap="round"/>
+<rect x="70" y="84" width="24" height="17" rx="8" fill="none" stroke="#343434" stroke-width="3"/>
+<rect x="106" y="84" width="24" height="17" rx="8" fill="none" stroke="#343434" stroke-width="3"/>
+<line x1="94" y1="92" x2="106" y2="92" stroke="#343434" stroke-width="3"/>
+</g></svg></div><b>Robert</b><div class="role">72 · Retired teacher</div><p>Blue cardigan, golden retriever, always smiling.</p></div>
+    <div class="char"><div class="av"><svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<defs><clipPath id="cc"><circle cx="100" cy="100" r="94"/></clipPath></defs>
+<circle cx="100" cy="100" r="94" fill="#FBE3D3"/>
+<g clip-path="url(#cc)">
+<path d="M40 210 q0-52 60-58 q60 6 60 58 Z" fill="#F4A259"/>
+<rect x="86" y="118" width="28" height="26" rx="12" fill="#CE9068"/>
+<circle cx="100" cy="92" r="40" fill="#CE9068"/>
+<circle cx="100" cy="46" r="12" fill="#8C8072"/><path d="M56 96 q0-52 44-52 q44 0 44 52 q-14-24-44-24 q-30 0-44 24Z" fill="#8C8072"/>
+<circle cx="86" cy="92" r="3.8" fill="#343434"/><circle cx="114" cy="92" r="3.8" fill="#343434"/>
+<circle cx="78" cy="100" r="6.5" fill="#F4A259" opacity="0.28"/><circle cx="122" cy="100" r="6.5" fill="#F4A259" opacity="0.28"/>
+<path d="M88 112 q12 10 24 0" stroke="#343434" stroke-width="3.6" fill="none" stroke-linecap="round"/>
+
+</g></svg></div><b>Maria</b><div class="role">68 · Patient learner</div><p>Orange sweater, houseplants, Spanish-speaking.</p></div>
+    <div class="char"><div class="av"><svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<defs><clipPath id="cc"><circle cx="100" cy="100" r="94"/></clipPath></defs>
+<circle cx="100" cy="100" r="94" fill="#E1EBDA"/>
+<g clip-path="url(#cc)">
+<path d="M40 210 q0-52 60-58 q60 6 60 58 Z" fill="#8BAE7B"/>
+<rect x="86" y="118" width="28" height="26" rx="12" fill="#EAB98F"/>
+<circle cx="100" cy="92" r="40" fill="#EAB98F"/>
+<path d="M56 92 q0-48 44-48 q44 0 44 48 q-8-10-16-8 q-6-12-16-8 q-8-10-18-6 q-10-2-16 8 q-12 2-22 22Z" fill="#E4DED2"/>
+<circle cx="86" cy="92" r="3.8" fill="#343434"/><circle cx="114" cy="92" r="3.8" fill="#343434"/>
+<circle cx="78" cy="100" r="6.5" fill="#F4A259" opacity="0.28"/><circle cx="122" cy="100" r="6.5" fill="#F4A259" opacity="0.28"/>
+<path d="M86 110 q14 14 28 0" stroke="#343434" stroke-width="3.8" fill="none" stroke-linecap="round"/>
+
+</g></svg></div><b>Helen</b><div class="role">76 · Independent</div><p>Loves video calls with the grandkids. Cheerful.</p></div>
+    <div class="char"><div class="av"><svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<defs><clipPath id="cc"><circle cx="100" cy="100" r="94"/></clipPath></defs>
+<circle cx="100" cy="100" r="94" fill="#F3E6D2"/>
+<g clip-path="url(#cc)">
+<path d="M40 210 q0-52 60-58 q60 6 60 58 Z" fill="#5E7E4F"/>
+<rect x="86" y="118" width="28" height="26" rx="12" fill="#CE9068"/>
+<circle cx="100" cy="92" r="40" fill="#CE9068"/>
+<path d="M58 86 q2-42 42-42 q40 0 42 42 q-14-16-42-16 q-28 0-42 16Z" fill="#B9B2A6"/>
+<circle cx="86" cy="92" r="3.8" fill="#343434"/><circle cx="114" cy="92" r="3.8" fill="#343434"/>
+<circle cx="78" cy="100" r="6.5" fill="#F4A259" opacity="0.28"/><circle cx="122" cy="100" r="6.5" fill="#F4A259" opacity="0.28"/>
+<path d="M88 112 q12 10 24 0" stroke="#343434" stroke-width="3.6" fill="none" stroke-linecap="round"/>
+<path d="M88 106 q12 5 24 0" stroke="#B9B2A6" stroke-width="5" fill="none" stroke-linecap="round"/>
+</g></svg></div><b>Carlos</b><div class="role">Retired veteran</div><p>Tablet and a coffee mug; manages appointments online.</p></div>
+    <div class="char"><div class="av"><svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<defs><clipPath id="cc"><circle cx="100" cy="100" r="94"/></clipPath></defs>
+<circle cx="100" cy="100" r="94" fill="#FBE3D3"/>
+<g clip-path="url(#cc)">
+<path d="M40 210 q0-52 60-58 q60 6 60 58 Z" fill="#F4A259"/>
+<rect x="86" y="118" width="28" height="26" rx="12" fill="#D89B72"/>
+<circle cx="100" cy="92" r="40" fill="#D89B72"/>
+<path d="M58 90 q0-46 42-46 q42 0 42 46 q-12-20-42-20 q-30 0-42 20Z" fill="#3B3128"/><path d="M140 96 q22 6 16 40 q-2 12-14 12 q10-28-6-48Z" fill="#3B3128"/>
+<circle cx="86" cy="92" r="3.8" fill="#343434"/><circle cx="114" cy="92" r="3.8" fill="#343434"/>
+<circle cx="78" cy="100" r="6.5" fill="#F4A259" opacity="0.28"/><circle cx="122" cy="100" r="6.5" fill="#F4A259" opacity="0.28"/>
+<path d="M86 110 q14 14 28 0" stroke="#343434" stroke-width="3.8" fill="none" stroke-linecap="round"/>
+
+</g></svg></div><b>Ana</b><div class="role">28 · Volunteer</div><p>Laptop and backpack. Always ready to help.</p></div>
+    <div class="char"><div class="av"><svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+<defs><clipPath id="cc"><circle cx="100" cy="100" r="94"/></clipPath></defs>
+<circle cx="100" cy="100" r="94" fill="#D9EAF3"/>
+<g clip-path="url(#cc)">
+<path d="M40 210 q0-52 60-58 q60 6 60 58 Z" fill="#78B8D9"/>
+<rect x="86" y="118" width="28" height="26" rx="12" fill="#B07A54"/>
+<circle cx="100" cy="92" r="40" fill="#B07A54"/>
+<path d="M60 88 q2-44 40-44 q38 0 40 44 q-14-18-40-18 q-26 0-40 18Z" fill="#2E2620"/>
+<circle cx="86" cy="92" r="3.8" fill="#343434"/><circle cx="114" cy="92" r="3.8" fill="#343434"/>
+<circle cx="78" cy="100" r="6.5" fill="#F4A259" opacity="0.28"/><circle cx="122" cy="100" r="6.5" fill="#F4A259" opacity="0.28"/>
+<path d="M88 112 q12 10 24 0" stroke="#343434" stroke-width="3.6" fill="none" stroke-linecap="round"/>
+<rect x="70" y="84" width="24" height="17" rx="8" fill="none" stroke="#343434" stroke-width="3"/>
+<rect x="106" y="84" width="24" height="17" rx="8" fill="none" stroke="#343434" stroke-width="3"/>
+<line x1="94" y1="92" x2="106" y2="92" stroke="#343434" stroke-width="3"/><path d="M60 96 q-6 0-6 8" stroke="#343434" stroke-width="3.4" fill="none" stroke-linecap="round"/><rect x="50" y="102" width="9" height="7" rx="3" fill="#5E7E4F"/>
+</g></svg></div><b>David</b><div class="role">Works remotely</div><p>Wheelchair user; relies on accessibility software.</p></div>
+  </div>
+  <div class="brandfoot">COACHELLA COMPUTER AID</div>
+  <div class="pnum">13</div>
+</section>
+
+<!-- ============================ ACCESSIBILITY ============================ -->
+<section class="page">
+  <div class="kicker">12 · Accessibility</div>
+  <h2 class="sec">Built for<br>everyone.</h2>
+  <div class="divider"></div>
+  <p style="max-width:6in;">Accessibility isn't a feature we add at the end — it's the baseline the whole system is measured against. Target: <strong>WCAG 2.1 AA and beyond</strong>.</p>
+  <div class="check">
+    <div class="c"><div class="tick"><svg width="14" height="14" viewBox="0 0 24 24"><path d="M5 12l4 4 10-11" stroke="#fff" stroke-width="3.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><b>Large text by default</b><span>18px+ body, scalable without breaking layout.</span></div></div>
+    <div class="c"><div class="tick"><svg width="14" height="14" viewBox="0 0 24 24"><path d="M5 12l4 4 10-11" stroke="#fff" stroke-width="3.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><b>AA contrast, verified</b><span>Charcoal on cream; text-safe accent shades.</span></div></div>
+    <div class="c"><div class="tick"><svg width="14" height="14" viewBox="0 0 24 24"><path d="M5 12l4 4 10-11" stroke="#fff" stroke-width="3.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><b>Full keyboard navigation</b><span>Visible focus rings on every control.</span></div></div>
+    <div class="c"><div class="tick"><svg width="14" height="14" viewBox="0 0 24 24"><path d="M5 12l4 4 10-11" stroke="#fff" stroke-width="3.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><b>Screen-reader ready</b><span>Semantic markup, alt text, ARIA labels.</span></div></div>
+    <div class="c"><div class="tick"><svg width="14" height="14" viewBox="0 0 24 24"><path d="M5 12l4 4 10-11" stroke="#fff" stroke-width="3.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><b>Reduced-motion respected</b><span>Animations soften or stop on request.</span></div></div>
+    <div class="c"><div class="tick"><svg width="14" height="14" viewBox="0 0 24 24"><path d="M5 12l4 4 10-11" stroke="#fff" stroke-width="3.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><b>Bilingual from day one</b><span>English and Spanish, equal footing.</span></div></div>
+    <div class="c"><div class="tick"><svg width="14" height="14" viewBox="0 0 24 24"><path d="M5 12l4 4 10-11" stroke="#fff" stroke-width="3.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><b>Large touch targets</b><span>44px minimum; easy to tap with less-steady hands.</span></div></div>
+    <div class="c"><div class="tick"><svg width="14" height="14" viewBox="0 0 24 24"><path d="M5 12l4 4 10-11" stroke="#fff" stroke-width="3.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div><div><b>Plain language</b><span>No jargon; short sentences; clear next steps.</span></div></div>
+  </div>
+  <div class="brandfoot">COACHELLA COMPUTER AID</div>
+  <div class="pnum">14</div>
+</section>
+
+<!-- ============================ PRINCIPLES ============================ -->
+<section class="page" style="background:var(--cream);">
+  <div class="kicker">13 · Design Principles</div>
+  <h2 class="sec">The litmus test.</h2>
+  <div class="divider"></div>
+  <p style="max-width:6in;">Before anything ships — a page, a flyer, a button — it has to pass these. If the answer isn't <strong>yes</strong>, we redesign it.</p>
+  <div class="prin">
+    <div class="q"><div class="n">1</div><div class="t">Is it easy to read?</div></div>
+    <div class="q"><div class="n">2</div><div class="t">Would an 80-year-old understand it?</div></div>
+    <div class="q"><div class="n">3</div><div class="t">Is it warm?</div></div>
+    <div class="q"><div class="n">4</div><div class="t">Does it reduce anxiety?</div></div>
+    <div class="q"><div class="n">5</div><div class="t">Is it welcoming?</div></div>
+    <div class="q"><div class="n">6</div><div class="t">Does it build trust?</div></div>
+  </div>
+  <div class="brandfoot">COACHELLA COMPUTER AID</div>
+  <div class="pnum">15</div>
+</section>
+
+<!-- ============================ ROADMAP ============================ -->
+<section class="page">
+  <div class="kicker">14 · Roadmap</div>
+  <h2 class="sec">Built to grow.</h2>
+  <div class="divider"></div>
+  <div class="road">
+    <div class="phase now"><div class="tag"><div class="n">Phase 1 · Now</div><div class="nm">Foundation</div></div>
+      <div class="items"><span>Brand Bible</span><span>Illustration Guide</span><span>Vuetify Design System</span><span>Homepage Blueprint</span></div></div>
+    <div class="phase"><div class="tag"><div class="n">Phase 2</div><div class="nm">Visual Identity</div></div>
+      <div class="items"><span>Logo</span><span>Icon set</span><span>Illustration library</span><span>Backgrounds</span><span>Characters</span></div></div>
+    <div class="phase"><div class="tag"><div class="n">Phase 3</div><div class="nm">Website</div></div>
+      <div class="items"><span>Vue 3 + Vite + Vuetify</span><span>Home</span><span>Services</span><span>Workshops</span><span>Resources</span><span>Contact</span></div></div>
+    <div class="phase" style="border-bottom:0;"><div class="tag"><div class="n">Phase 4</div><div class="nm">Community Platform</div></div>
+      <div class="items"><span>Booking</span><span>Survey</span><span>Workshop registration</span><span>Volunteer signup</span><span>Client portal</span></div></div>
+  </div>
+  <p style="margin-top:.3in; color:var(--charcoal-soft); font-size:11pt; max-width:6in;">Each phase inherits everything above it. The website is simply the first application built on the system — a volunteer portal, a mobile app, or a community dashboard would all share this same language and mission.</p>
+  <div class="brandfoot">COACHELLA COMPUTER AID</div>
+  <div class="pnum">16</div>
+</section>
+
+<!-- ============================ BACK ============================ -->
+<section class="page back">
+  <div class="mark"><svg width="34" height="34" viewBox="0 0 26 26"><path d="M6 13 q0-7 7-7 q4 0 6 3 l-3 2 q-1.6-2-3.6-2 q-3.6 0-3.6 4 q0 4 3.6 4 q2 0 3.6-2 l3 2 q-2 3-6 3 q-7 0-7-7Z" fill="#343434"/></svg></div>
+  <h2>No one should be left behind<br>simply because they need<br>a patient teacher.</h2>
+  <div class="tag">Personalized Technology Help for Everyone</div>
+</section>
+
+</body>
+</html>
