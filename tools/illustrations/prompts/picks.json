@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Robert · portrait",
+    "category": "characters",
+    "pick": "candidates/001-2.png"
+  },
+  {
+    "id": 2,
+    "name": "Robert · with laptop",
+    "category": "characters",
+    "regen": true
+  },
+  {
+    "id": 3,
+    "name": "Robert · video call",
+    "category": "characters",
+    "pick": "candidates/003-1.png"
+  },
+  {
+    "id": 4,
+    "name": "Maria · portrait",
+    "category": "characters",
+    "pick": "candidates/004-1.png"
+  },
+  {
+    "id": 5,
+    "name": "Maria · smartphone",
+    "category": "characters",
+    "pick": "candidates/005-2.png"
+  }
+]

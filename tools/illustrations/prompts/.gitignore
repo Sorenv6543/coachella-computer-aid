@@ -1,0 +1,4 @@
+candidates/
+picker-data.generated.js
+node_modules/
+failures.json

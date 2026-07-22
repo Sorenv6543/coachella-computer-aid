@@ -1,0 +1,15 @@
+{
+  "name": "cca-illustration-generator",
+  "private": true,
+  "type": "module",
+  "description": "Batch-generate CCA illustration candidates with Gemini Nano Banana, then pick.",
+  "scripts": {
+    "prompts": "node build-prompts.mjs --tool gemini --variants 3",
+    "generate": "node generate-images.mjs",
+    "generate:dry": "node generate-images.mjs --dry",
+    "scan": "node scan-candidates.mjs"
+  },
+  "dependencies": {
+    "@google/genai": "^1.0.0"
+  }
+}

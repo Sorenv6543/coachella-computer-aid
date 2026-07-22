@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CCA — Illustration Picker</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&display=swap" rel="stylesheet">
+<script src="picker-data.generated.js" onerror="window.__noData=true"></script>
+<style>
+:root{--cream:#FDF6EC;--sand:#F8E9D5;--sand2:#EED9BC;--orange:#F4A259;--clay:#B95E23;--sky:#78B8D9;--sky2:#3B7A9B;--sage:#8BAE7B;--sage2:#5E7E4F;--ink:#343434;--soft:#6E6A63}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--cream);color:var(--ink);font-family:"Nunito Sans",sans-serif;line-height:1.5}
+h1,h2,h3{font-family:"Nunito",sans-serif;margin:0}
+.bar{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1.5px solid var(--sand2);padding:14px 24px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;box-shadow:0 4px 16px -12px rgba(0,0,0,.2)}
+.bar h1{font-size:19px;font-weight:900}.bar h1 small{display:block;font-weight:800;font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--clay)}
+.prog{display:flex;align-items:center;gap:10px;margin-left:8px}
+.bar-track{width:180px;height:8px;background:var(--sand2);border-radius:99px;overflow:hidden}.bar-fill{height:100%;background:var(--sage);width:0}
+.count{font-family:"Nunito";font-weight:800;font-size:12px;color:var(--sage2)}
+.sp{flex:1}
+.btn{font-family:"Nunito";font-weight:800;font-size:12px;padding:8px 14px;border-radius:99px;border:1.5px solid var(--sand2);background:#fff;cursor:pointer;color:var(--ink)}
+.btn:hover{border-color:var(--soft)}
+.btn.pri{background:var(--sage2);color:#fff;border-color:var(--sage2)}
+.filters{display:flex;gap:7px;flex-wrap:wrap;padding:16px 24px 4px}
+.fb{font-family:"Nunito";font-weight:800;font-size:12px;padding:6px 13px;border-radius:99px;border:1.5px solid var(--sand2);background:#fff;cursor:pointer;color:var(--ink)}
+.fb.active{background:var(--ink);color:#fff;border-color:var(--ink)}
+.wrap{padding:8px 24px 80px}
+.sec{margin:22px 0}
+.sec h2{font-size:18px;font-weight:900;margin-bottom:12px;padding-bottom:8px;border-bottom:1.5px solid var(--sand2)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+.card{background:#fff;border-radius:14px;padding:14px;border:1.5px solid transparent;box-shadow:0 6px 18px -12px rgba(52,52,52,.22)}
+.card.done{border-color:rgba(139,174,123,.5);background:rgba(139,174,123,.06)}
+.card.regen{border-color:rgba(185,94,35,.4)}
+.card .top{display:flex;align-items:baseline;gap:8px;margin-bottom:3px}
+.card .num{font-family:"Nunito";font-weight:900;font-size:11px;color:var(--clay)}
+.card .name{font-family:"Nunito";font-weight:800;font-size:15px}
+.card .desc{font-size:12px;color:var(--soft);margin-bottom:10px;line-height:1.4}
+.cands{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.cand{position:relative;border-radius:10px;overflow:hidden;aspect-ratio:1;background:var(--sand);border:3px solid transparent;cursor:pointer}
+.cand img{width:100%;height:100%;object-fit:cover;display:block}
+.cand.pick{border-color:var(--sage2)}
+.cand.pick::after{content:"✓";position:absolute;top:4px;right:6px;font-family:"Nunito";font-weight:900;color:#fff;background:var(--sage2);width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-size:13px}
+.awaiting{grid-column:1/-1;text-align:center;color:var(--soft);font-size:13px;padding:22px;background:var(--sand);border-radius:10px}
+.card .foot{display:flex;align-items:center;gap:8px;margin-top:10px}
+.mini{font-family:"Nunito";font-weight:800;font-size:11px;padding:5px 11px;border-radius:99px;border:1.5px solid var(--sand2);background:#fff;cursor:pointer;color:var(--soft)}
+.mini.on{background:var(--clay);color:#fff;border-color:var(--clay)}
+.err{max-width:640px;margin:80px auto;background:#fff;border-radius:14px;padding:34px;text-align:center;box-shadow:0 10px 30px -18px rgba(0,0,0,.3)}
+.err code{background:var(--sand);padding:2px 7px;border-radius:6px}
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script>
+const D = window.CCA_PICKER;
+const LABELS={characters:'Characters & poses',hero:'Hero scenes',service:'Service illustrations',community:'Community scenes',workshop:'Workshop scenes',device:'Device illustrations',background:'Backgrounds',marketing:'Marketing graphics',ui:'UI graphics',icon:'Icons'};
+const ORDER=['characters','hero','service','community','workshop','device','background','marketing','ui','icon'];
+const KEY='cca-illustration-picks';
+let picks = JSON.parse(localStorage.getItem(KEY)||'{}');   // {id:{pick:path}} or {id:{regen:true}}
+let filter='all';
+
+function save(){localStorage.setItem(KEY,JSON.stringify(picks))}
+function candsFor(id){return (D.candidates[String(id)]||D.candidates[id]||[])}
+
+function app(){
+  const root=document.getElementById('app');
+  if(!D){root.innerHTML=`<div class="err"><h2>No candidate data yet</h2><p style="color:#6E6A63;margin-top:10px">Save your Gemini images to a <code>candidates/</code> folder as <code>&lt;id&gt;-1.png</code>, <code>&lt;id&gt;-2.png</code>, <code>&lt;id&gt;-3.png</code>, run <code>node scan-candidates.mjs</code>, then reload.</p></div>`;return;}
+  const withArt=D.items.filter(i=>candsFor(i.id).length).length;
+  const picked=D.items.filter(i=>picks[i.id]&&picks[i.id].pick).length;
+  const pct=withArt?Math.round(picked/withArt*100):0;
+
+  root.innerHTML=`
+   <div class="bar">
+     <h1>Illustration Picker<small>Coachella Computer Aid</small></h1>
+     <div class="prog"><div class="bar-track"><div class="bar-fill" style="width:${pct}%"></div></div>
+       <span class="count">${picked}/${withArt} picked · ${D.items.length-withArt} awaiting art</span></div>
+     <div class="sp"></div>
+     <button class="btn" onclick="imp()">Import picks</button>
+     <button class="btn pri" onclick="exp()">Export picks.json</button>
+   </div>
+   <div class="filters">
+     ${fb('all','All')} ${fb('undecided','Needs a pick')} ${fb('picked','Picked')} ${fb('regen','Regenerate')} ${fb('awaiting','Awaiting art')}
+     ${ORDER.map(c=>fb(c,LABELS[c])).join('')}
+   </div>
+   <div class="wrap" id="items"></div>`;
+  items();
+}
+function fb(k,l){return `<button class="fb ${filter===k?'active':''}" onclick="setF('${k}')">${l}</button>`}
+function setF(k){filter=k;app()}
+
+function match(i){
+  const c=candsFor(i.id).length, p=picks[i.id];
+  if(filter==='all')return true;
+  if(filter==='awaiting')return c===0;
+  if(filter==='undecided')return c>0 && !(p&&p.pick) && !(p&&p.regen);
+  if(filter==='picked')return p&&p.pick;
+  if(filter==='regen')return p&&p.regen;
+  return i.category===filter;
+}
+function items(){
+  const box=document.getElementById('items');
+  const cats=(['all','undecided','picked','regen','awaiting'].includes(filter))?ORDER:[filter];
+  box.innerHTML=cats.map(cat=>{
+    const list=D.items.filter(i=>i.category===cat&&match(i));
+    if(!list.length)return'';
+    return `<div class="sec"><h2>${LABELS[cat]} · ${list.length}</h2><div class="grid">${list.map(card).join('')}</div></div>`;
+  }).join('')||`<div class="awaiting" style="margin-top:30px">Nothing matches this filter.</div>`;
+}
+function card(i){
+  const cs=candsFor(i.id), p=picks[i.id]||{};
+  const cls=p.pick?'done':(p.regen?'regen':'');
+  const body = cs.length
+    ? `<div class="cands">${cs.map(src=>`<div class="cand ${p.pick===src?'pick':''}" onclick="pick(${i.id},'${src.replace(/'/g,"\\'")}')"><img src="${src}" loading="lazy" alt=""></div>`).join('')}</div>`
+    : `<div class="cands"><div class="awaiting">awaiting art — generate #${String(i.id).padStart(3,'0')} in Gemini</div></div>`;
+  return `<div class="card ${cls}">
+    <div class="top"><span class="num">#${String(i.id).padStart(3,'0')}</span><span class="name">${i.name}</span></div>
+    <div class="desc">${i.description}</div>
+    ${body}
+    ${cs.length?`<div class="foot"><button class="mini ${p.regen?'on':''}" onclick="regen(${i.id})">✕ none good — regenerate</button>${p.pick?'<span style="font-family:Nunito;font-weight:800;font-size:11px;color:var(--sage2);margin-left:auto">picked ✓</span>':''}</div>`:''}
+  </div>`;
+}
+function pick(id,src){
+  const p=picks[id]||{};
+  if(p.pick===src){delete picks[id];} else {picks[id]={pick:src};}
+  save();app();
+}
+function regen(id){
+  const p=picks[id]||{};
+  if(p.regen){delete picks[id];} else {picks[id]={regen:true};}
+  save();app();
+}
+function exp(){
+  const out=D.items.filter(i=>picks[i.id]).map(i=>({id:i.id,name:i.name,category:i.category,...picks[i.id]}));
+  const blob=new Blob([JSON.stringify(out,null,2)],{type:'application/json'});
+  const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='picks.json';a.click();
+}
+function imp(){
+  const inp=document.createElement('input');inp.type='file';inp.accept='.json';
+  inp.onchange=e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();
+    r.onload=()=>{try{const arr=JSON.parse(r.result);picks={};arr.forEach(o=>{picks[o.id]=o.pick?{pick:o.pick}:(o.regen?{regen:true}:{});});save();app();}catch(err){alert('Could not read picks.json')}};
+    r.readAsText(f);};
+  inp.click();
+}
+app();
+</script>
+</body>
+</html>
