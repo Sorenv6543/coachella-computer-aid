@@ -1,3 +1,6 @@
 .DS_Store
 Thumbs.db
 *.swp
+
+# Obsidian vault-local state (plugins, workspace layout, cache) — not project content
+docs/.obsidian/
