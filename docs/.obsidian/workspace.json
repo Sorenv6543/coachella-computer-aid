@@ -36,7 +36,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "## The Approach.md",
+                "file": "01-Project-Foundation/README.md",
                 "mode": "preview",
                 "source": false,
                 "backlinks": true,
@@ -51,11 +51,21 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "## The Approach"
+              "title": "README"
+            }
+          },
+          {
+            "id": "505581c314bcdad6",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -75,7 +85,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -220,7 +232,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -240,13 +252,15 @@
       "realclaudian:Open Claudian": false
     }
   },
-  "active": "973bd47b7699d058",
+  "active": "7119d128bc84c386",
   "lastOpenFiles": [
+    "README.md",
+    "01-Project-Foundation/README.md",
+    "## The Approach.md",
     "CLAUDE.md",
     "CLAUDE.md.tmp.52409.1985afef014d",
     "app/website/Charecter Based StoryTelling.md",
     "02-Strategy/README.md",
-    "## The Approach.md",
     "Untitled.base",
     "06-Assets/README.md",
     "05-Technical/Tech-Stack.md.tmp.52409.cf8cd716f565",
@@ -270,9 +284,7 @@
     "03-Website-Design/Website-Strategy.md",
     "02-Strategy/Long-Term-Roadmap.md",
     "02-Strategy/Community-Outreach-Strategy.md",
-    "01-Project-Foundation/README.md",
     "01-Project-Foundation/Brand-Bible.md",
-    "README.md",
     "app/website/backgrounds.md",
     "Untitled 2.md",
     "app/website/Website Strategy.md",

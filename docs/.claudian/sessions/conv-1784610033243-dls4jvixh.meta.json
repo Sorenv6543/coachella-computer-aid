@@ -6,10 +6,12 @@
   "createdAt": 1784610033250,
   "updatedAt": 1784611359732,
   "lastResponseAt": 1784611359732,
-  "sessionId": "e9a81d1c-e0a3-4596-9092-809b1e0b6ebe",
+  "sessionId": null,
   "selectedModel": "haiku",
   "providerState": {
-    "providerSessionId": "e9a81d1c-e0a3-4596-9092-809b1e0b6ebe"
+    "previousProviderSessionIds": [
+      "e9a81d1c-e0a3-4596-9092-809b1e0b6ebe"
+    ]
   },
   "usage": {
     "model": "haiku",

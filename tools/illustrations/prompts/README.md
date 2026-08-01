@@ -75,7 +75,7 @@ Instead of pasting prompts one by one, batch them with `generate-images.mjs`.
 
 ```
 npm i                                   # installs @google/genai
-export GEMINI_API_KEY=your_key          # or GOOGLE_API_KEY
+our_key          
 node generate-images.mjs --dry          # plan only — parses prompts, no API calls
 node generate-images.mjs --limit 5      # smoke test: 5 slots (15 images)
 node generate-images.mjs                # the full run: 300 slots x 3 = 900 images
