@@ -214,37 +214,37 @@ Instead of random stock photos, we've created a recurring cast of characters. Pe
 ### Robert
 - **Age:** 72
 - **Story:** Retired teacher
-- **Visual:** Blue cardigan, golden retriever, always smiling
+- **Visual:** Sky-blue cardigan over a cream shirt, grey trousers, round glasses, silver hair
 - **Represents:** Lifelong learners, seniors embracing technology
 
 ### Maria
 - **Age:** 68
 - **Story:** Active, engaged, Spanish-speaking
-- **Visual:** Orange sweater, houseplants, warm presence
+- **Visual:** Orange cardigan over a cream top, dark-brown bun, hoop earrings, navy trousers
 - **Represents:** Bilingual community, patient learners
 
 ### Ana
 - **Age:** 28
 - **Story:** Volunteer who loves helping others
-- **Visual:** Always with a laptop or backpack, ready to assist
+- **Visual:** Coral/orange tee, dark ponytail, sage backpack, grey pants, sneakers
 - **Represents:** Community helpers, young volunteers
 
 ### David
 - **Age:** 40s
 - **Story:** Works remotely, wheelchair user
-- **Visual:** Professional, uses accessibility software
+- **Visual:** Sky-blue polo, round glasses, neck headset, manual wheelchair with a sage frame
 - **Represents:** People with disabilities, adaptive technology users
 
 ### Helen
 - **Age:** 76
 - **Story:** Lives independently, loves family connection
-- **Visual:** Always cheerful, video call enthusiast
+- **Visual:** Sage cardigan, cream top, khaki pants, silver wavy hair, always laughing
 - **Represents:** Independence through technology
 
 ### Carlos
 - **Age:** 65
 - **Story:** Retired veteran
-- **Visual:** Tablet, coffee mug, medical appointments
+- **Visual:** Sage button-up shirt, navy trousers, grey hair and mustache
 - **Represents:** Veterans, telehealth users, lifelong learners
 
 **These people become recognizable throughout the website.**
