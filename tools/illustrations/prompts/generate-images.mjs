@@ -83,6 +83,7 @@ while ((m = re.exec(md))) {
 
 // ---- character-sheet reference images (characters category only) ----
 const ALL_CHARACTERS = ['robert','maria','helen','carlos','ana','david'];
+const refCache = new Map(); // name -> inlineData part | null (missing sheet), read/encoded once per run
 function refImagesFor(job) {
   if (NOREF || job.cat !== 'characters' || !job.character) return [];
   const names = job.character === 'All'
@@ -90,12 +91,17 @@ function refImagesFor(job) {
     : job.character.split(',').map(s => s.trim().toLowerCase());
   const parts = [];
   for (const name of names) {
-    const file = path.join(CHARDIR, `${name}-character-sheet.png`);
-    if (!fs.existsSync(file)) {
-      console.warn(`  ⚠ no character sheet for "${name}" (${file}) — generating without reference`);
-      continue;
+    if (!refCache.has(name)) {
+      const file = path.join(CHARDIR, `${name}-character-sheet.png`);
+      if (!fs.existsSync(file)) {
+        console.warn(`  ⚠ no character sheet for "${name}" (${file}) — generating without reference`);
+        refCache.set(name, null);
+      } else {
+        refCache.set(name, { inlineData: { mimeType: 'image/png', data: fs.readFileSync(file).toString('base64') } });
+      }
     }
-    parts.push({ inlineData: { mimeType: 'image/png', data: fs.readFileSync(file).toString('base64') } });
+    const cached = refCache.get(name);
+    if (cached) parts.push(cached);
   }
   return parts;
 }
