@@ -45,7 +45,8 @@
     "id": 8,
     "name": "Helen · video call joy",
     "category": "characters",
-    "regen": true
+    "pick": "candidates/008-2.png",
+    "note": "Replaces the exported helen-008-videocall.png, which had heavy-outline style drift and a visible Apple logo on the tablet. 008-2 matches Helen's sage cardigan + silver hair, plain background per FRAME spec, no logo, no cost (already-generated candidate)."
   },
   {
     "id": 9,
