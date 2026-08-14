@@ -98,7 +98,7 @@ predate `prompts/STYLE-LOCK.md`). Supporting evidence:
   when the style paragraph is under-weighted — STYLE-LOCK.md was written to fix
   exactly this.
 
-## Recommended remediation (blocked on API key)
+## Remediation status
 
 **Update, 2026-08-14 (later same day):** `generate-images.mjs` now attaches each
 character's `-character-sheet.png` as a reference image automatically for every
@@ -109,20 +109,50 @@ consistent across every image" instruction with an actual visual anchor. See
 the header comment in that file for details, and its README for the flag
 (`--no-ref` to disable and reproduce the old behavior).
 
-Regenerate the 5 flagged files (ids: 1, 3, 4, 5, 8 — `robert-001`,
-`robert-003`, `maria-004`, `maria-005`, `helen-008`) with:
+**Update, 2026-08-14 (same day, later still):** the API run that generated
+this catalog had already produced 3 raw candidates per slot in
+`tools/illustrations/prompts/candidates/` — 898 of 900 target images across
+all 300 catalog slots. Before spending anything new, all 3 raw candidates were
+checked by hand for the 5 flagged slots:
 
-```
-node generate-images.mjs --only 1,3,4,5,8 --force
-```
+- **Robert #1, #3 and Maria #4, #5: confirmed unfixable from the existing
+  pool.** Every one of the 12 raw candidates across these 4 slots has the same
+  wrong-person problem as the one that got picked — the whole batch came from
+  the same reference-less prompt, so there was never a good option to choose.
+  These 4 files have been **removed** from
+  `src/assets/images/illustrations/characters/` (not left in place wrong) —
+  `robert-001-portrait.png`, `robert-003-video-call.png`,
+  `maria-004-portrait.png`, `maria-005-smartphone.png`. `scan.mjs` now
+  correctly reports these 4 slots as `planned` again instead of falsely
+  `exported`. They still need real regeneration:
 
-This environment has **no `GEMINI_API_KEY`**, so generation can't run here —
-flagged for a session/machine that has the key. Also worth doing at the same
-time: confirm the current recommended model ID (see the same file's header —
+  ```
+  node generate-images.mjs --only 1,3,4,5 --force
+  ```
+
+  (id 8 dropped from this list — see next point.) This environment has **no
+  `GEMINI_API_KEY`**, so generation can't run here — flagged for a
+  session/machine that has the key. Cost at the current (unverified, see
+  below) default model: ~12 images × ~$0.039 ≈ **$0.47** for all 3 variants of
+  each slot, or ~$0.16 for one variant each.
+
+- **Helen #8: fixed for $0.** All 3 raw candidates for this slot were clean
+  (no Apple logo, no style drift). `candidates/008-2.png` was picked and
+  applied via `apply-picks.mjs --clean`, replacing the old
+  `helen-008-videocall.png` with `helen-008-video-call-joy.png`. No new API
+  spend.
+
+Also still worth doing before the next real generation run: confirm the
+current recommended model ID (see `generate-images.mjs`'s header —
 `ai.google.dev` is unreachable from this dev environment, so the default of
-`gemini-2.5-flash-image` is unverified against a primary source as of this
-writing) and regenerate `helen-character-sheet.png` in the flat-vector style
-to match the other five sheets, since it's currently drawn with heavy outlines.
+`gemini-2.5-flash-image` is unverified against a primary source, and there are
+signs it may be scheduled for shutdown around 2026-10-02) and regenerate
+`helen-character-sheet.png` in the flat-vector style to match the other five
+sheets, since it's currently drawn with heavy outlines.
 
-Until regeneration happens, do **not** use the 4 wrong-person files anywhere
-(site, docs, decks). The remaining pool is safe.
+The other ~283 catalog slots (all non-`characters` categories, plus the
+unreviewed character slots) already have raw candidates sitting in
+`candidates/` from the same paid run, un-picked — that's real, already-paid-for
+inventory. Running `picker.html` over them is a $0 next step whenever there's
+time for the visual review; it wasn't done here since picking illustrations
+for ~280 slots is a design decision, not something to auto-decide.
