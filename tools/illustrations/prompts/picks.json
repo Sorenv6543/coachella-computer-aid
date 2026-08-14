@@ -3,7 +3,8 @@
     "id": 1,
     "name": "Robert · portrait",
     "category": "characters",
-    "pick": "candidates/001-2.png"
+    "regen": true,
+    "note": "Checked all 3 raw candidates (001-1/2/3) 2026-08-14: all show an elderly woman, not Robert. No reference image was used at generation time. Needs regeneration with generate-images.mjs (now attaches robert-character-sheet.png automatically)."
   },
   {
     "id": 2,
@@ -15,18 +16,28 @@
     "id": 3,
     "name": "Robert · video call",
     "category": "characters",
-    "pick": "candidates/003-1.png"
+    "regen": true,
+    "note": "Checked all 3 raw candidates (003-1/2/3) 2026-08-14: all show a young dark-haired person, not Robert. Needs regeneration."
   },
   {
     "id": 4,
     "name": "Maria · portrait",
     "category": "characters",
-    "pick": "candidates/004-1.png"
+    "regen": true,
+    "note": "Checked all 3 raw candidates (004-1/2/3) 2026-08-14: all show light/blonde hair, not Maria's dark bun. Needs regeneration."
   },
   {
     "id": 5,
     "name": "Maria · smartphone",
     "category": "characters",
-    "pick": "candidates/005-2.png"
+    "regen": true,
+    "note": "Checked all 3 raw candidates (005-1/2/3) 2026-08-14: all show the same two off-identity, off-style people. Needs regeneration."
+  },
+  {
+    "id": 8,
+    "name": "Helen · video call joy",
+    "category": "characters",
+    "pick": "candidates/008-2.png",
+    "note": "Replaces the exported helen-008-videocall.png, which had heavy-outline style drift and a visible Apple logo on the tablet. 008-2 matches Helen's sage cardigan + silver hair, plain background per FRAME spec, no logo, no cost (already-generated candidate)."
   }
 ]
