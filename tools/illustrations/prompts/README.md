@@ -71,11 +71,16 @@ Instead of pasting prompts one by one, batch them with `generate-images.mjs`.
 > **Imagen is deprecated** (Google shutdown 2026-08-17). This uses **Nano Banana**
 > (`gemini-2.5-flash-image`) via `generateContent`, Google's recommended path.
 > Nano Banana returns one image per call, so the script calls it 3× per slot to get
-> your 3 variations.
+> your 3 variations. Google's docs site (`ai.google.dev`) is unreachable from this
+> repo's dev environment (network egress policy), so double-check the current
+> recommended model ID before a real run — there are signs of newer options
+> ("Nano Banana 2" / `gemini-3.1-flash-image`, and `gemini-3-pro-image-preview`
+> for higher-fidelity multi-reference character work) that couldn't be verified
+> against a primary source from here.
 
 ```
 npm i                                   # installs @google/genai
-our_key          
+export GEMINI_API_KEY=your_key
 node generate-images.mjs --dry          # plan only — parses prompts, no API calls
 node generate-images.mjs --limit 5      # smoke test: 5 slots (15 images)
 node generate-images.mjs                # the full run: 300 slots x 3 = 900 images
@@ -88,6 +93,15 @@ missing), retries on rate-limit/5xx with backoff, writes `failures.json` for any
 that fails, and sets the aspect ratio per category (heroes 16:9, icons 1:1, etc.).
 Useful flags: `--only 1,2,101`, `--cat icon`, `--concurrency 2`, `--delay 500`,
 `--force`, `--model gemini-3-pro-image-preview` (higher quality).
+
+**Character consistency:** for the `characters` category, each slot's character
+sheet (`src/assets/images/illustrations/characters/<name>-character-sheet.png`)
+is automatically attached as a reference image alongside the text prompt — pair
+and group shots (e.g. "Robert + Helen") attach every sheet they need. This is
+what CHARACTER-AUDIT-2026-08-14.md (in `tools/illustrations/`) recommends for
+regenerating the identity-drift failures (`robert-001`, `robert-003`,
+`maria-004`, `maria-005`) — those were generated before this existed. Use
+`--no-ref` to fall back to the old text-only behavior.
 
 **Heads up:** 900 images is a real API spend and will take a while — do `--limit 5`
 first, eyeball the style, tweak `STYLE-LOCK.md` and rerun `npm run prompts` if needed,

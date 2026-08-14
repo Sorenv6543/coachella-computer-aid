@@ -100,10 +100,29 @@ predate `prompts/STYLE-LOCK.md`). Supporting evidence:
 
 ## Recommended remediation (blocked on API key)
 
-Regenerate the 5 flagged files with `tools/illustrations/prompts/generate-images.mjs`
-using `--only` for the affected ids, with the character sheet supplied as a
-reference image per STYLE-LOCK.md. This environment has **no `GEMINI_API_KEY`**,
-so generation can't run here — flagged for a session/machine that has the key.
+**Update, 2026-08-14 (later same day):** `generate-images.mjs` now attaches each
+character's `-character-sheet.png` as a reference image automatically for every
+`characters`-category slot (pairs/group shots attach every sheet involved) —
+this was a real gap in the pipeline, not just a one-off prompting mistake: the
+script only ever sent text prompts, so nothing enforced STYLE-LOCK.md's "keep
+consistent across every image" instruction with an actual visual anchor. See
+the header comment in that file for details, and its README for the flag
+(`--no-ref` to disable and reproduce the old behavior).
+
+Regenerate the 5 flagged files (ids: 1, 3, 4, 5, 8 — `robert-001`,
+`robert-003`, `maria-004`, `maria-005`, `helen-008`) with:
+
+```
+node generate-images.mjs --only 1,3,4,5,8 --force
+```
+
+This environment has **no `GEMINI_API_KEY`**, so generation can't run here —
+flagged for a session/machine that has the key. Also worth doing at the same
+time: confirm the current recommended model ID (see the same file's header —
+`ai.google.dev` is unreachable from this dev environment, so the default of
+`gemini-2.5-flash-image` is unverified against a primary source as of this
+writing) and regenerate `helen-character-sheet.png` in the flat-vector style
+to match the other five sheets, since it's currently drawn with heavy outlines.
 
 Until regeneration happens, do **not** use the 4 wrong-person files anywhere
 (site, docs, decks). The remaining pool is safe.
