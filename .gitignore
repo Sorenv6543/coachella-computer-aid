@@ -4,3 +4,6 @@ Thumbs.db
 
 # Obsidian vault-local state (plugins, workspace layout, cache) — not project content
 docs/.obsidian/
+
+# Claudian plugin session state — not project content
+docs/.claudian/
