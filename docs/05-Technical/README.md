@@ -6,7 +6,7 @@ This section contains technical specifications for building the Coachella Comput
 
 ### [Tech Stack](Tech-Stack.md)
 Complete technology choices:
-- Frontend: Vue 3, TypeScript, Vite, Vuetify 3
+- Frontend: Vue 3, TypeScript, Vite, Vuetify 4
 - Backend: Supabase (PostgreSQL, auth, storage)
 - Analytics: Google Analytics 4
 - Hosting: Vercel or Netlify
@@ -96,7 +96,7 @@ Claude can look up live Vuetify documentation — no need to search!
 | **Frontend Framework** | Vue 3 | Modern, approachable, powerful |
 | **Language** | TypeScript | Type safety, better IDE support |
 | **Build Tool** | Vite | Fast, modern, optimized |
-| **UI Components** | Vuetify 3 | Accessible, comprehensive |
+| **UI Components** | Vuetify 4 | Accessible, comprehensive |
 | **State Mgmt** | Pinia | Simple, modern |
 | **Styling** | Sass/SCSS | Variables, maintainability |
 | **Backend** | Supabase | PostgreSQL, auth, real-time |

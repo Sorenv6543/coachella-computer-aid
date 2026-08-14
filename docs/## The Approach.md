@@ -18,7 +18,7 @@ Build this like a real software company would—not page by page, not component 
 - Vue 3
 - TypeScript
 - Vite
-- Vuetify 3
+- Vuetify 4
 - Pinia
 - Vue Router
 - VueUse
@@ -342,7 +342,7 @@ Authentication, database, real-time features
 - Vue 3 Composition API + TypeScript
 - Vite for fast development & production builds
 - Pinia for scalable state management
-- Vuetify 3 for component consistency
+- Vuetify 4 for component consistency
 - SEO optimization (meta tags, structured data)
 - Performance optimization (code splitting, lazy loading, image optimization)
 - Testing with Vitest

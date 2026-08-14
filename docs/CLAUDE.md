@@ -43,7 +43,7 @@ This isn't a generic website—it's a mission-driven platform built on specific 
 
 ### Tech Stack
 - Frontend: Vue 3 + TypeScript + Vite
-- Components: Vuetify 3 *(Claude has MCP access for live docs!)*
+- Components: Vuetify 4 *(Claude has MCP access for live docs!)*
 - Backend: Supabase (PostgreSQL, auth, storage)
 - Hosting: Vercel or Netlify
 
