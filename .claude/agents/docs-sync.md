@@ -14,8 +14,9 @@ files actually ship. You keep it coherent.
 
 Numbered top-level sections, each with its own `README.md` index:
 `01-Project-Foundation`, `02-Strategy`, `03-Website-Design`, `04-Visual-System`,
-`05-Technical`, `06-Assets`, plus `docs/app/website/` (working notes) and
-`docs/.claude/instructions.md` (task routing). The root `docs/README.md` is the hub.
+`05-Technical`, `06-Assets`, plus `docs/archive/` (superseded drafts, not linked
+from navigation — see `docs/archive/README.md`). The root `docs/README.md` is
+the hub; `docs/CLAUDE.md` is the sole Claude-facing instructions file.
 
 ## What to check and fix
 

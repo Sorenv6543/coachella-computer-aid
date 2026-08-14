@@ -253,8 +253,9 @@ the body is the agent's system prompt. Claude Code auto-delegates based on the
 - `model` is set to `sonnet` across the board. `docs-sync` is grep-heavy and could
   drop to `haiku` for the scanning pass if you want to cut cost; keep sonnet if you
   want it to also reason about structure and fix links.
-- These live at repo-root `.claude/agents/` (where Claude Code looks). The existing
-  `docs/.claude/instructions.md` is separate task-routing guidance and is left as-is.
+- These live at repo-root `.claude/agents/` (where Claude Code looks). The former
+  `docs/.claude/instructions.md` duplicated `docs/CLAUDE.md` almost entirely and
+  was removed in favor of the latter, which Claude Code actually auto-loads.
 - Two real drifts these agents already know about: the `carlos-007` illustration
   mislabel (see `tools/illustrations/`) and the Inter-vs-Nunito font mismatch
   (`docs-sync` will flag it).

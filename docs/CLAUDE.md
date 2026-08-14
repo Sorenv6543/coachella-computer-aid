@@ -15,7 +15,6 @@ When you're asked to work on CCA:
 
 ### Start Here
 - [[README.md|Master README]] — Hub for everything
-- [[.claude/instructions.md|Claude Instructions]] — Project-specific guidance
 
 ### By Task Type
 | Task | Start Here |
@@ -129,7 +128,6 @@ Claude has live access to Vuetify documentation via MCP. When building component
 ccc/
 ├── README.md (START HERE)
 ├── CLAUDE.md (this file)
-├── .claude/instructions.md (project instructions)
 │
 ├── 01-Project-Foundation/
 │   ├── Brand-Bible.md (MOST IMPORTANT)
