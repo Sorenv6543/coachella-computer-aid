@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Robert · portrait",
     "category": "characters",
-    "pick": "candidates/001-2.png"
+    "regen": true
   },
   {
     "id": 2,
@@ -15,18 +15,1788 @@
     "id": 3,
     "name": "Robert · video call",
     "category": "characters",
-    "pick": "candidates/003-1.png"
+    "regen": true
   },
   {
     "id": 4,
     "name": "Maria · portrait",
     "category": "characters",
-    "pick": "candidates/004-1.png"
+    "regen": true
   },
   {
     "id": 5,
     "name": "Maria · smartphone",
     "category": "characters",
-    "pick": "candidates/005-2.png"
+    "regen": true
+  },
+  {
+    "id": 6,
+    "name": "Maria · at library",
+    "category": "characters",
+    "regen": true
+  },
+  {
+    "id": 7,
+    "name": "Helen · portrait",
+    "category": "characters",
+    "regen": true
+  },
+  {
+    "id": 8,
+    "name": "Helen · video call joy",
+    "category": "characters",
+    "regen": true
+  },
+  {
+    "id": 9,
+    "name": "Carlos · portrait",
+    "category": "characters",
+    "regen": true
+  },
+  {
+    "id": 10,
+    "name": "Carlos · VA portal",
+    "category": "characters",
+    "regen": true
+  },
+  {
+    "id": 11,
+    "name": "Ana · helper portrait",
+    "category": "characters",
+    "regen": true
+  },
+  {
+    "id": 12,
+    "name": "Ana · home visit",
+    "category": "characters",
+    "regen": true
+  },
+  {
+    "id": 13,
+    "name": "Ana · teaching",
+    "category": "characters",
+    "regen": true
+  },
+  {
+    "id": 14,
+    "name": "David · portrait",
+    "category": "characters",
+    "regen": true
+  },
+  {
+    "id": 15,
+    "name": "David · accessibility",
+    "category": "characters",
+    "regen": true
+  },
+  {
+    "id": 16,
+    "name": "Robert + Helen · couple",
+    "category": "characters",
+    "regen": true
+  },
+  {
+    "id": 17,
+    "name": "Full cast · group",
+    "category": "characters",
+    "regen": true
+  },
+  {
+    "id": 18,
+    "name": "Ana + Maria · bilingual",
+    "category": "characters",
+    "regen": true
+  },
+  {
+    "id": 19,
+    "name": "Carlos + Robert · veterans",
+    "category": "characters",
+    "regen": true
+  },
+  {
+    "id": 20,
+    "name": "Helen + David · connection",
+    "category": "characters",
+    "regen": true
+  },
+  {
+    "id": 101,
+    "name": "San Jacinto Mountains",
+    "category": "hero",
+    "pick": "candidates/101-3.png"
+  },
+  {
+    "id": 102,
+    "name": "Senior couple · living room",
+    "category": "hero",
+    "regen": true
+  },
+  {
+    "id": 103,
+    "name": "Home visit arrival",
+    "category": "hero",
+    "regen": true
+  },
+  {
+    "id": 104,
+    "name": "Library workshop",
+    "category": "hero",
+    "regen": true
+  },
+  {
+    "id": 105,
+    "name": "Community center",
+    "category": "hero",
+    "pick": "candidates/105-1.png"
+  },
+  {
+    "id": 106,
+    "name": "Senior center · outdoor",
+    "category": "hero",
+    "pick": "candidates/106-2.png"
+  },
+  {
+    "id": 107,
+    "name": "Video call family moment",
+    "category": "hero",
+    "regen": true
+  },
+  {
+    "id": 108,
+    "name": "Pay-What-You-Can moment",
+    "category": "hero",
+    "regen": true
+  },
+  {
+    "id": 109,
+    "name": "Mobile homepage hero",
+    "category": "hero",
+    "pick": "candidates/109-1.png"
+  },
+  {
+    "id": 110,
+    "name": "About page · mission",
+    "category": "hero",
+    "regen": true
+  },
+  {
+    "id": 201,
+    "name": "Stay connected · icon",
+    "category": "service",
+    "regen": true
+  },
+  {
+    "id": 202,
+    "name": "Stay safe · icon",
+    "category": "service",
+    "pick": "candidates/202-2.png"
+  },
+  {
+    "id": 203,
+    "name": "Learn technology · icon",
+    "category": "service",
+    "regen": true
+  },
+  {
+    "id": 204,
+    "name": "Repair devices · icon",
+    "category": "service",
+    "regen": true
+  },
+  {
+    "id": 205,
+    "name": "Internet & Wi-Fi · icon",
+    "category": "service",
+    "regen": true
+  },
+  {
+    "id": 206,
+    "name": "Remote assistance · icon",
+    "category": "service",
+    "regen": true
+  },
+  {
+    "id": 207,
+    "name": "Video call · scene",
+    "category": "service",
+    "pick": "candidates/207-1.png"
+  },
+  {
+    "id": 208,
+    "name": "Email setup · scene",
+    "category": "service",
+    "regen": true
+  },
+  {
+    "id": 209,
+    "name": "Smartphone basics · scene",
+    "category": "service",
+    "regen": true
+  },
+  {
+    "id": 210,
+    "name": "Tablet training · scene",
+    "category": "service",
+    "pick": "candidates/210-2.png"
+  },
+  {
+    "id": 211,
+    "name": "Printer setup · scene",
+    "category": "service",
+    "regen": true
+  },
+  {
+    "id": 212,
+    "name": "Smart TV · scene",
+    "category": "service",
+    "regen": true
+  },
+  {
+    "id": 213,
+    "name": "Password manager · scene",
+    "category": "service",
+    "regen": true
+  },
+  {
+    "id": 214,
+    "name": "Scam awareness · scene",
+    "category": "service",
+    "regen": true
+  },
+  {
+    "id": 215,
+    "name": "Phishing email · scene",
+    "category": "service",
+    "regen": true
+  },
+  {
+    "id": 216,
+    "name": "Phone scam · scene",
+    "category": "service",
+    "regen": true
+  },
+  {
+    "id": 217,
+    "name": "Identity protection · scene",
+    "category": "service",
+    "regen": true
+  },
+  {
+    "id": 218,
+    "name": "Wi-Fi setup · scene",
+    "category": "service",
+    "regen": true
+  },
+  {
+    "id": 219,
+    "name": "Router troubleshooting",
+    "category": "service",
+    "regen": true
+  },
+  {
+    "id": 220,
+    "name": "Remote support · scene",
+    "category": "service",
+    "regen": true
+  },
+  {
+    "id": 221,
+    "name": "Home visit · scene",
+    "category": "service",
+    "regen": true
+  },
+  {
+    "id": 222,
+    "name": "Photos & memories · scene",
+    "category": "service",
+    "regen": true
+  },
+  {
+    "id": 223,
+    "name": "Telehealth appointment",
+    "category": "service",
+    "regen": true
+  },
+  {
+    "id": 224,
+    "name": "Government forms",
+    "category": "service",
+    "regen": true
+  },
+  {
+    "id": 225,
+    "name": "Benefit applications",
+    "category": "service",
+    "regen": true
+  },
+  {
+    "id": 226,
+    "name": "School portal help",
+    "category": "service",
+    "regen": true
+  },
+  {
+    "id": 227,
+    "name": "Accessibility settings",
+    "category": "service",
+    "regen": true
+  },
+  {
+    "id": 228,
+    "name": "Voice assistant",
+    "category": "service",
+    "regen": true
+  },
+  {
+    "id": 229,
+    "name": "Screen reader setup",
+    "category": "service",
+    "regen": true
+  },
+  {
+    "id": 230,
+    "name": "Laptop repair · scene",
+    "category": "service",
+    "regen": true
+  },
+  {
+    "id": 231,
+    "name": "Virus removal · scene",
+    "category": "service",
+    "pick": "candidates/231-2.png"
+  },
+  {
+    "id": 232,
+    "name": "Backup setup · scene",
+    "category": "service",
+    "regen": true
+  },
+  {
+    "id": 233,
+    "name": "Streaming setup · scene",
+    "category": "service",
+    "pick": "candidates/233-2.png"
+  },
+  {
+    "id": 234,
+    "name": "Facebook basics",
+    "category": "service",
+    "regen": true
+  },
+  {
+    "id": 235,
+    "name": "WhatsApp family group",
+    "category": "service",
+    "pick": "candidates/235-1.png"
+  },
+  {
+    "id": 236,
+    "name": "Zoom meeting",
+    "category": "service",
+    "regen": true
+  },
+  {
+    "id": 237,
+    "name": "FaceTime call",
+    "category": "service",
+    "regen": true
+  },
+  {
+    "id": 238,
+    "name": "Internet safety basics",
+    "category": "service",
+    "regen": true
+  },
+  {
+    "id": 239,
+    "name": "Job application online",
+    "category": "service",
+    "regen": true
+  },
+  {
+    "id": 240,
+    "name": "Email account recovery",
+    "category": "service",
+    "pick": "candidates/240-2.png"
+  },
+  {
+    "id": 301,
+    "name": "Library exterior",
+    "category": "community",
+    "pick": "candidates/301-2.png"
+  },
+  {
+    "id": 302,
+    "name": "Library class · wide",
+    "category": "community",
+    "pick": "candidates/302-2.png"
+  },
+  {
+    "id": 303,
+    "name": "Library class · intimate",
+    "category": "community",
+    "regen": true
+  },
+  {
+    "id": 304,
+    "name": "Senior center exterior",
+    "category": "community",
+    "pick": "candidates/304-3.png"
+  },
+  {
+    "id": 305,
+    "name": "Senior center class",
+    "category": "community",
+    "pick": "candidates/305-1.png"
+  },
+  {
+    "id": 306,
+    "name": "Church fellowship hall",
+    "category": "community",
+    "pick": "candidates/306-2.png"
+  },
+  {
+    "id": 307,
+    "name": "Church tech office hours",
+    "category": "community",
+    "regen": true
+  },
+  {
+    "id": 308,
+    "name": "Community center wide",
+    "category": "community",
+    "regen": true
+  },
+  {
+    "id": 309,
+    "name": "Nursing home visit",
+    "category": "community",
+    "regen": true
+  },
+  {
+    "id": 310,
+    "name": "Nursing home video call",
+    "category": "community",
+    "pick": "candidates/310-3.png"
+  },
+  {
+    "id": 311,
+    "name": "Coffee shop help",
+    "category": "community",
+    "regen": true
+  },
+  {
+    "id": 312,
+    "name": "Home visit · living room",
+    "category": "community",
+    "regen": true
+  },
+  {
+    "id": 313,
+    "name": "Home visit · kitchen",
+    "category": "community",
+    "regen": true
+  },
+  {
+    "id": 314,
+    "name": "Volunteer group",
+    "category": "community",
+    "regen": true
+  },
+  {
+    "id": 315,
+    "name": "Volunteer training day",
+    "category": "community",
+    "regen": true
+  },
+  {
+    "id": 316,
+    "name": "Community tech fair",
+    "category": "community",
+    "pick": "candidates/316-3.png"
+  },
+  {
+    "id": 317,
+    "name": "Donation moment",
+    "category": "community",
+    "regen": true
+  },
+  {
+    "id": 318,
+    "name": "Donated computers",
+    "category": "community",
+    "regen": true
+  },
+  {
+    "id": 319,
+    "name": "Partnerships · library",
+    "category": "community",
+    "regen": true
+  },
+  {
+    "id": 320,
+    "name": "Partnerships · senior center",
+    "category": "community",
+    "regen": true
+  },
+  {
+    "id": 321,
+    "name": "Flyer on bulletin board",
+    "category": "community",
+    "pick": "candidates/321-2.png"
+  },
+  {
+    "id": 322,
+    "name": "Facebook group moment",
+    "category": "community",
+    "regen": true
+  },
+  {
+    "id": 323,
+    "name": "Word of mouth",
+    "category": "community",
+    "pick": "candidates/323-2.png"
+  },
+  {
+    "id": 324,
+    "name": "Graduation moment",
+    "category": "community",
+    "regen": true
+  },
+  {
+    "id": 325,
+    "name": "Survey completion",
+    "category": "community",
+    "regen": true
+  },
+  {
+    "id": 401,
+    "name": "Senior Tech Mondays · title",
+    "category": "workshop",
+    "pick": "candidates/401-3.png"
+  },
+  {
+    "id": 402,
+    "name": "Scam awareness · title card",
+    "category": "workshop",
+    "regen": true
+  },
+  {
+    "id": 403,
+    "name": "Smartphone basics · title card",
+    "category": "workshop",
+    "pick": "candidates/403-3.png"
+  },
+  {
+    "id": 404,
+    "name": "Computer basics · title card",
+    "category": "workshop",
+    "pick": "candidates/404-2.png"
+  },
+  {
+    "id": 405,
+    "name": "Technology for caregivers · card",
+    "category": "workshop",
+    "pick": "candidates/405-3.png"
+  },
+  {
+    "id": 406,
+    "name": "Spanish workshop · title card",
+    "category": "workshop",
+    "pick": "candidates/406-3.png"
+  },
+  {
+    "id": 407,
+    "name": "Workshop room setup",
+    "category": "workshop",
+    "pick": "candidates/407-3.png"
+  },
+  {
+    "id": 408,
+    "name": "Presenter at screen",
+    "category": "workshop",
+    "regen": true
+  },
+  {
+    "id": 409,
+    "name": "Hands-on exercise",
+    "category": "workshop",
+    "pick": "candidates/409-2.png"
+  },
+  {
+    "id": 410,
+    "name": "Q&A moment",
+    "category": "workshop",
+    "regen": true
+  },
+  {
+    "id": 411,
+    "name": "Workshop handout",
+    "category": "workshop",
+    "regen": true
+  },
+  {
+    "id": 412,
+    "name": "Post-workshop chat",
+    "category": "workshop",
+    "regen": true
+  },
+  {
+    "id": 413,
+    "name": "Online workshop · Zoom",
+    "category": "workshop",
+    "regen": true
+  },
+  {
+    "id": 414,
+    "name": "Workshop registration",
+    "category": "workshop",
+    "regen": true
+  },
+  {
+    "id": 415,
+    "name": "Workshop reminder",
+    "category": "workshop",
+    "regen": true
+  },
+  {
+    "id": 416,
+    "name": "Scam demo · live",
+    "category": "workshop",
+    "regen": true
+  },
+  {
+    "id": 417,
+    "name": "Password exercise",
+    "category": "workshop",
+    "regen": true
+  },
+  {
+    "id": 418,
+    "name": "Smartphone exercise",
+    "category": "workshop",
+    "regen": true
+  },
+  {
+    "id": 419,
+    "name": "Video call practice",
+    "category": "workshop",
+    "pick": "candidates/419-1.png"
+  },
+  {
+    "id": 420,
+    "name": "Workshop complete · celebrate",
+    "category": "workshop",
+    "regen": true
+  },
+  {
+    "id": 501,
+    "name": "Laptop · front view",
+    "category": "device",
+    "pick": "candidates/501-3.png"
+  },
+  {
+    "id": 502,
+    "name": "Laptop · with person",
+    "category": "device",
+    "pick": "candidates/502-2.png"
+  },
+  {
+    "id": 503,
+    "name": "Desktop computer",
+    "category": "device",
+    "pick": "candidates/503-2.png"
+  },
+  {
+    "id": 504,
+    "name": "Smartphone · front",
+    "category": "device",
+    "pick": "candidates/504-2.png"
+  },
+  {
+    "id": 505,
+    "name": "Smartphone · in hand",
+    "category": "device",
+    "pick": "candidates/505-1.png"
+  },
+  {
+    "id": 506,
+    "name": "Tablet · front",
+    "category": "device",
+    "pick": "candidates/506-1.png"
+  },
+  {
+    "id": 507,
+    "name": "Tablet · with stand",
+    "category": "device",
+    "regen": true
+  },
+  {
+    "id": 508,
+    "name": "Tablet · in hands",
+    "category": "device",
+    "regen": true
+  },
+  {
+    "id": 509,
+    "name": "Printer",
+    "category": "device",
+    "pick": "candidates/509-1.png"
+  },
+  {
+    "id": 510,
+    "name": "Printer + document",
+    "category": "device",
+    "regen": true
+  },
+  {
+    "id": 511,
+    "name": "Router",
+    "category": "device",
+    "pick": "candidates/511-1.png"
+  },
+  {
+    "id": 512,
+    "name": "Router + home",
+    "category": "device",
+    "pick": "candidates/512-1.png"
+  },
+  {
+    "id": 513,
+    "name": "Smart TV",
+    "category": "device",
+    "regen": true
+  },
+  {
+    "id": 514,
+    "name": "Smart TV · remote",
+    "category": "device",
+    "pick": "candidates/514-1.png"
+  },
+  {
+    "id": 515,
+    "name": "Wireless earbuds",
+    "category": "device",
+    "pick": "candidates/515-3.png"
+  },
+  {
+    "id": 516,
+    "name": "Keyboard · closeup",
+    "category": "device",
+    "pick": "candidates/516-1.png"
+  },
+  {
+    "id": 517,
+    "name": "Mouse + hand",
+    "category": "device",
+    "pick": "candidates/517-2.png"
+  },
+  {
+    "id": 518,
+    "name": "Charging cable tangle",
+    "category": "device",
+    "pick": "candidates/518-1.png"
+  },
+  {
+    "id": 519,
+    "name": "Organized cables",
+    "category": "device",
+    "pick": "candidates/519-2.png"
+  },
+  {
+    "id": 520,
+    "name": "Old vs new phone",
+    "category": "device",
+    "regen": true
+  },
+  {
+    "id": 521,
+    "name": "External hard drive",
+    "category": "device",
+    "pick": "candidates/521-2.png"
+  },
+  {
+    "id": 522,
+    "name": "USB drive",
+    "category": "device",
+    "pick": "candidates/522-3.png"
+  },
+  {
+    "id": 523,
+    "name": "Webcam",
+    "category": "device",
+    "pick": "candidates/523-3.png"
+  },
+  {
+    "id": 524,
+    "name": "Headset",
+    "category": "device",
+    "pick": "candidates/524-2.png"
+  },
+  {
+    "id": 525,
+    "name": "Power strip",
+    "category": "device",
+    "pick": "candidates/525-3.png"
+  },
+  {
+    "id": 526,
+    "name": "Laptop repair · open",
+    "category": "device",
+    "pick": "candidates/526-3.png"
+  },
+  {
+    "id": 527,
+    "name": "Cracked screen",
+    "category": "device",
+    "pick": "candidates/527-1.png"
+  },
+  {
+    "id": 528,
+    "name": "Fixed screen",
+    "category": "device",
+    "pick": "candidates/528-3.png"
+  },
+  {
+    "id": 529,
+    "name": "Battery low",
+    "category": "device",
+    "regen": true
+  },
+  {
+    "id": 530,
+    "name": "Fully charged",
+    "category": "device",
+    "pick": "candidates/530-2.png"
+  },
+  {
+    "id": 601,
+    "name": "San Jacinto · full",
+    "category": "background",
+    "pick": "candidates/601-3.png"
+  },
+  {
+    "id": 602,
+    "name": "San Jacinto · dawn",
+    "category": "background",
+    "pick": "candidates/602-3.png"
+  },
+  {
+    "id": 603,
+    "name": "San Jacinto · dusk",
+    "category": "background",
+    "pick": "candidates/603-3.png"
+  },
+  {
+    "id": 604,
+    "name": "Desert landscape · minimal",
+    "category": "background",
+    "pick": "candidates/604-2.png"
+  },
+  {
+    "id": 605,
+    "name": "Palm Springs streetscape",
+    "category": "background",
+    "regen": true
+  },
+  {
+    "id": 606,
+    "name": "Library interior",
+    "category": "background",
+    "pick": "candidates/606-3.png"
+  },
+  {
+    "id": 607,
+    "name": "Senior center interior",
+    "category": "background",
+    "pick": "candidates/607-2.png"
+  },
+  {
+    "id": 608,
+    "name": "Community center interior",
+    "category": "background",
+    "pick": "candidates/608-2.png"
+  },
+  {
+    "id": 609,
+    "name": "Church hall interior",
+    "category": "background",
+    "pick": "candidates/609-3.png"
+  },
+  {
+    "id": 610,
+    "name": "Coffee shop interior",
+    "category": "background",
+    "regen": true
+  },
+  {
+    "id": 611,
+    "name": "Home living room",
+    "category": "background",
+    "pick": "candidates/611-3.png"
+  },
+  {
+    "id": 612,
+    "name": "Home kitchen",
+    "category": "background",
+    "pick": "candidates/612-1.png"
+  },
+  {
+    "id": 613,
+    "name": "Home office nook",
+    "category": "background",
+    "pick": "candidates/613-1.png"
+  },
+  {
+    "id": 614,
+    "name": "Nursing home common room",
+    "category": "background",
+    "regen": true
+  },
+  {
+    "id": 615,
+    "name": "Outdoor community event",
+    "category": "background",
+    "regen": true
+  },
+  {
+    "id": 616,
+    "name": "Desert sky · cream",
+    "category": "background",
+    "pick": "candidates/616-3.png"
+  },
+  {
+    "id": 617,
+    "name": "Desert sky · blue",
+    "category": "background",
+    "pick": "candidates/617-1.png"
+  },
+  {
+    "id": 618,
+    "name": "Cream texture · minimal",
+    "category": "background",
+    "pick": "candidates/618-2.png"
+  },
+  {
+    "id": 619,
+    "name": "Sand gradient",
+    "category": "background",
+    "regen": true
+  },
+  {
+    "id": 620,
+    "name": "Orange gradient",
+    "category": "background",
+    "pick": "candidates/620-3.png"
+  },
+  {
+    "id": 621,
+    "name": "Abstract warmth",
+    "category": "background",
+    "regen": true
+  },
+  {
+    "id": 622,
+    "name": "Mountains · mobile crop",
+    "category": "background",
+    "pick": "candidates/622-1.png"
+  },
+  {
+    "id": 623,
+    "name": "Workshop room wide",
+    "category": "background",
+    "pick": "candidates/623-3.png"
+  },
+  {
+    "id": 624,
+    "name": "Night sky · desert",
+    "category": "background",
+    "regen": true
+  },
+  {
+    "id": 625,
+    "name": "Coachella Valley aerial",
+    "category": "background",
+    "regen": true
+  },
+  {
+    "id": 701,
+    "name": "Facebook post · helpful tip",
+    "category": "marketing",
+    "regen": true
+  },
+  {
+    "id": 702,
+    "name": "Facebook post · workshop announce",
+    "category": "marketing",
+    "pick": "candidates/702-3.png"
+  },
+  {
+    "id": 703,
+    "name": "Facebook post · scam warning",
+    "category": "marketing",
+    "pick": "candidates/703-3.png"
+  },
+  {
+    "id": 704,
+    "name": "Facebook post · success story",
+    "category": "marketing",
+    "regen": true
+  },
+  {
+    "id": 705,
+    "name": "Facebook cover photo",
+    "category": "marketing",
+    "regen": true
+  },
+  {
+    "id": 706,
+    "name": "Instagram post · square",
+    "category": "marketing",
+    "pick": "candidates/706-2.png"
+  },
+  {
+    "id": 707,
+    "name": "Instagram story · vertical",
+    "category": "marketing",
+    "regen": true
+  },
+  {
+    "id": 708,
+    "name": "Instagram carousel · slide 1",
+    "category": "marketing",
+    "regen": true
+  },
+  {
+    "id": 709,
+    "name": "Instagram carousel · slides 2–5",
+    "category": "marketing",
+    "pick": "candidates/709-1.png"
+  },
+  {
+    "id": 710,
+    "name": "Flyer · senior workshop",
+    "category": "marketing",
+    "regen": true
+  },
+  {
+    "id": 711,
+    "name": "Flyer · scam awareness",
+    "category": "marketing",
+    "regen": true
+  },
+  {
+    "id": 712,
+    "name": "Flyer · Spanish workshop",
+    "category": "marketing",
+    "regen": true
+  },
+  {
+    "id": 713,
+    "name": "Flyer · general services",
+    "category": "marketing",
+    "regen": true
+  },
+  {
+    "id": 714,
+    "name": "Business card · front",
+    "category": "marketing",
+    "regen": true
+  },
+  {
+    "id": 715,
+    "name": "Business card · back",
+    "category": "marketing",
+    "regen": true
+  },
+  {
+    "id": 716,
+    "name": "Workshop handout · cover",
+    "category": "marketing",
+    "pick": "candidates/716-1.png"
+  },
+  {
+    "id": 717,
+    "name": "Workshop handout · smartphone",
+    "category": "marketing",
+    "regen": true
+  },
+  {
+    "id": 718,
+    "name": "Workshop handout · scam tips",
+    "category": "marketing",
+    "regen": true
+  },
+  {
+    "id": 719,
+    "name": "Workshop handout · passwords",
+    "category": "marketing",
+    "regen": true
+  },
+  {
+    "id": 720,
+    "name": "Newsletter header",
+    "category": "marketing",
+    "pick": "candidates/720-2.png"
+  },
+  {
+    "id": 721,
+    "name": "Newsletter · tip card",
+    "category": "marketing",
+    "pick": "candidates/721-2.png"
+  },
+  {
+    "id": 722,
+    "name": "Email signature banner",
+    "category": "marketing",
+    "pick": "candidates/722-2.png"
+  },
+  {
+    "id": 723,
+    "name": "Event poster · 11×17",
+    "category": "marketing",
+    "regen": true
+  },
+  {
+    "id": 724,
+    "name": "Yard sign",
+    "category": "marketing",
+    "regen": true
+  },
+  {
+    "id": 725,
+    "name": "Car magnet",
+    "category": "marketing",
+    "regen": true
+  },
+  {
+    "id": 726,
+    "name": "Presentation title slide",
+    "category": "marketing",
+    "regen": true
+  },
+  {
+    "id": 727,
+    "name": "Presentation content slide",
+    "category": "marketing",
+    "regen": true
+  },
+  {
+    "id": 728,
+    "name": "Table tent card",
+    "category": "marketing",
+    "pick": "candidates/728-3.png"
+  },
+  {
+    "id": 729,
+    "name": "Bookmark",
+    "category": "marketing",
+    "regen": true
+  },
+  {
+    "id": 730,
+    "name": "Thank you card",
+    "category": "marketing",
+    "pick": "candidates/730-3.png"
+  },
+  {
+    "id": 801,
+    "name": "Homepage hero · desktop",
+    "category": "ui",
+    "regen": true
+  },
+  {
+    "id": 802,
+    "name": "Homepage hero · mobile",
+    "category": "ui",
+    "regen": true
+  },
+  {
+    "id": 803,
+    "name": "Who We Help · section header",
+    "category": "ui",
+    "pick": "candidates/803-2.png"
+  },
+  {
+    "id": 804,
+    "name": "Audience · seniors badge",
+    "category": "ui",
+    "pick": "candidates/804-2.png"
+  },
+  {
+    "id": 805,
+    "name": "Audience · disabilities badge",
+    "category": "ui",
+    "pick": "candidates/805-1.png"
+  },
+  {
+    "id": 806,
+    "name": "Audience · immigrant families badge",
+    "category": "ui",
+    "regen": true
+  },
+  {
+    "id": 807,
+    "name": "Audience · veterans badge",
+    "category": "ui",
+    "pick": "candidates/807-1.png"
+  },
+  {
+    "id": 808,
+    "name": "Audience · low-income families badge",
+    "category": "ui",
+    "pick": "candidates/808-1.png"
+  },
+  {
+    "id": 809,
+    "name": "Audience · everyone badge",
+    "category": "ui",
+    "regen": true
+  },
+  {
+    "id": 810,
+    "name": "Services · stay connected card",
+    "category": "ui",
+    "regen": true
+  },
+  {
+    "id": 811,
+    "name": "Services · stay safe card",
+    "category": "ui",
+    "pick": "candidates/811-3.png"
+  },
+  {
+    "id": 812,
+    "name": "Services · learn card",
+    "category": "ui",
+    "regen": true
+  },
+  {
+    "id": 813,
+    "name": "Services · repair card",
+    "category": "ui",
+    "regen": true
+  },
+  {
+    "id": 814,
+    "name": "Services · wi-fi card",
+    "category": "ui",
+    "pick": "candidates/814-1.png"
+  },
+  {
+    "id": 815,
+    "name": "Services · remote card",
+    "category": "ui",
+    "pick": "candidates/815-1.png"
+  },
+  {
+    "id": 816,
+    "name": "How it works · step 1",
+    "category": "ui",
+    "pick": "candidates/816-3.png"
+  },
+  {
+    "id": 817,
+    "name": "How it works · step 2",
+    "category": "ui",
+    "regen": true
+  },
+  {
+    "id": 818,
+    "name": "How it works · step 3",
+    "category": "ui",
+    "pick": "candidates/818-3.png"
+  },
+  {
+    "id": 819,
+    "name": "How it works · step 4",
+    "category": "ui",
+    "pick": "candidates/819-1.png"
+  },
+  {
+    "id": 820,
+    "name": "Pay-What-You-Can section",
+    "category": "ui",
+    "regen": true
+  },
+  {
+    "id": 821,
+    "name": "Testimonial · Robert quote",
+    "category": "ui",
+    "regen": true
+  },
+  {
+    "id": 822,
+    "name": "Testimonial · Maria quote",
+    "category": "ui",
+    "regen": true
+  },
+  {
+    "id": 823,
+    "name": "Testimonial · Helen quote",
+    "category": "ui",
+    "regen": true
+  },
+  {
+    "id": 824,
+    "name": "Community survey CTA",
+    "category": "ui",
+    "pick": "candidates/824-2.png"
+  },
+  {
+    "id": 825,
+    "name": "404 error page",
+    "category": "ui",
+    "regen": true
+  },
+  {
+    "id": 826,
+    "name": "Empty state · no workshops",
+    "category": "ui",
+    "pick": "candidates/826-2.png"
+  },
+  {
+    "id": 827,
+    "name": "Empty state · no messages",
+    "category": "ui",
+    "pick": "candidates/827-1.png"
+  },
+  {
+    "id": 828,
+    "name": "Loading state",
+    "category": "ui",
+    "pick": "candidates/828-3.png"
+  },
+  {
+    "id": 829,
+    "name": "Success · booking confirmed",
+    "category": "ui",
+    "pick": "candidates/829-3.png"
+  },
+  {
+    "id": 830,
+    "name": "Success · form submitted",
+    "category": "ui",
+    "pick": "candidates/830-3.png"
+  },
+  {
+    "id": 831,
+    "name": "Contact page header",
+    "category": "ui",
+    "pick": "candidates/831-1.png"
+  },
+  {
+    "id": 832,
+    "name": "About page · our story",
+    "category": "ui",
+    "regen": true
+  },
+  {
+    "id": 833,
+    "name": "Resources page header",
+    "category": "ui",
+    "pick": "candidates/833-3.png"
+  },
+  {
+    "id": 834,
+    "name": "Workshops page header",
+    "category": "ui",
+    "regen": true
+  },
+  {
+    "id": 835,
+    "name": "Volunteer CTA section",
+    "category": "ui",
+    "pick": "candidates/835-3.png"
+  },
+  {
+    "id": 836,
+    "name": "Newsletter signup",
+    "category": "ui",
+    "pick": "candidates/836-2.png"
+  },
+  {
+    "id": 837,
+    "name": "Cookie / privacy notice",
+    "category": "ui",
+    "pick": "candidates/837-1.png"
+  },
+  {
+    "id": 838,
+    "name": "Mobile nav · drawer illustration",
+    "category": "ui",
+    "pick": "candidates/838-3.png"
+  },
+  {
+    "id": 839,
+    "name": "Footer · mountain strip",
+    "category": "ui",
+    "pick": "candidates/839-1.png"
+  },
+  {
+    "id": 840,
+    "name": "Donation confirmation",
+    "category": "ui",
+    "pick": "candidates/840-2.png"
+  },
+  {
+    "id": 901,
+    "name": "Computer",
+    "category": "icon",
+    "regen": true
+  },
+  {
+    "id": 902,
+    "name": "Laptop",
+    "category": "icon",
+    "pick": "candidates/902-2.png"
+  },
+  {
+    "id": 903,
+    "name": "Tablet",
+    "category": "icon",
+    "regen": true
+  },
+  {
+    "id": 904,
+    "name": "Smartphone",
+    "category": "icon",
+    "pick": "candidates/904-2.png"
+  },
+  {
+    "id": 905,
+    "name": "Printer",
+    "category": "icon",
+    "regen": true
+  },
+  {
+    "id": 906,
+    "name": "Router / Wi-Fi",
+    "category": "icon",
+    "pick": "candidates/906-3.png"
+  },
+  {
+    "id": 907,
+    "name": "Smart TV",
+    "category": "icon",
+    "regen": true
+  },
+  {
+    "id": 908,
+    "name": "Keyboard",
+    "category": "icon",
+    "regen": true
+  },
+  {
+    "id": 909,
+    "name": "Mouse",
+    "category": "icon",
+    "regen": true
+  },
+  {
+    "id": 910,
+    "name": "Headset",
+    "category": "icon",
+    "pick": "candidates/910-3.png"
+  },
+  {
+    "id": 911,
+    "name": "Webcam",
+    "category": "icon",
+    "pick": "candidates/911-1.png"
+  },
+  {
+    "id": 912,
+    "name": "External drive",
+    "category": "icon",
+    "pick": "candidates/912-2.png"
+  },
+  {
+    "id": 913,
+    "name": "USB drive",
+    "category": "icon",
+    "pick": "candidates/913-1.png"
+  },
+  {
+    "id": 914,
+    "name": "Power cable",
+    "category": "icon",
+    "pick": "candidates/914-1.png"
+  },
+  {
+    "id": 915,
+    "name": "Shield · basic",
+    "category": "icon",
+    "regen": true
+  },
+  {
+    "id": 916,
+    "name": "Shield + check",
+    "category": "icon",
+    "pick": "candidates/916-1.png"
+  },
+  {
+    "id": 917,
+    "name": "Shield + lock",
+    "category": "icon",
+    "pick": "candidates/917-2.png"
+  },
+  {
+    "id": 918,
+    "name": "Warning triangle",
+    "category": "icon",
+    "pick": "candidates/918-2.png"
+  },
+  {
+    "id": 919,
+    "name": "Lock",
+    "category": "icon",
+    "pick": "candidates/919-1.png"
+  },
+  {
+    "id": 920,
+    "name": "Key",
+    "category": "icon",
+    "regen": true
+  },
+  {
+    "id": 921,
+    "name": "Globe",
+    "category": "icon",
+    "pick": "candidates/921-1.png"
+  },
+  {
+    "id": 922,
+    "name": "Signal / Wi-Fi arcs",
+    "category": "icon",
+    "pick": "candidates/922-2.png"
+  },
+  {
+    "id": 923,
+    "name": "Cloud",
+    "category": "icon",
+    "pick": "candidates/923-1.png"
+  },
+  {
+    "id": 924,
+    "name": "Cloud + upload arrow",
+    "category": "icon",
+    "pick": "candidates/924-3.png"
+  },
+  {
+    "id": 925,
+    "name": "Cloud + download arrow",
+    "category": "icon",
+    "pick": "candidates/925-2.png"
+  },
+  {
+    "id": 926,
+    "name": "Email envelope",
+    "category": "icon",
+    "pick": "candidates/926-2.png"
+  },
+  {
+    "id": 927,
+    "name": "Email + check",
+    "category": "icon",
+    "pick": "candidates/927-1.png"
+  },
+  {
+    "id": 928,
+    "name": "Phone handset",
+    "category": "icon",
+    "regen": true
+  },
+  {
+    "id": 929,
+    "name": "Calendar",
+    "category": "icon",
+    "pick": "candidates/929-1.png"
+  },
+  {
+    "id": 930,
+    "name": "Clock",
+    "category": "icon",
+    "pick": "candidates/930-1.png"
+  },
+  {
+    "id": 931,
+    "name": "Map pin",
+    "category": "icon",
+    "pick": "candidates/931-2.png"
+  },
+  {
+    "id": 932,
+    "name": "Home",
+    "category": "icon",
+    "pick": "candidates/932-2.png"
+  },
+  {
+    "id": 933,
+    "name": "Heart",
+    "category": "icon",
+    "pick": "candidates/933-2.png"
+  },
+  {
+    "id": 934,
+    "name": "Star",
+    "category": "icon",
+    "regen": true
+  },
+  {
+    "id": 935,
+    "name": "People group",
+    "category": "icon",
+    "pick": "candidates/935-2.png"
+  },
+  {
+    "id": 936,
+    "name": "Person",
+    "category": "icon",
+    "regen": true
+  },
+  {
+    "id": 937,
+    "name": "Accessibility wheelchair",
+    "category": "icon",
+    "pick": "candidates/937-3.png"
+  },
+  {
+    "id": 938,
+    "name": "Book / guide",
+    "category": "icon",
+    "regen": true
+  },
+  {
+    "id": 939,
+    "name": "PDF document",
+    "category": "icon",
+    "pick": "candidates/939-1.png"
+  },
+  {
+    "id": 940,
+    "name": "Video play",
+    "category": "icon",
+    "pick": "candidates/940-1.png"
+  },
+  {
+    "id": 941,
+    "name": "Microphone",
+    "category": "icon",
+    "pick": "candidates/941-1.png"
+  },
+  {
+    "id": 942,
+    "name": "Speaker / audio",
+    "category": "icon",
+    "pick": "candidates/942-1.png"
+  },
+  {
+    "id": 943,
+    "name": "Camera",
+    "category": "icon",
+    "regen": true
+  },
+  {
+    "id": 944,
+    "name": "Photo",
+    "category": "icon",
+    "pick": "candidates/944-2.png"
+  },
+  {
+    "id": 945,
+    "name": "Checkmark",
+    "category": "icon",
+    "regen": true
+  },
+  {
+    "id": 946,
+    "name": "X / close",
+    "category": "icon",
+    "pick": "candidates/946-2.png"
+  },
+  {
+    "id": 947,
+    "name": "Plus / add",
+    "category": "icon",
+    "pick": "candidates/947-1.png"
+  },
+  {
+    "id": 948,
+    "name": "Arrow right",
+    "category": "icon",
+    "regen": true
+  },
+  {
+    "id": 949,
+    "name": "Arrow left",
+    "category": "icon",
+    "regen": true
+  },
+  {
+    "id": 950,
+    "name": "External link",
+    "category": "icon",
+    "regen": true
+  },
+  {
+    "id": 951,
+    "name": "Search",
+    "category": "icon",
+    "pick": "candidates/951-2.png"
+  },
+  {
+    "id": 952,
+    "name": "Settings / gear",
+    "category": "icon",
+    "pick": "candidates/952-1.png"
+  },
+  {
+    "id": 953,
+    "name": "Tools / wrench",
+    "category": "icon",
+    "regen": true
+  },
+  {
+    "id": 954,
+    "name": "Volunteer hand",
+    "category": "icon",
+    "pick": "candidates/954-2.png"
+  },
+  {
+    "id": 955,
+    "name": "Donation hand + heart",
+    "category": "icon",
+    "pick": "candidates/955-2.png"
+  },
+  {
+    "id": 956,
+    "name": "Language / translate",
+    "category": "icon",
+    "regen": true
+  },
+  {
+    "id": 957,
+    "name": "Translation EN/ES",
+    "category": "icon",
+    "regen": true
+  },
+  {
+    "id": 958,
+    "name": "Certificate",
+    "category": "icon",
+    "pick": "candidates/958-2.png"
+  },
+  {
+    "id": 959,
+    "name": "Loading spinner",
+    "category": "icon",
+    "pick": "candidates/959-2.png"
+  },
+  {
+    "id": 960,
+    "name": "CCA logo mark",
+    "category": "icon",
+    "regen": true
   }
 ]
