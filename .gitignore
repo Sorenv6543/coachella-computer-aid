@@ -7,3 +7,6 @@ docs/.obsidian/
 
 # Claudian plugin session state — not project content
 docs/.claudian/
+.env
+# Node modules
+node_modules/
