@@ -3,37 +3,37 @@
     "id": 1,
     "name": "Robert · portrait",
     "category": "characters",
-    "regen": true
+    "pick": "candidates/001-1.png"
   },
   {
     "id": 2,
     "name": "Robert · with laptop",
     "category": "characters",
-    "regen": true
+    "pick": "candidates/002-1.png"
   },
   {
     "id": 3,
     "name": "Robert · video call",
     "category": "characters",
-    "regen": true
+    "pick": "candidates/003-1.png"
   },
   {
     "id": 4,
     "name": "Maria · portrait",
     "category": "characters",
-    "regen": true
+    "pick": "candidates/004-3.png"
   },
   {
     "id": 5,
     "name": "Maria · smartphone",
     "category": "characters",
-    "regen": true
+    "pick": "candidates/005-2.png"
   },
   {
     "id": 6,
     "name": "Maria · at library",
     "category": "characters",
-    "regen": true
+    "pick": "candidates/006-1.png"
   },
   {
     "id": 7,
@@ -45,50 +45,49 @@
     "id": 8,
     "name": "Helen · video call joy",
     "category": "characters",
-    "pick": "candidates/008-2.png",
-    "note": "Replaces the exported helen-008-videocall.png, which had heavy-outline style drift and a visible Apple logo on the tablet. 008-2 matches Helen's sage cardigan + silver hair, plain background per FRAME spec, no logo, no cost (already-generated candidate)."
+    "pick": "candidates/008-2.png"
   },
   {
     "id": 9,
     "name": "Carlos · portrait",
     "category": "characters",
-    "regen": true
+    "pick": "candidates/009-1.png"
   },
   {
     "id": 10,
     "name": "Carlos · VA portal",
     "category": "characters",
-    "regen": true
+    "pick": "candidates/010-1.png"
   },
   {
     "id": 11,
     "name": "Ana · helper portrait",
     "category": "characters",
-    "regen": true
+    "pick": "candidates/011-1.png"
   },
   {
     "id": 12,
     "name": "Ana · home visit",
     "category": "characters",
-    "regen": true
+    "pick": "candidates/012-1.png"
   },
   {
     "id": 13,
     "name": "Ana · teaching",
     "category": "characters",
-    "regen": true
+    "pick": "candidates/013-1.png"
   },
   {
     "id": 14,
     "name": "David · portrait",
     "category": "characters",
-    "regen": true
+    "pick": "candidates/014-1.png"
   },
   {
     "id": 15,
     "name": "David · accessibility",
     "category": "characters",
-    "regen": true
+    "pick": "candidates/015-1.png"
   },
   {
     "id": 16,
@@ -106,19 +105,19 @@
     "id": 18,
     "name": "Ana + Maria · bilingual",
     "category": "characters",
-    "regen": true
+    "pick": "candidates/018-1.png"
   },
   {
     "id": 19,
     "name": "Carlos + Robert · veterans",
     "category": "characters",
-    "regen": true
+    "pick": "candidates/019-3.png"
   },
   {
     "id": 20,
     "name": "Helen + David · connection",
     "category": "characters",
-    "regen": true
+    "pick": "candidates/020-1.png"
   },
   {
     "id": 101,
