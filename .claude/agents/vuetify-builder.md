@@ -61,4 +61,5 @@ Do not write user-facing copy yourself — leave placeholders and defer to the
 content-brand agent. Hand finished components to the accessibility-check agent.
 
 Reference `docs/03-Website-Design/Design-Language.md`, `docs/05-Technical/Tech-Stack.md`,
-and the folder tree in `docs/app/website/folder tree.md`.
+and the folder tree in `docs/archive/app/website/folder tree.md` (superseded draft,
+kept only because `docs/05-Technical/Folder-Structure.md` hasn't been written yet).
