@@ -54,6 +54,11 @@ Interactive elements and user interactions
 #### [User Stories](Homepage/User-Stories.md) *(Coming)*
 Requirements written from user perspectives
 
+### [B2 — Chosen Design Direction](B2-vuetify4.html)
+Working HTML prototype in Vuetify 4, built with the final illustrations.
+This is the winning candidate picked from a round of style comparisons —
+open it directly in a browser to see the look and feel in practice.
+
 ---
 
 ## 🎯 Purpose
