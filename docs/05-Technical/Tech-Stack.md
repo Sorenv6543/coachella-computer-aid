@@ -29,8 +29,9 @@ Every technology choice prioritizes:
 **Why:** Ultra-fast development, instant reload, optimized production builds  
 **Features:** Next-generation ES modules, instant HMR
 
-### Component Library: Vuetify 3
+### Component Library: Vuetify 4
 **Why:** Pre-built accessible components, theming system, maintained by community  
+**Decision (2026-08-14):** Vuetify 4 confirmed over the originally documented v3 — the approved "B2 — Desert Modernism Warmed" prototype was built and verified against Vuetify 4 (stable Feb 2026) with the working `cca` theme object.  
 **Components:** 80+ components ready to use  
 **Accessibility:** Built-in WCAG AA support  
 **📚 MCP Access:** Claude has access to the Vuetify MCP server for live documentation lookups
@@ -259,7 +260,7 @@ src/
 {
   "vue": "^3.3",
   "typescript": "^5.0",
-  "vuetify": "^3.3",
+  "vuetify": "^4.0",
   "pinia": "^2.0",
   "vue-router": "^4.2"
 }

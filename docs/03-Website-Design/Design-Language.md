@@ -38,10 +38,16 @@ All website colors derive from our [[../../01-Project-Foundation/Brand-Bible.md|
 ## 📝 Typography
 
 ### Font Families
-- **Headlines:** "Inter" or similar friendly sans-serif (Google Fonts or similar)
-- **Body:** "Inter" or "Roboto" (Google Fonts)
+- **Headlines:** "Archivo" (600–800 weights, Google Fonts) — display headings only
+- **Body:** "Nunito Sans" (Google Fonts) — all body copy, UI text, and subheadings
 - **Monospace:** "JetBrains Mono" (for code examples)
 - **Fallback:** System fonts if web fonts fail
+
+> **Decision (2026-08-14):** Nunito Sans + Archivo confirmed as the canonical
+> pairing. This doc previously said Inter/Roboto, but every shipped deliverable
+> (Brand Bible HTML, B2 prototype, illustration kit) uses Nunito Sans, and the
+> approved B2 "Desert Modernism Warmed" direction adds Archivo for display
+> headings.
 
 ### Type Scale
 

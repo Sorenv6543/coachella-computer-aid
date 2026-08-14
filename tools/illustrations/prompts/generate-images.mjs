@@ -14,9 +14,28 @@
  *   node generate-images.mjs --variants 3 --concurrency 2 --delay 0
  *   node generate-images.mjs --force     # regenerate even if files exist
  *   node generate-images.mjs --model gemini-3-pro-image-preview   # higher quality
+ *   node generate-images.mjs --no-ref    # characters: skip character-sheet reference image
  *
  * Imagen note: Google deprecated the Imagen models (shutdown 2026-08-17) and
- * recommends Nano Banana, which is what this uses. Swap --model if you like.
+ * recommends Nano Banana, which is what this uses. Swap --model if you like —
+ * as of this writing Google's own docs describe newer "Nano Banana 2"
+ * (gemini-3.1-flash-image) and "Gemini 3 Pro Image" (gemini-3-pro-image-preview,
+ * explicitly built for multi-reference character consistency, up to 14 inputs)
+ * as current options, but that couldn't be verified against a primary source
+ * from this environment (ai.google.dev / developers.googleblog.com / Vertex AI
+ * docs are all blocked by the network egress policy here) — confirm the
+ * current recommended model ID before relying on the hardcoded default below.
+ *
+ * Character-sheet reference images: for the `characters` category, each job's
+ * `character` field (from manifest.json — a name, or comma-separated names for
+ * pair/group shots) is used to look up `<name>-character-sheet.png` in
+ * src/assets/images/illustrations/characters/ and attach it as a reference
+ * image alongside the text prompt, so the model has a concrete visual anchor
+ * instead of generating the character from adjectives alone. This is the fix
+ * for the identity-drift failures found in CHARACTER-AUDIT-2026-08-14.md
+ * (robert-001, robert-003, maria-004, maria-005) — those were generated before
+ * this reference-image step existed. Disable with --no-ref to reproduce the
+ * old (text-only) behavior.
  */
 import fs from 'node:fs';
 import path from 'node:path';
@@ -41,6 +60,8 @@ const CAT      = opt('--cat', null);
 const DRY      = has('--dry');
 const FORCE    = has('--force');
 const NOASPECT = has('--no-aspect');
+const NOREF    = has('--no-ref');
+const CHARDIR  = path.resolve(here, '../../../src/assets/images/illustrations/characters');
 
 // ---- category -> aspect ratio (matches build-prompts.mjs) ----
 const AR = {characters:'1:1',hero:'16:9',service:'4:3',community:'4:3',workshop:'4:3',
@@ -48,14 +69,41 @@ const AR = {characters:'1:1',hero:'16:9',service:'4:3',community:'4:3',workshop:
 
 // ---- parse the prompt markdown ----
 const md = fs.readFileSync(PROMPTS, 'utf8');
-const catById = new Map(JSON.parse(fs.readFileSync(MANIFEST,'utf8')).map(m => [m.id, m.category]));
+const manifest = JSON.parse(fs.readFileSync(MANIFEST,'utf8'));
+const catById  = new Map(manifest.map(m => [m.id, m.category]));
+const charById = new Map(manifest.map(m => [m.id, m.character]));
 const re = /###\s+#(\d+)\s*·\s*([^\n]*)\n```\n([\s\S]*?)\n```/g;
 let m, jobs = [];
 while ((m = re.exec(md))) {
   const id = Number(m[1]);
   // strip the conversational "3 variations" instruction — we do variants via repeated calls
   const prompt = m[3].replace(/\s*Generate\s+\d+\s+distinct variations\.\s*$/i, '').trim();
-  jobs.push({ id, name: m[2].trim(), prompt, cat: catById.get(id) || 'ui' });
+  jobs.push({ id, name: m[2].trim(), prompt, cat: catById.get(id) || 'ui', character: charById.get(id) });
+}
+
+// ---- character-sheet reference images (characters category only) ----
+const ALL_CHARACTERS = ['robert','maria','helen','carlos','ana','david'];
+const refCache = new Map(); // name -> inlineData part | null (missing sheet), read/encoded once per run
+function refImagesFor(job) {
+  if (NOREF || job.cat !== 'characters' || !job.character) return [];
+  const names = job.character === 'All'
+    ? ALL_CHARACTERS
+    : job.character.split(',').map(s => s.trim().toLowerCase());
+  const parts = [];
+  for (const name of names) {
+    if (!refCache.has(name)) {
+      const file = path.join(CHARDIR, `${name}-character-sheet.png`);
+      if (!fs.existsSync(file)) {
+        console.warn(`  ⚠ no character sheet for "${name}" (${file}) — generating without reference`);
+        refCache.set(name, null);
+      } else {
+        refCache.set(name, { inlineData: { mimeType: 'image/png', data: fs.readFileSync(file).toString('base64') } });
+      }
+    }
+    const cached = refCache.get(name);
+    if (cached) parts.push(cached);
+  }
+  return parts;
 }
 
 // ---- filters ----
@@ -81,7 +129,11 @@ console.log(`output         : ${path.relative(path.resolve(here,'../..'), OUTDIR
 
 if (DRY) {
   console.log('\n--dry: first 8 planned files:');
-  tasks.slice(0, 8).forEach(t => console.log(`  ${pad(t.id)}-${t.n}.png  [${t.cat} ${NOASPECT?'':AR[t.cat]}]  "${t.prompt.slice(0,60)}…"`));
+  tasks.slice(0, 8).forEach(t => {
+    const refs = refImagesFor(t);
+    const refNote = t.cat === 'characters' ? `  ref:${NOREF ? 'off' : refs.length}` : '';
+    console.log(`  ${pad(t.id)}-${t.n}.png  [${t.cat} ${NOASPECT?'':AR[t.cat]}]${refNote}  "${t.prompt.slice(0,60)}…"`);
+  });
   if (!tasks.length) console.log('  (nothing to do — all present, or filters matched none)');
   process.exit(0);
 }
@@ -98,8 +150,14 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 async function genOne(t, attempt = 1) {
   const config = NOASPECT ? {} : { imageConfig: { aspectRatio: AR[t.cat] } };
+  const refs = refImagesFor(t);
+  // with references: image part(s) first, then text — keeps the same shape @google/genai
+  // expects for a single-turn multimodal prompt. Without references: bare string, unchanged.
+  const contents = refs.length
+    ? [...refs, { text: `${t.prompt} Match the exact character(s) shown in the reference image(s) above — same face, hair, skin tone, and outfit.` }]
+    : t.prompt;
   try {
-    const res = await ai.models.generateContent({ model: MODEL, contents: t.prompt, config });
+    const res = await ai.models.generateContent({ model: MODEL, contents, config });
     const parts = res?.candidates?.[0]?.content?.parts || [];
     const img = parts.find(p => p.inlineData?.data);
     if (!img) {

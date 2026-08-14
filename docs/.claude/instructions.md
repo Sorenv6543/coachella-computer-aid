@@ -60,7 +60,7 @@ When working on CCA, always:
 
 ### Tech Stack
 - **Frontend:** Vue 3 + TypeScript + Vite
-- **Components:** Vuetify 3 (with MCP access for live docs!)
+- **Components:** Vuetify 4 (with MCP access for live docs!)
 - **State:** Pinia
 - **Backend:** Supabase (PostgreSQL, auth, storage)
 - **Hosting:** Vercel or Netlify
@@ -112,7 +112,7 @@ When building components, ask directly:
 
 No need to search — I can look it up in real-time. ⚡
 
-Reference: [[../05-Technical/Tech-Stack.md#component-library-vuetify-3|Tech Stack — Vuetify 3]]
+Reference: [[../05-Technical/Tech-Stack.md#component-library-vuetify-4|Tech Stack — Vuetify 4]]
 
 ---
 
