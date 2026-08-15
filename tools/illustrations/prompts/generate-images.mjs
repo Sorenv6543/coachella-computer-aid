@@ -81,38 +81,14 @@ while ((m = re.exec(md))) {
   jobs.push({ id, name: m[2].trim(), prompt, cat: catById.get(id) || 'ui', character: charById.get(id) });
 }
 
-// ---- recurring characters: reference sheets + canonical descriptors ----
-// Any slot (any category) that names a character in its prompt/title gets that
-// character's turnaround sheet as a reference image AND a text descriptor, so
-// scenes keep the cast consistent — not just the `characters` category.
+// ---- character-sheet reference images (characters category only) ----
 const ALL_CHARACTERS = ['robert','maria','helen','carlos','ana','david'];
-const CHAR_DESC = {
-  robert:'Robert — 72, retired teacher: silver hair, round glasses, blue cardigan over a cream collared shirt',
-  maria:'Maria — 68: brown hair in a bun, orange cardigan',
-  helen:'Helen — 76: short silver hair, sage cardigan, cheerful',
-  carlos:'Carlos — 60s veteran: grey mustache, sage shirt, relaxed',
-  ana:'Ana — 28, the volunteer helper: dark hair in a ponytail, orange top, backpack',
-  david:'David — professional wheelchair user: sky-blue shirt, headset, glasses',
-};
 const refCache = new Map(); // name -> inlineData part | null (missing sheet), read/encoded once per run
-// which recurring characters this job names (explicit field, or mentioned in prompt/title)
-function charactersIn(job) {
-  const found = new Set();
-  if (job.character) {
-    (job.character === 'All' ? ALL_CHARACTERS : job.character.split(',').map(s => s.trim().toLowerCase()))
-      .forEach(n => { if (ALL_CHARACTERS.includes(n)) found.add(n); });
-  }
-  const hay = `${job.name} ${job.prompt}`.toLowerCase();
-  for (const n of ALL_CHARACTERS) if (new RegExp(`\\b${n}\\b`).test(hay)) found.add(n);
-  return [...found];
-}
 function refImagesFor(job) {
-  if (NOREF) return [];
-  const names = charactersIn(job);
-  // One character → the reference sheet locks identity best (see solo pilots). Two or
-  // more → sheets tend to blend (both figures collapse into the dominant character), so
-  // skip the images and rely on the text descriptors, which compose reliably in scenes.
-  if (names.length !== 1) return [];
+  if (NOREF || job.cat !== 'characters' || !job.character) return [];
+  const names = job.character === 'All'
+    ? ALL_CHARACTERS
+    : job.character.split(',').map(s => s.trim().toLowerCase());
   const parts = [];
   for (const name of names) {
     if (!refCache.has(name)) {
@@ -128,12 +104,6 @@ function refImagesFor(job) {
     if (cached) parts.push(cached);
   }
   return parts;
-}
-// canonical text descriptors for the named characters, appended to the prompt
-function descriptorsFor(job) {
-  const names = charactersIn(job);
-  if (!names.length) return '';
-  return ` Keep these recurring characters consistent and recognizable: ${names.map(n => CHAR_DESC[n]).join('; ')}.`;
 }
 
 // ---- filters ----
@@ -161,7 +131,7 @@ if (DRY) {
   console.log('\n--dry: first 8 planned files:');
   tasks.slice(0, 8).forEach(t => {
     const refs = refImagesFor(t);
-    const refNote = charactersIn(t).length ? `  ref:${NOREF ? 'off' : refs.length}[${charactersIn(t).join('+')}]` : '';
+    const refNote = t.cat === 'characters' ? `  ref:${NOREF ? 'off' : refs.length}` : '';
     console.log(`  ${pad(t.id)}-${t.n}.png  [${t.cat} ${NOASPECT?'':AR[t.cat]}]${refNote}  "${t.prompt.slice(0,60)}…"`);
   });
   if (!tasks.length) console.log('  (nothing to do — all present, or filters matched none)');
@@ -183,10 +153,9 @@ async function genOne(t, attempt = 1) {
   const refs = refImagesFor(t);
   // with references: image part(s) first, then text — keeps the same shape @google/genai
   // expects for a single-turn multimodal prompt. Without references: bare string, unchanged.
-  const promptText = `${t.prompt}${descriptorsFor(t)}`;
   const contents = refs.length
-    ? [...refs, { text: `${promptText} Match the exact character(s) shown in the reference image(s) above — same face, hair, skin tone, and outfit.` }]
-    : promptText;
+    ? [...refs, { text: `${t.prompt} Match the exact character(s) shown in the reference image(s) above — same face, hair, skin tone, and outfit.` }]
+    : t.prompt;
   try {
     const res = await ai.models.generateContent({ model: MODEL, contents, config });
     const parts = res?.candidates?.[0]?.content?.parts || [];
