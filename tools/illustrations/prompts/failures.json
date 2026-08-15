@@ -1,12 +1,32 @@
 [
   {
     "id": 701,
-    "n": 1,
-    "error": "no image (I cannot fulfill your request as it contains contradictory instructions. You ask)"
+    "n": 2,
+    "error": "no image (I cannot fulfill this request. My apologies.\n)"
   },
   {
     "id": 701,
     "n": 3,
-    "error": "no image (I can create a warm, friendly flat vector illustration with rounded soft shapes,)"
+    "error": "no image (I cannot fulfill this request. My purpose is to be helpful and harmless, and the)"
+  },
+  {
+    "id": 710,
+    "n": 2,
+    "error": "no image (I can create a warm, friendly, flat vector illustration for you. Just to clarify)"
+  },
+  {
+    "id": 714,
+    "n": 1,
+    "error": "no image (I cannot create logos or any images that include text. I can, however, create a )"
+  },
+  {
+    "id": 714,
+    "n": 3,
+    "error": "no image (I can create a warm, friendly, flat vector illustration for you based on your sp)"
+  },
+  {
+    "id": 802,
+    "n": 2,
+    "error": "no image (Sounds like a lovely aesthetic! What subject would you like for this illustratio)"
   }
 ]
