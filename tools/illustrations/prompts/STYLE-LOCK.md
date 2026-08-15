@@ -29,7 +29,9 @@ a scene calls for place. Interiors are warm, sunlit, homey.
 - **David** — professional, uses a wheelchair, headset, works from home.
 
 ## Never (hard constraints — enforced as negative prompt in build-prompts.mjs)
-- **any text, letters, words, or labels** baked into the image
+- **any text, letters, words, or labels** baked into the image (incl. color
+  names or hex codes — keep hex out of the generation prompt; it can leak as a
+  rendered caption)
 - **logos or watermarks** of any kind (incl. stray corner marks)
 - **3D, CGI, clay, or rendered depth** — the art is strictly flat 2D vector
 - **photorealism**

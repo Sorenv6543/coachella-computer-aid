@@ -22,7 +22,7 @@ const OUT = opt('--out', null);
 const manifest = JSON.parse(fs.readFileSync(path.resolve(here,'../manifest.json'),'utf8'));
 
 // condensed style prefix carried in every prompt (full spec lives in STYLE-LOCK.md)
-const STYLE = 'Warm friendly flat vector illustration, strictly flat 2D, rounded soft shapes, gentle flat shading, warm golden lighting, uncluttered. Palette only: cream #FDF6EC, sand #F8E9D5, orange #F4A259, clay #B95E23, sky #78B8D9, sage #8BAE7B, charcoal #343434. Never include: any text, letters, words or labels; logos or watermarks; 3D, CGI, clay or rendered depth of any kind; photorealism; animals; dark or cold tones; distorted anatomy or oversized, out-of-proportion people.';
+const STYLE = 'Warm friendly flat vector illustration, strictly flat 2D, rounded soft shapes, gentle flat shading, warm golden lighting, uncluttered. Palette only: warm cream, soft sand, warm orange, terracotta clay, sky blue, sage green, and charcoal. Never include: any text, letters, words, labels, color names or hex codes; logos or watermarks; 3D, CGI, clay or rendered depth of any kind; photorealism; animals; dark or cold tones; distorted anatomy or oversized, out-of-proportion people.';
 
 const FRAME = {
   characters:'square, single figure or pair on a plain warm background, portrait feel',
@@ -48,7 +48,7 @@ function gemini(it){
 }
 function midjourney(it){
   const v = VARIANTS>1 ? '' : ''; // MJ always returns 4
-  return `${it.description}, ${FRAME[it.category]}, warm flat vector illustration, rounded soft shapes, warm golden lighting, palette cream F4A259 F8E9D5 B95E23 78B8D9 8BAE7B, flat design --ar ${AR[it.category]} --no text letters logo watermark 3d cgi render photorealism animals dark`;
+  return `${it.description}, ${FRAME[it.category]}, warm flat vector illustration, rounded soft shapes, warm golden lighting, palette warm cream sand orange terracotta sky-blue sage-green, flat design --ar ${AR[it.category]} --no text letters logo watermark 3d cgi render photorealism animals dark`;
 }
 const fmt = TOOL==='midjourney'?midjourney:gemini;
 
