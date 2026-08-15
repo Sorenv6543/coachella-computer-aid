@@ -870,7 +870,7 @@
     "id": 507,
     "category": "device",
     "name": "Tablet · with stand",
-    "description": "Tablet propped on a simple stand, screen facing forward. Kitchen context.",
+    "description": "Tablet on stand. Video call angle. Kitchen context.",
     "designed": false
   },
   {
@@ -1213,7 +1213,7 @@
     "id": 701,
     "category": "marketing",
     "name": "Facebook post · helpful tip",
-    "description": "Ana helping a senior with a phone, warm and encouraging. Square, cozy, with open negative space for a caption added later.",
+    "description": "Square. Large readable text. Simple icon. Branded.",
     "designed": false
   },
   {
@@ -1276,7 +1276,7 @@
     "id": 710,
     "category": "marketing",
     "name": "Flyer · senior workshop",
-    "description": "Older adults learning at a workshop table with a helper, warm and welcoming. Portrait orientation with generous blank margins for flyer text added later.",
+    "description": "Print-ready. Large text. QR code space. 8.5×11.",
     "designed": false
   },
   {
@@ -1304,7 +1304,7 @@
     "id": 714,
     "category": "marketing",
     "name": "Business card · front",
-    "description": "Warm cream card background with a small San Jacinto mountain and palm motif in one corner; mostly empty, leaving room for a logo and contact details added later.",
+    "description": "Logo + name + tagline + contact. Warm cream card.",
     "designed": false
   },
   {
@@ -1430,7 +1430,7 @@
     "id": 802,
     "category": "ui",
     "name": "Homepage hero · mobile",
-    "description": "Maria smiling while using her smartphone, warm and approachable. Tall vertical mobile crop with open space at the top for a headline.",
+    "description": "Cropped vertical. Character prominent. Stack layout.",
     "designed": false
   },
   {

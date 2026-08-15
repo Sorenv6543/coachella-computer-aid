@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Robert · portrait",
     "category": "characters",
-    "pick": "candidates/001-2.png"
+    "pick": "candidates/001-1.png"
   },
   {
     "id": 2,
@@ -21,7 +21,7 @@
     "id": 4,
     "name": "Maria · portrait",
     "category": "characters",
-    "pick": "candidates/004-1.png"
+    "pick": "candidates/004-3.png"
   },
   {
     "id": 5,
@@ -33,13 +33,13 @@
     "id": 6,
     "name": "Maria · at library",
     "category": "characters",
-    "regen": true
+    "pick": "candidates/006-1.png"
   },
   {
     "id": 7,
     "name": "Helen · portrait",
     "category": "characters",
-    "pick": "candidates/007-2.png"
+    "regen": true
   },
   {
     "id": 8,
@@ -93,13 +93,13 @@
     "id": 16,
     "name": "Robert + Helen · couple",
     "category": "characters",
-    "pick": "candidates/016-1.png"
+    "regen": true
   },
   {
     "id": 17,
     "name": "Full cast · group",
     "category": "characters",
-    "pick": "candidates/017-3.png"
+    "regen": true
   },
   {
     "id": 18,
@@ -111,7 +111,7 @@
     "id": 19,
     "name": "Carlos + Robert · veterans",
     "category": "characters",
-    "pick": "candidates/019-2.png"
+    "pick": "candidates/019-3.png"
   },
   {
     "id": 20,
@@ -123,13 +123,13 @@
     "id": 101,
     "name": "San Jacinto Mountains",
     "category": "hero",
-    "pick": "candidates/101-1.png"
+    "pick": "candidates/101-3.png"
   },
   {
     "id": 102,
     "name": "Senior couple · living room",
     "category": "hero",
-    "pick": "candidates/102-3.png"
+    "regen": true
   },
   {
     "id": 103,
@@ -141,13 +141,13 @@
     "id": 104,
     "name": "Library workshop",
     "category": "hero",
-    "pick": "candidates/104-3.png"
+    "regen": true
   },
   {
     "id": 105,
     "name": "Community center",
     "category": "hero",
-    "pick": "candidates/105-2.png"
+    "pick": "candidates/105-1.png"
   },
   {
     "id": 106,
@@ -159,7 +159,7 @@
     "id": 107,
     "name": "Video call family moment",
     "category": "hero",
-    "pick": "candidates/107-2.png"
+    "regen": true
   },
   {
     "id": 108,
@@ -171,13 +171,13 @@
     "id": 109,
     "name": "Mobile homepage hero",
     "category": "hero",
-    "pick": "candidates/109-3.png"
+    "pick": "candidates/109-1.png"
   },
   {
     "id": 110,
     "name": "About page · mission",
     "category": "hero",
-    "pick": "candidates/110-2.png"
+    "regen": true
   },
   {
     "id": 201,
@@ -189,7 +189,7 @@
     "id": 202,
     "name": "Stay safe · icon",
     "category": "service",
-    "regen": true
+    "pick": "candidates/202-2.png"
   },
   {
     "id": 203,
@@ -225,13 +225,13 @@
     "id": 208,
     "name": "Email setup · scene",
     "category": "service",
-    "pick": "candidates/208-1.png"
+    "regen": true
   },
   {
     "id": 209,
     "name": "Smartphone basics · scene",
     "category": "service",
-    "pick": "candidates/209-3.png"
+    "regen": true
   },
   {
     "id": 210,
@@ -243,31 +243,31 @@
     "id": 211,
     "name": "Printer setup · scene",
     "category": "service",
-    "pick": "candidates/211-3.png"
+    "regen": true
   },
   {
     "id": 212,
     "name": "Smart TV · scene",
     "category": "service",
-    "pick": "candidates/212-3.png"
+    "regen": true
   },
   {
     "id": 213,
     "name": "Password manager · scene",
     "category": "service",
-    "pick": "candidates/213-3.png"
+    "regen": true
   },
   {
     "id": 214,
     "name": "Scam awareness · scene",
     "category": "service",
-    "pick": "candidates/214-3.png"
+    "regen": true
   },
   {
     "id": 215,
     "name": "Phishing email · scene",
     "category": "service",
-    "pick": "candidates/215-3.png"
+    "regen": true
   },
   {
     "id": 216,
@@ -285,25 +285,25 @@
     "id": 218,
     "name": "Wi-Fi setup · scene",
     "category": "service",
-    "pick": "candidates/218-2.png"
+    "regen": true
   },
   {
     "id": 219,
     "name": "Router troubleshooting",
     "category": "service",
-    "pick": "candidates/219-2.png"
+    "regen": true
   },
   {
     "id": 220,
     "name": "Remote support · scene",
     "category": "service",
-    "pick": "candidates/220-1.png"
+    "regen": true
   },
   {
     "id": 221,
     "name": "Home visit · scene",
     "category": "service",
-    "pick": "candidates/221-2.png"
+    "regen": true
   },
   {
     "id": 222,
@@ -315,55 +315,61 @@
     "id": 223,
     "name": "Telehealth appointment",
     "category": "service",
-    "pick": "candidates/223-1.png"
+    "regen": true
   },
   {
     "id": 224,
     "name": "Government forms",
     "category": "service",
-    "pick": "candidates/224-3.png"
+    "regen": true
   },
   {
     "id": 225,
     "name": "Benefit applications",
     "category": "service",
-    "pick": "candidates/225-1.png"
+    "regen": true
   },
   {
     "id": 226,
     "name": "School portal help",
     "category": "service",
-    "pick": "candidates/226-3.png"
+    "regen": true
   },
   {
     "id": 227,
     "name": "Accessibility settings",
     "category": "service",
-    "pick": "candidates/227-3.png"
+    "regen": true
+  },
+  {
+    "id": 228,
+    "name": "Voice assistant",
+    "category": "service",
+    "regen": true
   },
   {
     "id": 229,
     "name": "Screen reader setup",
     "category": "service",
-    "pick": "candidates/229-3.png"
+    "regen": true
   },
   {
     "id": 230,
     "name": "Laptop repair · scene",
     "category": "service",
-    "pick": "candidates/230-2.png"
+    "regen": true
   },
   {
     "id": 231,
     "name": "Virus removal · scene",
     "category": "service",
-    "pick": "candidates/231-1.png"
+    "pick": "candidates/231-2.png"
   },
   {
     "id": 232,
     "name": "Backup setup · scene",
     "category": "service",
-    "pick": "candidates/232-1.png"
+    "regen": true
   },
   {
     "id": 233,
@@ -375,25 +381,25 @@
     "id": 234,
     "name": "Facebook basics",
     "category": "service",
-    "pick": "candidates/234-1.png"
+    "regen": true
   },
   {
     "id": 235,
     "name": "WhatsApp family group",
     "category": "service",
-    "pick": "candidates/235-2.png"
+    "pick": "candidates/235-1.png"
   },
   {
     "id": 236,
     "name": "Zoom meeting",
     "category": "service",
-    "pick": "candidates/236-1.png"
+    "regen": true
   },
   {
     "id": 237,
     "name": "FaceTime call",
     "category": "service",
-    "pick": "candidates/237-1.png"
+    "regen": true
   },
   {
     "id": 238,
@@ -405,7 +411,7 @@
     "id": 239,
     "name": "Job application online",
     "category": "service",
-    "pick": "candidates/239-3.png"
+    "regen": true
   },
   {
     "id": 240,
@@ -423,25 +429,25 @@
     "id": 302,
     "name": "Library class · wide",
     "category": "community",
-    "pick": "candidates/302-3.png"
+    "pick": "candidates/302-2.png"
   },
   {
     "id": 303,
     "name": "Library class · intimate",
     "category": "community",
-    "pick": "candidates/303-3.png"
+    "regen": true
   },
   {
     "id": 304,
     "name": "Senior center exterior",
     "category": "community",
-    "pick": "candidates/304-2.png"
+    "pick": "candidates/304-3.png"
   },
   {
     "id": 305,
     "name": "Senior center class",
     "category": "community",
-    "pick": "candidates/305-3.png"
+    "pick": "candidates/305-1.png"
   },
   {
     "id": 306,
@@ -453,19 +459,19 @@
     "id": 307,
     "name": "Church tech office hours",
     "category": "community",
-    "pick": "candidates/307-2.png"
+    "regen": true
   },
   {
     "id": 308,
     "name": "Community center wide",
     "category": "community",
-    "pick": "candidates/308-3.png"
+    "regen": true
   },
   {
     "id": 309,
     "name": "Nursing home visit",
     "category": "community",
-    "pick": "candidates/309-3.png"
+    "regen": true
   },
   {
     "id": 310,
@@ -477,73 +483,73 @@
     "id": 311,
     "name": "Coffee shop help",
     "category": "community",
-    "pick": "candidates/311-1.png"
+    "regen": true
   },
   {
     "id": 312,
     "name": "Home visit · living room",
     "category": "community",
-    "pick": "candidates/312-2.png"
+    "regen": true
   },
   {
     "id": 313,
     "name": "Home visit · kitchen",
     "category": "community",
-    "pick": "candidates/313-3.png"
+    "regen": true
   },
   {
     "id": 314,
     "name": "Volunteer group",
     "category": "community",
-    "pick": "candidates/314-2.png"
+    "regen": true
   },
   {
     "id": 315,
     "name": "Volunteer training day",
     "category": "community",
-    "pick": "candidates/315-3.png"
+    "regen": true
   },
   {
     "id": 316,
     "name": "Community tech fair",
     "category": "community",
-    "pick": "candidates/316-2.png"
+    "pick": "candidates/316-3.png"
   },
   {
     "id": 317,
     "name": "Donation moment",
     "category": "community",
-    "pick": "candidates/317-1.png"
+    "regen": true
   },
   {
     "id": 318,
     "name": "Donated computers",
     "category": "community",
-    "pick": "candidates/318-1.png"
+    "regen": true
   },
   {
     "id": 319,
     "name": "Partnerships · library",
     "category": "community",
-    "pick": "candidates/319-3.png"
+    "regen": true
   },
   {
     "id": 320,
     "name": "Partnerships · senior center",
     "category": "community",
-    "pick": "candidates/320-1.png"
+    "regen": true
   },
   {
     "id": 321,
     "name": "Flyer on bulletin board",
     "category": "community",
-    "pick": "candidates/321-1.png"
+    "pick": "candidates/321-2.png"
   },
   {
     "id": 322,
     "name": "Facebook group moment",
     "category": "community",
-    "pick": "candidates/322-1.png"
+    "regen": true
   },
   {
     "id": 323,
@@ -555,25 +561,25 @@
     "id": 324,
     "name": "Graduation moment",
     "category": "community",
-    "pick": "candidates/324-2.png"
+    "regen": true
   },
   {
     "id": 325,
     "name": "Survey completion",
     "category": "community",
-    "pick": "candidates/325-2.png"
+    "regen": true
   },
   {
     "id": 401,
     "name": "Senior Tech Mondays · title",
     "category": "workshop",
-    "pick": "candidates/401-1.png"
+    "pick": "candidates/401-3.png"
   },
   {
     "id": 402,
     "name": "Scam awareness · title card",
     "category": "workshop",
-    "pick": "candidates/402-3.png"
+    "regen": true
   },
   {
     "id": 403,
@@ -609,7 +615,7 @@
     "id": 408,
     "name": "Presenter at screen",
     "category": "workshop",
-    "pick": "candidates/408-2.png"
+    "regen": true
   },
   {
     "id": 409,
@@ -621,67 +627,67 @@
     "id": 410,
     "name": "Q&A moment",
     "category": "workshop",
-    "pick": "candidates/410-3.png"
+    "regen": true
   },
   {
     "id": 411,
     "name": "Workshop handout",
     "category": "workshop",
-    "pick": "candidates/411-2.png"
+    "regen": true
   },
   {
     "id": 412,
     "name": "Post-workshop chat",
     "category": "workshop",
-    "pick": "candidates/412-3.png"
+    "regen": true
   },
   {
     "id": 413,
     "name": "Online workshop · Zoom",
     "category": "workshop",
-    "pick": "candidates/413-2.png"
+    "regen": true
   },
   {
     "id": 414,
     "name": "Workshop registration",
     "category": "workshop",
-    "pick": "candidates/414-1.png"
+    "regen": true
   },
   {
     "id": 415,
     "name": "Workshop reminder",
     "category": "workshop",
-    "pick": "candidates/415-2.png"
+    "regen": true
   },
   {
     "id": 416,
     "name": "Scam demo · live",
     "category": "workshop",
-    "pick": "candidates/416-1.png"
+    "regen": true
   },
   {
     "id": 417,
     "name": "Password exercise",
     "category": "workshop",
-    "pick": "candidates/417-2.png"
+    "regen": true
   },
   {
     "id": 418,
     "name": "Smartphone exercise",
     "category": "workshop",
-    "pick": "candidates/418-3.png"
+    "regen": true
   },
   {
     "id": 419,
     "name": "Video call practice",
     "category": "workshop",
-    "pick": "candidates/419-2.png"
+    "pick": "candidates/419-1.png"
   },
   {
     "id": 420,
     "name": "Workshop complete · celebrate",
     "category": "workshop",
-    "pick": "candidates/420-3.png"
+    "regen": true
   },
   {
     "id": 501,
@@ -693,7 +699,7 @@
     "id": 502,
     "name": "Laptop · with person",
     "category": "device",
-    "pick": "candidates/502-3.png"
+    "pick": "candidates/502-2.png"
   },
   {
     "id": 503,
@@ -723,25 +729,25 @@
     "id": 507,
     "name": "Tablet · with stand",
     "category": "device",
-    "pick": "candidates/507-3.png"
+    "regen": true
   },
   {
     "id": 508,
     "name": "Tablet · in hands",
     "category": "device",
-    "pick": "candidates/508-1.png"
+    "regen": true
   },
   {
     "id": 509,
     "name": "Printer",
     "category": "device",
-    "pick": "candidates/509-3.png"
+    "pick": "candidates/509-1.png"
   },
   {
     "id": 510,
     "name": "Printer + document",
     "category": "device",
-    "pick": "candidates/510-2.png"
+    "regen": true
   },
   {
     "id": 511,
@@ -759,13 +765,13 @@
     "id": 513,
     "name": "Smart TV",
     "category": "device",
-    "pick": "candidates/513-3.png"
+    "regen": true
   },
   {
     "id": 514,
     "name": "Smart TV · remote",
     "category": "device",
-    "pick": "candidates/514-2.png"
+    "pick": "candidates/514-1.png"
   },
   {
     "id": 515,
@@ -801,13 +807,13 @@
     "id": 520,
     "name": "Old vs new phone",
     "category": "device",
-    "pick": "candidates/520-2.png"
+    "regen": true
   },
   {
     "id": 521,
     "name": "External hard drive",
     "category": "device",
-    "pick": "candidates/521-1.png"
+    "pick": "candidates/521-2.png"
   },
   {
     "id": 522,
@@ -855,7 +861,7 @@
     "id": 529,
     "name": "Battery low",
     "category": "device",
-    "pick": "candidates/529-3.png"
+    "regen": true
   },
   {
     "id": 530,
@@ -867,13 +873,13 @@
     "id": 601,
     "name": "San Jacinto · full",
     "category": "background",
-    "pick": "candidates/601-2.png"
+    "pick": "candidates/601-3.png"
   },
   {
     "id": 602,
     "name": "San Jacinto · dawn",
     "category": "background",
-    "pick": "candidates/602-2.png"
+    "pick": "candidates/602-3.png"
   },
   {
     "id": 603,
@@ -885,31 +891,31 @@
     "id": 604,
     "name": "Desert landscape · minimal",
     "category": "background",
-    "pick": "candidates/604-3.png"
+    "pick": "candidates/604-2.png"
   },
   {
     "id": 605,
     "name": "Palm Springs streetscape",
     "category": "background",
-    "pick": "candidates/605-2.png"
+    "regen": true
   },
   {
     "id": 606,
     "name": "Library interior",
     "category": "background",
-    "pick": "candidates/606-1.png"
+    "pick": "candidates/606-3.png"
   },
   {
     "id": 607,
     "name": "Senior center interior",
     "category": "background",
-    "pick": "candidates/607-1.png"
+    "pick": "candidates/607-2.png"
   },
   {
     "id": 608,
     "name": "Community center interior",
     "category": "background",
-    "pick": "candidates/608-1.png"
+    "pick": "candidates/608-2.png"
   },
   {
     "id": 609,
@@ -921,19 +927,19 @@
     "id": 610,
     "name": "Coffee shop interior",
     "category": "background",
-    "pick": "candidates/610-2.png"
+    "regen": true
   },
   {
     "id": 611,
     "name": "Home living room",
     "category": "background",
-    "pick": "candidates/611-2.png"
+    "pick": "candidates/611-3.png"
   },
   {
     "id": 612,
     "name": "Home kitchen",
     "category": "background",
-    "pick": "candidates/612-2.png"
+    "pick": "candidates/612-1.png"
   },
   {
     "id": 613,
@@ -945,13 +951,13 @@
     "id": 614,
     "name": "Nursing home common room",
     "category": "background",
-    "pick": "candidates/614-2.png"
+    "regen": true
   },
   {
     "id": 615,
     "name": "Outdoor community event",
     "category": "background",
-    "pick": "candidates/615-3.png"
+    "regen": true
   },
   {
     "id": 616,
@@ -975,7 +981,7 @@
     "id": 619,
     "name": "Sand gradient",
     "category": "background",
-    "pick": "candidates/619-2.png"
+    "regen": true
   },
   {
     "id": 620,
@@ -987,7 +993,7 @@
     "id": 621,
     "name": "Abstract warmth",
     "category": "background",
-    "pick": "candidates/621-1.png"
+    "regen": true
   },
   {
     "id": 622,
@@ -1005,19 +1011,19 @@
     "id": 624,
     "name": "Night sky · desert",
     "category": "background",
-    "pick": "candidates/624-3.png"
+    "regen": true
   },
   {
     "id": 625,
     "name": "Coachella Valley aerial",
     "category": "background",
-    "pick": "candidates/625-3.png"
+    "regen": true
   },
   {
     "id": 701,
     "name": "Facebook post · helpful tip",
     "category": "marketing",
-    "pick": "candidates/701-2.png"
+    "regen": true
   },
   {
     "id": 702,
@@ -1029,19 +1035,19 @@
     "id": 703,
     "name": "Facebook post · scam warning",
     "category": "marketing",
-    "pick": "candidates/703-2.png"
+    "pick": "candidates/703-3.png"
   },
   {
     "id": 704,
     "name": "Facebook post · success story",
     "category": "marketing",
-    "pick": "candidates/704-2.png"
+    "regen": true
   },
   {
     "id": 705,
     "name": "Facebook cover photo",
     "category": "marketing",
-    "pick": "candidates/705-1.png"
+    "regen": true
   },
   {
     "id": 706,
@@ -1053,13 +1059,13 @@
     "id": 707,
     "name": "Instagram story · vertical",
     "category": "marketing",
-    "pick": "candidates/707-2.png"
+    "regen": true
   },
   {
     "id": 708,
     "name": "Instagram carousel · slide 1",
     "category": "marketing",
-    "pick": "candidates/708-2.png"
+    "regen": true
   },
   {
     "id": 709,
@@ -1071,7 +1077,7 @@
     "id": 710,
     "name": "Flyer · senior workshop",
     "category": "marketing",
-    "pick": "candidates/710-3.png"
+    "regen": true
   },
   {
     "id": 711,
@@ -1083,25 +1089,25 @@
     "id": 712,
     "name": "Flyer · Spanish workshop",
     "category": "marketing",
-    "pick": "candidates/712-1.png"
+    "regen": true
   },
   {
     "id": 713,
     "name": "Flyer · general services",
     "category": "marketing",
-    "pick": "candidates/713-1.png"
+    "regen": true
   },
   {
     "id": 714,
     "name": "Business card · front",
     "category": "marketing",
-    "pick": "candidates/714-2.png"
+    "regen": true
   },
   {
     "id": 715,
     "name": "Business card · back",
     "category": "marketing",
-    "pick": "candidates/715-3.png"
+    "regen": true
   },
   {
     "id": 716,
@@ -1113,19 +1119,19 @@
     "id": 717,
     "name": "Workshop handout · smartphone",
     "category": "marketing",
-    "pick": "candidates/717-1.png"
+    "regen": true
   },
   {
     "id": 718,
     "name": "Workshop handout · scam tips",
     "category": "marketing",
-    "pick": "candidates/718-3.png"
+    "regen": true
   },
   {
     "id": 719,
     "name": "Workshop handout · passwords",
     "category": "marketing",
-    "pick": "candidates/719-3.png"
+    "regen": true
   },
   {
     "id": 720,
@@ -1143,37 +1149,37 @@
     "id": 722,
     "name": "Email signature banner",
     "category": "marketing",
-    "pick": "candidates/722-3.png"
+    "pick": "candidates/722-2.png"
   },
   {
     "id": 723,
     "name": "Event poster · 11×17",
     "category": "marketing",
-    "pick": "candidates/723-2.png"
+    "regen": true
   },
   {
     "id": 724,
     "name": "Yard sign",
     "category": "marketing",
-    "pick": "candidates/724-1.png"
+    "regen": true
   },
   {
     "id": 725,
     "name": "Car magnet",
     "category": "marketing",
-    "pick": "candidates/725-3.png"
+    "regen": true
   },
   {
     "id": 726,
     "name": "Presentation title slide",
     "category": "marketing",
-    "pick": "candidates/726-2.png"
+    "regen": true
   },
   {
     "id": 727,
     "name": "Presentation content slide",
     "category": "marketing",
-    "pick": "candidates/727-2.png"
+    "regen": true
   },
   {
     "id": 728,
@@ -1185,7 +1191,7 @@
     "id": 729,
     "name": "Bookmark",
     "category": "marketing",
-    "pick": "candidates/729-1.png"
+    "regen": true
   },
   {
     "id": 730,
@@ -1227,7 +1233,7 @@
     "id": 806,
     "name": "Audience · immigrant families badge",
     "category": "ui",
-    "pick": "candidates/806-3.png"
+    "regen": true
   },
   {
     "id": 807,
@@ -1245,13 +1251,13 @@
     "id": 809,
     "name": "Audience · everyone badge",
     "category": "ui",
-    "pick": "candidates/809-1.png"
+    "regen": true
   },
   {
     "id": 810,
     "name": "Services · stay connected card",
     "category": "ui",
-    "pick": "candidates/810-1.png"
+    "regen": true
   },
   {
     "id": 811,
@@ -1263,13 +1269,13 @@
     "id": 812,
     "name": "Services · learn card",
     "category": "ui",
-    "pick": "candidates/812-1.png"
+    "regen": true
   },
   {
     "id": 813,
     "name": "Services · repair card",
     "category": "ui",
-    "pick": "candidates/813-1.png"
+    "regen": true
   },
   {
     "id": 814,
@@ -1287,13 +1293,13 @@
     "id": 816,
     "name": "How it works · step 1",
     "category": "ui",
-    "pick": "candidates/816-1.png"
+    "pick": "candidates/816-3.png"
   },
   {
     "id": 817,
     "name": "How it works · step 2",
     "category": "ui",
-    "pick": "candidates/817-1.png"
+    "regen": true
   },
   {
     "id": 818,
@@ -1311,13 +1317,13 @@
     "id": 820,
     "name": "Pay-What-You-Can section",
     "category": "ui",
-    "pick": "candidates/820-2.png"
+    "regen": true
   },
   {
     "id": 821,
     "name": "Testimonial · Robert quote",
     "category": "ui",
-    "pick": "candidates/821-3.png"
+    "regen": true
   },
   {
     "id": 822,
@@ -1329,19 +1335,19 @@
     "id": 823,
     "name": "Testimonial · Helen quote",
     "category": "ui",
-    "pick": "candidates/823-3.png"
+    "regen": true
   },
   {
     "id": 824,
     "name": "Community survey CTA",
     "category": "ui",
-    "pick": "candidates/824-3.png"
+    "pick": "candidates/824-2.png"
   },
   {
     "id": 825,
     "name": "404 error page",
     "category": "ui",
-    "pick": "candidates/825-1.png"
+    "regen": true
   },
   {
     "id": 826,
@@ -1365,31 +1371,31 @@
     "id": 829,
     "name": "Success · booking confirmed",
     "category": "ui",
-    "pick": "candidates/829-1.png"
+    "pick": "candidates/829-3.png"
   },
   {
     "id": 830,
     "name": "Success · form submitted",
     "category": "ui",
-    "pick": "candidates/830-1.png"
+    "pick": "candidates/830-3.png"
   },
   {
     "id": 831,
     "name": "Contact page header",
     "category": "ui",
-    "pick": "candidates/831-2.png"
+    "pick": "candidates/831-1.png"
   },
   {
     "id": 832,
     "name": "About page · our story",
     "category": "ui",
-    "pick": "candidates/832-1.png"
+    "regen": true
   },
   {
     "id": 833,
     "name": "Resources page header",
     "category": "ui",
-    "pick": "candidates/833-2.png"
+    "pick": "candidates/833-3.png"
   },
   {
     "id": 834,
@@ -1419,25 +1425,25 @@
     "id": 838,
     "name": "Mobile nav · drawer illustration",
     "category": "ui",
-    "pick": "candidates/838-1.png"
+    "pick": "candidates/838-3.png"
   },
   {
     "id": 839,
     "name": "Footer · mountain strip",
     "category": "ui",
-    "pick": "candidates/839-2.png"
+    "pick": "candidates/839-1.png"
   },
   {
     "id": 840,
     "name": "Donation confirmation",
     "category": "ui",
-    "pick": "candidates/840-1.png"
+    "pick": "candidates/840-2.png"
   },
   {
     "id": 901,
     "name": "Computer",
     "category": "icon",
-    "pick": "candidates/901-2.png"
+    "regen": true
   },
   {
     "id": 902,
@@ -1449,7 +1455,7 @@
     "id": 903,
     "name": "Tablet",
     "category": "icon",
-    "pick": "candidates/903-3.png"
+    "regen": true
   },
   {
     "id": 904,
@@ -1461,7 +1467,7 @@
     "id": 905,
     "name": "Printer",
     "category": "icon",
-    "pick": "candidates/905-3.png"
+    "regen": true
   },
   {
     "id": 906,
@@ -1473,19 +1479,19 @@
     "id": 907,
     "name": "Smart TV",
     "category": "icon",
-    "pick": "candidates/907-1.png"
+    "regen": true
   },
   {
     "id": 908,
     "name": "Keyboard",
     "category": "icon",
-    "pick": "candidates/908-2.png"
+    "regen": true
   },
   {
     "id": 909,
     "name": "Mouse",
     "category": "icon",
-    "pick": "candidates/909-2.png"
+    "regen": true
   },
   {
     "id": 910,
@@ -1521,7 +1527,7 @@
     "id": 915,
     "name": "Shield · basic",
     "category": "icon",
-    "pick": "candidates/915-3.png"
+    "regen": true
   },
   {
     "id": 916,
@@ -1551,13 +1557,13 @@
     "id": 920,
     "name": "Key",
     "category": "icon",
-    "pick": "candidates/920-2.png"
+    "regen": true
   },
   {
     "id": 921,
     "name": "Globe",
     "category": "icon",
-    "pick": "candidates/921-2.png"
+    "pick": "candidates/921-1.png"
   },
   {
     "id": 922,
@@ -1599,7 +1605,7 @@
     "id": 928,
     "name": "Phone handset",
     "category": "icon",
-    "pick": "candidates/928-3.png"
+    "regen": true
   },
   {
     "id": 929,
@@ -1635,7 +1641,7 @@
     "id": 934,
     "name": "Star",
     "category": "icon",
-    "pick": "candidates/934-1.png"
+    "regen": true
   },
   {
     "id": 935,
@@ -1647,7 +1653,7 @@
     "id": 936,
     "name": "Person",
     "category": "icon",
-    "pick": "candidates/936-1.png"
+    "regen": true
   },
   {
     "id": 937,
@@ -1659,7 +1665,7 @@
     "id": 938,
     "name": "Book / guide",
     "category": "icon",
-    "pick": "candidates/938-3.png"
+    "regen": true
   },
   {
     "id": 939,
@@ -1671,7 +1677,7 @@
     "id": 940,
     "name": "Video play",
     "category": "icon",
-    "pick": "candidates/940-2.png"
+    "pick": "candidates/940-1.png"
   },
   {
     "id": 941,
@@ -1689,7 +1695,7 @@
     "id": 943,
     "name": "Camera",
     "category": "icon",
-    "pick": "candidates/943-1.png"
+    "regen": true
   },
   {
     "id": 944,
@@ -1701,7 +1707,7 @@
     "id": 945,
     "name": "Checkmark",
     "category": "icon",
-    "pick": "candidates/945-1.png"
+    "regen": true
   },
   {
     "id": 946,
@@ -1719,19 +1725,19 @@
     "id": 948,
     "name": "Arrow right",
     "category": "icon",
-    "pick": "candidates/948-2.png"
+    "regen": true
   },
   {
     "id": 949,
     "name": "Arrow left",
     "category": "icon",
-    "pick": "candidates/949-2.png"
+    "regen": true
   },
   {
     "id": 950,
     "name": "External link",
     "category": "icon",
-    "pick": "candidates/950-2.png"
+    "regen": true
   },
   {
     "id": 951,
@@ -1749,7 +1755,7 @@
     "id": 953,
     "name": "Tools / wrench",
     "category": "icon",
-    "pick": "candidates/953-2.png"
+    "regen": true
   },
   {
     "id": 954,
@@ -1761,13 +1767,13 @@
     "id": 955,
     "name": "Donation hand + heart",
     "category": "icon",
-    "pick": "candidates/955-1.png"
+    "pick": "candidates/955-2.png"
   },
   {
     "id": 956,
     "name": "Language / translate",
     "category": "icon",
-    "pick": "candidates/956-2.png"
+    "regen": true
   },
   {
     "id": 957,
@@ -1791,6 +1797,6 @@
     "id": 960,
     "name": "CCA logo mark",
     "category": "icon",
-    "pick": "candidates/960-2.png"
+    "regen": true
   }
 ]

@@ -28,20 +28,9 @@ a scene calls for place. Interiors are warm, sunlit, homey.
 - **Ana** — 28, the helper: backpack, laptop, confident and approachable.
 - **David** — professional, uses a wheelchair, headset, works from home.
 
-## Never (hard constraints — enforced as negative prompt in build-prompts.mjs)
-- **any text, letters, words, or labels** baked into the image (incl. color
-  names or hex codes — keep hex out of the generation prompt; it can leak as a
-  rendered caption)
-- **logos or watermarks** of any kind (incl. stray corner marks)
-- **3D, CGI, clay, or rendered depth** — the art is strictly flat 2D vector
-- **photorealism**
-- **animals**
-- **distorted anatomy or oversized, out-of-proportion people**
-- harsh/dark shadows, cold or desaturated tones, off-palette colors
-- cluttered busy backgrounds
-- **placeholder "blob" faces on device screens** — a device's screen shows a
-  simple abstract app UI, never featureless smiley faces (people on a *scene*
-  video call, drawn full-size and on-style, are fine)
+## Always avoid
+text or lettering, watermarks, logos, photorealism, harsh/dark shadows, cold or
+desaturated tones, cluttered busy backgrounds, off-palette colors.
 
 ## Per-category framing
 - characters → square, single figure or pair, plain warm background, portrait feel
