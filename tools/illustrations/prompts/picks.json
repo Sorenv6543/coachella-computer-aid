@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Robert · portrait",
     "category": "characters",
-    "pick": "candidates/001-1.png"
+    "pick": "candidates/001-2.png"
   },
   {
     "id": 2,
@@ -33,7 +33,7 @@
     "id": 6,
     "name": "Maria · at library",
     "category": "characters",
-    "pick": "candidates/006-1.png"
+    "regen": true
   },
   {
     "id": 7,
@@ -93,7 +93,7 @@
     "id": 16,
     "name": "Robert + Helen · couple",
     "category": "characters",
-    "regen": true
+    "pick": "candidates/016-1.png"
   },
   {
     "id": 17,
@@ -111,7 +111,7 @@
     "id": 19,
     "name": "Carlos + Robert · veterans",
     "category": "characters",
-    "pick": "candidates/019-3.png"
+    "pick": "candidates/019-1.png"
   },
   {
     "id": 20,
@@ -189,7 +189,7 @@
     "id": 202,
     "name": "Stay safe · icon",
     "category": "service",
-    "pick": "candidates/202-2.png"
+    "regen": true
   },
   {
     "id": 203,
@@ -237,7 +237,7 @@
     "id": 210,
     "name": "Tablet training · scene",
     "category": "service",
-    "pick": "candidates/210-2.png"
+    "regen": true
   },
   {
     "id": 211,
@@ -333,7 +333,7 @@
     "id": 226,
     "name": "School portal help",
     "category": "service",
-    "regen": true
+    "pick": "candidates/226-3.png"
   },
   {
     "id": 227,
@@ -345,7 +345,7 @@
     "id": 228,
     "name": "Voice assistant",
     "category": "service",
-    "regen": true
+    "pick": "candidates/228-2.png"
   },
   {
     "id": 229,
@@ -423,7 +423,7 @@
     "id": 301,
     "name": "Library exterior",
     "category": "community",
-    "pick": "candidates/301-2.png"
+    "pick": "candidates/301-1.png"
   },
   {
     "id": 302,
@@ -873,13 +873,13 @@
     "id": 601,
     "name": "San Jacinto · full",
     "category": "background",
-    "pick": "candidates/601-3.png"
+    "pick": "candidates/601-2.png"
   },
   {
     "id": 602,
     "name": "San Jacinto · dawn",
     "category": "background",
-    "pick": "candidates/602-3.png"
+    "pick": "candidates/602-2.png"
   },
   {
     "id": 603,
@@ -903,19 +903,19 @@
     "id": 606,
     "name": "Library interior",
     "category": "background",
-    "pick": "candidates/606-3.png"
+    "pick": "candidates/606-1.png"
   },
   {
     "id": 607,
     "name": "Senior center interior",
     "category": "background",
-    "pick": "candidates/607-2.png"
+    "pick": "candidates/607-1.png"
   },
   {
     "id": 608,
     "name": "Community center interior",
     "category": "background",
-    "pick": "candidates/608-2.png"
+    "pick": "candidates/608-1.png"
   },
   {
     "id": 609,
@@ -939,7 +939,7 @@
     "id": 612,
     "name": "Home kitchen",
     "category": "background",
-    "pick": "candidates/612-1.png"
+    "pick": "candidates/612-2.png"
   },
   {
     "id": 613,
@@ -993,7 +993,7 @@
     "id": 621,
     "name": "Abstract warmth",
     "category": "background",
-    "regen": true
+    "pick": "candidates/621-1.png"
   },
   {
     "id": 622,
@@ -1011,13 +1011,13 @@
     "id": 624,
     "name": "Night sky · desert",
     "category": "background",
-    "regen": true
+    "pick": "candidates/624-3.png"
   },
   {
     "id": 625,
     "name": "Coachella Valley aerial",
     "category": "background",
-    "regen": true
+    "pick": "candidates/625-3.png"
   },
   {
     "id": 701,
@@ -1035,7 +1035,7 @@
     "id": 703,
     "name": "Facebook post · scam warning",
     "category": "marketing",
-    "pick": "candidates/703-3.png"
+    "pick": "candidates/703-2.png"
   },
   {
     "id": 704,
@@ -1119,7 +1119,7 @@
     "id": 717,
     "name": "Workshop handout · smartphone",
     "category": "marketing",
-    "regen": true
+    "pick": "candidates/717-1.png"
   },
   {
     "id": 718,
