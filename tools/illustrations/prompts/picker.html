@@ -25,7 +25,7 @@ h1,h2,h3{font-family:"Nunito",sans-serif;margin:0}
 .wrap{padding:8px 24px 80px}
 .sec{margin:22px 0}
 .sec h2{font-size:18px;font-weight:900;margin-bottom:12px;padding-bottom:8px;border-bottom:1.5px solid var(--sand2)}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+.grid{display:grid;grid-template-columns:1fr;gap:16px}
 .card{background:#fff;border-radius:14px;padding:14px;border:1.5px solid transparent;box-shadow:0 6px 18px -12px rgba(52,52,52,.22)}
 .card.done{border-color:rgba(139,174,123,.5);background:rgba(139,174,123,.06)}
 .card.regen{border-color:rgba(185,94,35,.4)}
@@ -34,8 +34,8 @@ h1,h2,h3{font-family:"Nunito",sans-serif;margin:0}
 .card .name{font-family:"Nunito";font-weight:800;font-size:15px}
 .card .desc{font-size:12px;color:var(--soft);margin-bottom:10px;line-height:1.4}
 .cands{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-.cand{position:relative;border-radius:10px;overflow:hidden;aspect-ratio:1;background:var(--sand);border:3px solid transparent;cursor:pointer}
-.cand img{width:100%;height:100%;object-fit:cover;display:block}
+.cand{position:relative;border-radius:10px;overflow:hidden;aspect-ratio:4/5;background:var(--cream);border:3px solid transparent;cursor:pointer}
+.cand img{width:100%;height:100%;object-fit:contain;display:block}
 .cand.pick{border-color:var(--sage2)}
 .cand.pick::after{content:"✓";position:absolute;top:4px;right:6px;font-family:"Nunito";font-weight:900;color:#fff;background:var(--sage2);width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-size:13px}
 .awaiting{grid-column:1/-1;text-align:center;color:var(--soft);font-size:13px;padding:22px;background:var(--sand);border-radius:10px}
