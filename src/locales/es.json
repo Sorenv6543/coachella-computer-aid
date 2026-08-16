@@ -1,0 +1,11 @@
+{
+  "common": {
+    "toggleLanguage": "English"
+  },
+  "home": {
+    "hero": {
+      "title": "Ayuda paciente y amable con su computadora",
+      "subtitle": "Pague lo que pueda. Vamos a su casa."
+    }
+  }
+}

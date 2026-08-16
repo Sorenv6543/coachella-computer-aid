@@ -1,0 +1,11 @@
+{
+  "common": {
+    "toggleLanguage": "Español"
+  },
+  "home": {
+    "hero": {
+      "title": "Patient, friendly help with your computer",
+      "subtitle": "Pay what you can. We come to you."
+    }
+  }
+}
