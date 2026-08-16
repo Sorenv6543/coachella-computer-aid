@@ -22,7 +22,7 @@ Over time, this creates a recognizable identity that people associate with your 
 
 ## 📚 Building a Complete Illustration Library
 
-Rather than creating illustrations only as we need them, the goal is a complete illustration library—**300+ coordinated illustrations** across characters, heroes, services, icons, backgrounds, devices, and marketing (see the [[../../tools/illustrations/README.md|manifest]])—before launch.
+Rather than creating illustrations only as we need them, the goal is a complete illustration library—**300+ coordinated illustrations** across characters, heroes, services, icons, backgrounds, devices, and marketing (see `tools/illustrations/manifest.json` and [[../../tools/illustrations/README.md|Illustration Pipeline]])—before launch.
 
 ### Why This Approach?
 
