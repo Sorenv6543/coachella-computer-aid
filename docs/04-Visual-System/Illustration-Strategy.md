@@ -53,9 +53,9 @@ See [[Illustration-Catalog.md|Illustration Catalog]] for detailed specifications
 |----------|---------|-------|
 | **Characters** | Recurring people, varied scenarios | 15–20 |
 | **Hero** | Homepage and page headers | 5–8 |
-| **Service** | One per service offering | 8–10 |
+| **Service** | One per service offering | 11 |
 | **Audience** | One per audience segment | 6 |
-| **Icon** | Custom icons for UI and navigation | 20–30 |
+| **Icon** | Custom icons for UI and navigation | 150+ |
 | **Background** | Scene settings and locations | 10–15 |
 | **Device** | Computers, phones, tablets in use | 8–10 |
 | **UI** | Forms, buttons, interaction states | 8–10 |
