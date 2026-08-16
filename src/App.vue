@@ -7,10 +7,7 @@ const { t } = useI18n()
 
 <template>
   <v-app>
-    <a href="#cca-main-content" class="cca-skip-link">{{ t('common.skipToContent') }}</a>
-    <AppNavbar />
-    <v-main id="cca-main-content">
-      <router-view />
+    <v-main id="cca-main-content" tabindex="-1">
     </v-main>
   </v-app>
 </template>
