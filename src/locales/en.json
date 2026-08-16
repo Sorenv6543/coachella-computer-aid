@@ -1,11 +1,33 @@
 {
   "common": {
-    "toggleLanguage": "Español"
+    "toggleLanguage": "Español",
+    "toggleLanguageAriaLabel": "Switch to Spanish",
+    "skipToContent": "Skip to main content"
+  },
+  "nav": {
+    "brand": "Coachella Computer Aid",
+    "brandAriaLabel": "Coachella Computer Aid, go to homepage",
+    "ariaLabel": "Main navigation",
+    "menuToggle": "Open menu",
+    "menuClose": "Close menu",
+    "cta": "Get Help Today",
+    "links": {
+      "home": "Home",
+      "services": "Services",
+      "workshops": "Workshops",
+      "resources": "Resources",
+      "community": "Community",
+      "contact": "Contact"
+    }
   },
   "home": {
     "hero": {
-      "title": "Patient, friendly help with your computer",
-      "subtitle": "Pay what you can. We come to you."
+      "title": "Finally, technology help that's patient with you",
+      "subtitle": "Real people right here in the Coachella Valley, ready to help in person or from your own home.",
+      "body": "We offer one-on-one help with phones, tablets, and computers across the Coachella Valley. Meet with us in person or by video call, whichever is easier for you. Pay what you can. Everyone is welcome.",
+      "ctaPrimary": "Get Help Today",
+      "ctaSecondary": "Explore Services",
+      "imageAlt": "Two smiling seniors sitting together outdoors, using tablets, with the desert mountains glowing warmly behind them."
     }
   }
 }
