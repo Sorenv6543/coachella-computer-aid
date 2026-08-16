@@ -13,16 +13,16 @@ const menuToggleLabel = computed(() =>
 )
 
 // Only "/" is a registered route today (see src/router/index.ts). The rest
-// are placeholders for pages that don't exist yet — flagged in the PR/report
-// so they get wired up (or swapped for router `to` targets) as those pages
-// land.
+// are placeholders for pages that don't exist yet — hash targets are omitted
+// until the corresponding sections land so clicking them doesn't silently
+// no-op while changing the URL hash.
 const navLinks = [
   { key: 'nav.links.home', href: '/' },
-  { key: 'nav.links.services', href: '#services' },
-  { key: 'nav.links.workshops', href: '#workshops' },
-  { key: 'nav.links.resources', href: '#resources' },
-  { key: 'nav.links.community', href: '#community' },
-  { key: 'nav.links.contact', href: '#contact' },
+  { key: 'nav.links.services', href: null },
+  { key: 'nav.links.workshops', href: null },
+  { key: 'nav.links.resources', href: null },
+  { key: 'nav.links.community', href: null },
+  { key: 'nav.links.contact', href: null },
 ]
 
 const toggleLabel = computed(() => t('common.toggleLanguage'))
@@ -49,12 +49,16 @@ function closeDrawer() {
 
       <nav class="cca-navbar__links d-none d-md-flex" :aria-label="t('nav.ariaLabel')">
         <template v-for="link in navLinks" :key="link.key">
-          <router-link v-if="link.href.startsWith('/')" :to="link.href" class="cca-navbar__link">
+          <router-link
+            v-if="link.href && link.href.startsWith('/')"
+            :to="link.href"
+            class="cca-navbar__link"
+          >
             {{ t(link.key) }}
           </router-link>
-          <a v-else :href="link.href" class="cca-navbar__link">
+          <span v-else class="cca-navbar__link cca-navbar__link--disabled" aria-disabled="true">
             {{ t(link.key) }}
-          </a>
+          </span>
         </template>
       </nav>
 
@@ -75,7 +79,6 @@ function closeDrawer() {
           variant="flat"
           rounded="8"
           min-height="48"
-          href="#get-help"
           class="cca-navbar__cta d-none d-md-inline-flex"
         >
           {{ t('nav.cta') }}
@@ -109,8 +112,9 @@ function closeDrawer() {
       <v-list-item
         v-for="link in navLinks"
         :key="link.key"
-        :to="link.href.startsWith('/') ? link.href : undefined"
-        :href="link.href.startsWith('/') ? undefined : link.href"
+        :to="link.href && link.href.startsWith('/') ? link.href : undefined"
+        :href="link.href && !link.href.startsWith('/') ? link.href : undefined"
+        :disabled="!link.href"
         min-height="48"
         class="cca-navbar__drawer-link"
         @click="closeDrawer"
@@ -120,15 +124,7 @@ function closeDrawer() {
     </v-list>
 
     <div class="cca-navbar__drawer-cta pa-4">
-      <v-btn
-        color="primary"
-        variant="flat"
-        rounded="8"
-        min-height="48"
-        block
-        href="#get-help"
-        @click="closeDrawer"
-      >
+      <v-btn color="primary" variant="flat" rounded="8" min-height="48" block @click="closeDrawer">
         {{ t('nav.cta') }}
       </v-btn>
     </div>
@@ -194,6 +190,12 @@ function closeDrawer() {
 // instead of primary for the same reason as the hover/focus rule above.
 .cca-navbar__link.router-link-exact-active {
   border-bottom-color: rgb(var(--v-theme-clay));
+}
+
+.cca-navbar__link--disabled {
+  opacity: 0.45;
+  cursor: default;
+  pointer-events: none;
 }
 
 .cca-navbar__actions {
