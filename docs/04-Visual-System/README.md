@@ -65,7 +65,7 @@ These documents define **the visual language** of Coachella Computer Aid. Every 
 |---------|-------|--------|-----|
 | **Characters** | 6 | ✅ Documented | Throughout website and marketing |
 | **Hero Images** | 8–10 | 📋 Planned | Homepage, major sections |
-| **Service Graphics** | 10 | 📋 Planned | Services section |
+| **Service Graphics** | 11 | 📋 Planned | Services section |
 | **Icons** | 150+ | 📋 Planned | UI, navigation, features |
 | **Backgrounds** | 12–15 | 📋 Planned | Sections, locations, contexts |
 | **Other Illustrations** | 100+ | 📋 Planned | Community, workshops, devices, marketing |
