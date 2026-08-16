@@ -12,6 +12,15 @@ Core philosophy and approach:
 - "Pay What You Can" section
 - Success metrics
 
+### [Website Experience & Implementation Vision](Website-Experience-Vision.md)
+Guiding principles for building a website that feels alive:
+- The emotional experience of visiting
+- Building as a production-quality application
+- Animations and microinteractions
+- Human-centered design approach
+- Growth path across five phases
+- Key differentiators
+
 ### [Website Roadmap](Website-Roadmap.md)
 Features organized by phase:
 - **Phase 1:** Foundation website (MVP)

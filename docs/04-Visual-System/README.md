@@ -1,47 +1,55 @@
- Woo! Woo!# Visual System — Illustrations, Characters, Icons
+# Visual System — Illustrations, Characters, Icons
 
 This section contains the visual identity system that makes Coachella Computer Aid recognizable and consistent.
 
 ## 📄 Documents
 
-### [Illustration System](Illustration-System.md) *(Coming)*
-Complete guide to creating illustrations:
-- Style guide (warm, friendly, modern)
-- Color palette rules
-- Character usage guidelines
-- Illustration categories and counts
-- Quality standards
+### [Illustration Strategy](Illustration-Strategy.md)
+Philosophy and approach to building illustrations as a brand asset:
+- Why illustrations are critical to brand identity
+- Building a complete 300+ illustration library
+- Visual consistency principles
+- Character usage philosophy
+- Workflow overview
 
-### [Characters](Characters.md) *(Coming)*
-Meet our recurring cast:
-- **Robert** — Retired teacher, lifelong learner
-- **Maria** — Engaged senior, Spanish-speaking
-- **Ana** — Young volunteer, always helping
-- **David** — Works remotely, wheelchair user
-- **Helen** — Independent, loves connection
-- **Carlos** — Retired veteran
+### [Illustration Catalog](../06-Assets/Illustration-Catalog.md)
+Complete guide to every illustration needed by section:
+- Homepage sections (hero, mission, audiences, services, etc.)
+- Service-specific illustrations
+- Workshop locations
+- Character variations
+- Icon illustrations
+- Naming conventions
+- Generation workflow
 
-Each character includes visual specifications, personality, and where they appear.
+### [Character Placement Guide](Character-Placement-Guide.md)
+Detailed guide to our six recurring characters:
+- **Robert** — 72, retired teacher, blue cardigan, glasses
+- **Maria** — 68, orange cardigan, community-focused
+- **Ana** — 28, young volunteer, energetic, orange top
+- **David** — Wheelchair user, independent, capable
+- **Helen** — 76, independent, wise, protective
+- **Carlos** — Veteran, service-oriented, community-minded
 
-### [Icons Guide](Icons-Guide.md) *(Coming)*
-System of ~150 icons:
-- Icon categories (actions, devices, emotions, services, etc.)
-- Design specifications
-- Usage rules
-- Integration with website
+Includes where each character appears, variation strategies, and representation guidelines.
 
-### [Backgrounds](Backgrounds.md) *(Coming)*
-Environmental illustrations:
-- San Jacinto Mountains
-- Community locations
-- Interior spaces
-- Seasonal variations
+### [Icon Specifications](../06-Assets/Icon-Specifications.md)
+System of 150+ icons organized by category:
+- Technology icons (devices, networks, etc.)
+- Security & safety icons
+- Accessibility & inclusion icons
+- Calendar & workshop icons
+- Communication icons
+- Action & navigation icons
+- Usage guidelines, sizing, colors
 
-### [Service Graphics](Service-Graphics.md) *(Coming)*
-Visual representations of services:
-- Learn, Stay Connected, Stay Safe, Device Support
-- Illustrations for each service
-- How they appear on website
+### [Background Assets](../06-Assets/Background-Assets.md)
+Illustrations for scene settings and locations:
+- San Jacinto Mountains and desert elements
+- Location backgrounds (senior centers, libraries, churches, coffee shops)
+- Interior spaces (living room, home office, kitchen)
+- Community gathering spaces
+- Device usage scenarios
 
 ---
 
@@ -55,12 +63,12 @@ These documents define **the visual language** of Coachella Computer Aid. Every 
 
 | Element | Count | Status | Use |
 |---------|-------|--------|-----|
-| **Characters** | 6 | 📋 Documented | Throughout website and marketing |
-| **Hero Images** | 10 | 📋 Planned | Homepage, major sections |
-| **Service Graphics** | 40 | 📋 Planned | Services section |
-| **Icons** | 150 | 🔄 In Progress | UI, navigation, features |
-| **Backgrounds** | 25 | 📋 Planned | Sections, headers |
-| **Other Illustrations** | 79+ | 📋 Planned | Community, workshops, devices, marketing |
+| **Characters** | 6 | ✅ Documented | Throughout website and marketing |
+| **Hero Images** | 8–10 | 📋 Planned | Homepage, major sections |
+| **Service Graphics** | 10 | 📋 Planned | Services section |
+| **Icons** | 150+ | 📋 Planned | UI, navigation, features |
+| **Backgrounds** | 12–15 | 📋 Planned | Sections, locations, contexts |
+| **Other Illustrations** | 100+ | 📋 Planned | Community, workshops, devices, marketing |
 
 **Total Visual Assets:** 300+
 
@@ -68,10 +76,13 @@ These documents define **the visual language** of Coachella Computer Aid. Every 
 
 ## 📍 How to Use
 
-**For designers creating illustrations:** Read [[Illustration-System.md|Illustration System]] first  
-**For those needing character specs:** Check [[Characters.md|Characters]]  
-**For icon needs:** Reference [[Icons-Guide.md|Icons Guide]]  
-**For backgrounds:** See [[Backgrounds.md|Backgrounds]]
+**For designers creating illustrations:** Read [[Illustration-Strategy.md|Illustration Strategy]] first, then [[../06-Assets/Illustration-Catalog.md|Illustration Catalog]]
+
+**For understanding character usage:** Check [[Character-Placement-Guide.md|Character Placement Guide]]
+
+**For icon needs:** Reference [[../06-Assets/Icon-Specifications.md|Icon Specifications]]
+
+**For backgrounds:** See [[../06-Assets/Background-Assets.md|Background Assets]]
 
 ---
 
@@ -88,5 +99,5 @@ These documents define **the visual language** of Coachella Computer Aid. Every 
 
 ---
 
-**Status:** Visual System Planning  
-**Related Sections:** [[../../01-Project-Foundation/Brand-Bible.md|Brand Bible]] | [[../../03-Website-Design/Design-Language.md|Design Language]] | [[../../03-Website-Design/|Website Design]]
+**Status:** Visual System Documentation Complete  
+**Related Sections:** [[../../01-Project-Foundation/Brand-Bible.md|Brand Bible]] | [[../../03-Website-Design/Design-Language.md|Design Language]] | [[../../03-Website-Design/|Website Design]] | [[../06-Assets/|Assets]]
