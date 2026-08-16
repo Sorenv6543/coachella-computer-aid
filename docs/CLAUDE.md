@@ -145,7 +145,6 @@ docs/
 │   ├── Website-Strategy.md
 │   ├── Website-Roadmap.md
 │   ├── Website-Experience-Vision.md
-│   ├── DetailedAppAssetLocations.md
 │   ├── Homepage/Sections.md
 │   └── README.md
 │

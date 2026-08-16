@@ -4,15 +4,15 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this repository is
 
-Coachella Computer Aid (CCA) is a community tech-education nonprofit. This repo is currently **brand, planning, and asset production** for the CCA site — there is no scaffolded application yet. Concretely, that means:
+Coachella Computer Aid (CCA) is a community tech-education nonprofit. This repo holds both **brand/planning/asset production** for the CCA site and, as of the site scaffold + first homepage components landing, the **beginning of the actual Vue app**. Concretely, that means:
 
 - `docs/` — an Obsidian vault of planning docs (mission, strategy, design language, tech stack decisions). Numbered folders (`01-Project-Foundation` … `06-Assets`) form the intended reading order; `docs/README.md` is the hub, cross-linked via `[[wikilink]]`s.
-- `tools/illustrations/` — a Node.js pipeline that generates and tracks the site's 300-item illustration catalog (see below). This is the only real "build tooling" in the repo.
+- `tools/illustrations/` — a Node.js pipeline that generates and tracks the site's 300-item illustration catalog (see below). This is separate build tooling from the app itself.
 - `files/` — finished static HTML/PDF deliverables (Brand Bible, Character Poses, Illustration Library) built *from* the illustration catalog, for stakeholder review.
-- `src/assets/images/illustrations/` — the actual exported PNG assets, organized by category, that a future app would consume.
-- `.claude/agents/` — project subagents for building the eventual site (see Subagents below).
+- `src/` — the actual Vue app: `src/assets/images/illustrations/` holds the exported PNG assets organized by category; `src/components/`, `src/pages/`, `src/plugins/`, `src/router/`, `src/stores/`, `src/utils/`, `src/locales/` hold real app code (see Tech-Stack below). Don't assume `src/` is asset-only — check what's actually there.
+- `.claude/agents/` — project subagents for building the site (see Subagents below).
 
-The planned frontend stack (Vue 3 + Vite + Vuetify 4 + Pinia + Supabase — see `docs/05-Technical/Tech-Stack.md`) has not been implemented. Don't assume `src/` contains app code; it currently holds only image assets.
+The frontend stack (Vue 3 + Vite + Vuetify 4 + Pinia + Vue Router + vue-i18n — see `docs/05-Technical/Tech-Stack.md` and `docs/06-Assets/Architecture-Reference.md`) is scaffolded and buildable: `npm install && npm run dev`. Supabase is still planned, not wired up. Built so far: the app shell (`App.vue`, theme, i18n, routing) and the homepage `AppNavbar`/`HeroSection` components, with EN/ES copy and a passed accessibility audit. Most of the homepage (and the rest of the site) is still unbuilt — check `docs/03-Website-Design/Homepage/Sections.md`'s MVP priority ranking for what's next.
 
 There are two `CLAUDE.md` files in this repo with different scopes: this one (repo-wide dev workflow) and `docs/CLAUDE.md` (navigation guide for building the future site *from* the vault's brand/design docs — read that one when the task is "build a component" or "write copy," not "work on the illustration pipeline").
 
