@@ -378,7 +378,7 @@ This reputation becomes our most powerful marketing tool.
 - [[../../02-Strategy/Long-Term-Roadmap.md|Long-Term Roadmap]] — Phases and timeline
 - [[../../03-Website-Design/Website-Strategy.md|Website Strategy]] — How website supports outreach
 - [[../../01-Project-Foundation/Brand-Bible.md|Brand Bible]] — Voice and messaging
-- [[../Business-Model.md|Business Model]] — Pricing and sustainability
+- [[../Business-Model.md|Business Model]] *(Coming)* — Pricing and sustainability
 
 ---
 

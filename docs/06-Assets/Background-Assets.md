@@ -260,7 +260,7 @@ Current backgrounds needed (rough estimate):
 
 ## 🔗 Related Documents
 
-- [[Illustration-Strategy.md|Illustration Strategy]] — Overall philosophy
+- [[../04-Visual-System/Illustration-Strategy.md|Illustration Strategy]] — Overall philosophy
 - [[Illustration-Catalog.md|Illustration Catalog]] — All illustrations needed by section
 - [[../../03-Website-Design/Design-Language.md|Design Language]] — Color specifications, visual system
 - [[../../01-Project-Foundation/Brand-Bible.md|Brand Bible]] — Brand colors, aesthetic direction

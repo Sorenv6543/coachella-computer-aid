@@ -45,7 +45,7 @@ The entire organization looks professionally designed rather than assembled from
 
 ## 🎯 Illustration Categories
 
-See [[Illustration-Catalog.md|Illustration Catalog]] for detailed specifications by category.
+See [[../06-Assets/Illustration-Catalog.md|Illustration Catalog]] for detailed specifications by category.
 
 ### Core Categories
 
@@ -152,9 +152,9 @@ When regenerating character art:
 
 ## 🔗 Related Documents
 
-- [[Illustration-Catalog.md|Illustration Catalog]] — Complete specifications by category
+- [[../06-Assets/Illustration-Catalog.md|Illustration Catalog]] — Complete specifications by category
 - [[Character-Placement-Guide.md|Character Placement Guide]] — How/where to use recurring characters
-- [[Icon-Specifications.md|Icon Specifications]] — Custom icon requirements
+- [[../06-Assets/Icon-Specifications.md|Icon Specifications]] — Custom icon requirements
 - [[../../01-Project-Foundation/Brand-Bible.md|Brand Bible]] — Color palette and brand identity
 - [[../../tools/illustrations/README.md|Illustration Pipeline]] — Technical generation workflow
 

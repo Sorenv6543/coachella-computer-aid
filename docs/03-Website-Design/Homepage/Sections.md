@@ -12,6 +12,8 @@ The homepage is structured as a continuous story that guides visitors from aware
 
 ## 1️⃣ Navbar
 
+**Status:** ✅ Built — `src/components/shared/AppNavbar.vue`
+
 **Purpose:** Navigation and branding throughout the site
 
 ### Desktop Version
@@ -43,6 +45,8 @@ The homepage is structured as a continuous story that guides visitors from aware
 ---
 
 ## 2️⃣ Hero Section
+
+**Status:** ✅ Built — `src/components/home/Hero/HeroSection.vue`
 
 **Purpose:** Emotional hook — "I can get help here"
 
@@ -497,8 +501,8 @@ Each workshop card shows:
 ## 📊 Section Priority Ranking
 
 ### MVP (Must Have For Launch)
-1. Navbar
-2. Hero
+1. Navbar ✅ Built
+2. Hero ✅ Built
 3. Mission
 4. Who We Help
 5. Services
@@ -520,10 +524,10 @@ Each workshop card shows:
 
 - [[../Design-Language.md|Design Language]] — Colors, typography, components
 - [[../Website-Strategy.md|Website Strategy]] — Overall approach
-- [[../../04-Visual-System/Characters.md|Characters]] — Who appears in illustrations
+- [[../../04-Visual-System/Character-Placement-Guide.md|Characters]] — Who appears in illustrations
 - [[../../01-Project-Foundation/Brand-Bible.md|Brand Bible]] — Brand guidelines
 
 ---
 
-**Status:** Homepage Specifications  
-**Last Updated:** July 20, 2026
+**Status:** Homepage Specifications — Navbar & Hero built  
+**Last Updated:** August 16, 2026

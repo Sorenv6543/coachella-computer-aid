@@ -183,7 +183,7 @@ Everything we do follows these principles:
 ### For Developers
 1. Read [[../05-Technical/Tech-Stack.md|Tech Stack]]
 2. Review [[../03-Website-Design/Design-Language.md|Design Language]]
-3. Follow [[../05-Technical/Development-Plan.md|Development Plan]]
+3. Follow [[../05-Technical/Development-Plan.md|Development Plan]] *(Coming)* — meanwhile see [[../06-Assets/Architecture-Reference.md|Architecture Reference]] for the actual `src/` layout
 
 ### For Designers
 1. Study [[Brand-Bible.md|Brand Bible]]

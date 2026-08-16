@@ -301,7 +301,7 @@ Before publishing an illustration with characters:
 ## 🔗 Related Documents
 
 - [[Illustration-Strategy.md|Illustration Strategy]] — Overall approach, philosophy
-- [[Illustration-Catalog.md|Illustration Catalog]] — Detailed section-by-section needs
+- [[../06-Assets/Illustration-Catalog.md|Illustration Catalog]] — Detailed section-by-section needs
 - [[../../01-Project-Foundation/Brand-Bible.md|Brand Bible]] — Character descriptions, visual guidelines
 - [[../../tools/illustrations/README.md|Illustration Pipeline]] — Technical generation, reference images
 

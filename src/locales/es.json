@@ -1,11 +1,33 @@
 {
   "common": {
-    "toggleLanguage": "English"
+    "toggleLanguage": "English",
+    "toggleLanguageAriaLabel": "Cambiar a inglés",
+    "skipToContent": "Saltar al contenido principal"
+  },
+  "nav": {
+    "brand": "Coachella Computer Aid",
+    "brandAriaLabel": "Coachella Computer Aid, ir a la página de inicio",
+    "ariaLabel": "Navegación principal",
+    "menuToggle": "Abrir menú",
+    "menuClose": "Cerrar menú",
+    "cta": "Obtenga ayuda hoy",
+    "links": {
+      "home": "Inicio",
+      "services": "Servicios",
+      "workshops": "Talleres",
+      "resources": "Recursos",
+      "community": "Comunidad",
+      "contact": "Contacto"
+    }
   },
   "home": {
     "hero": {
-      "title": "Ayuda paciente y amable con su computadora",
-      "subtitle": "Pague lo que pueda. Vamos a su casa."
+      "title": "Por fin, ayuda con la tecnología que le tiene paciencia",
+      "subtitle": "Personas reales aquí mismo, en el Valle de Coachella, listas para ayudarle en persona o por videollamada, sin salir de casa.",
+      "body": "Ofrecemos ayuda personalizada, uno a uno, con teléfonos, tabletas y computadoras en todo el Valle de Coachella. Reúnase con nosotros en persona o por videollamada, lo que le resulte más fácil. Pague lo que pueda. Todos son bienvenidos.",
+      "ctaPrimary": "Obtenga ayuda hoy",
+      "ctaSecondary": "Explore los servicios",
+      "imageAlt": "Dos personas mayores sonriendo, sentadas juntas al aire libre, usando tabletas, con las montañas del desierto brillando cálidamente detrás de ellas."
     }
   }
 }

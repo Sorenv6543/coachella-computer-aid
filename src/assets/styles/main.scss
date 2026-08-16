@@ -16,6 +16,24 @@ h4,
   letter-spacing: -0.01em;
 }
 
+// Vuetify's default focus ring is a currentColor overlay at ~0.12-0.25
+// opacity, which measures ~1.5:1 against these brand button colors — far
+// under WCAG's 3:1 minimum for UI component focus indicators, and easy to
+// miss for a low-vision user tabbing through the page. Replace it with a
+// solid, high-contrast outline everywhere a Vuetify button/list-item can
+// receive focus, rather than patching it per-component.
+.v-btn:focus-visible::after,
+.v-list-item:focus-visible::after {
+  opacity: 1;
+  border: 2px solid rgb(var(--v-theme-clay));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .v-btn {
+    transition: none !important;
+  }
+}
+
 :root {
   --cca-space-1: 4px;
   --cca-space-2: 8px;

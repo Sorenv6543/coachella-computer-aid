@@ -201,7 +201,7 @@ Each workshop location gets its own illustration:
 
 ## 👥 Character Variations
 
-See [[Character-Placement-Guide.md|Character Placement Guide]] for detailed usage.
+See [[../04-Visual-System/Character-Placement-Guide.md|Character Placement Guide]] for detailed usage.
 
 ### Robert (72, retired teacher)
 - At computer (learning and teaching)
@@ -337,8 +337,8 @@ Character sheet exception: `<subject>-character-sheet.png` (not counted in catal
 
 ## 🔗 Related Documents
 
-- [[Illustration-Strategy.md|Illustration Strategy]] — Philosophy and approach
-- [[Character-Placement-Guide.md|Character Placement Guide]] — Where and how to use characters
+- [[../04-Visual-System/Illustration-Strategy.md|Illustration Strategy]] — Philosophy and approach
+- [[../04-Visual-System/Character-Placement-Guide.md|Character Placement Guide]] — Where and how to use characters
 - [[Icon-Specifications.md|Icon Specifications]] — Icon design requirements
 - [[Background-Assets.md|Background Assets]] — Background asset requirements
 - [[../../tools/illustrations/README.md|Illustration Pipeline]] — Technical generation workflow

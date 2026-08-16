@@ -20,6 +20,6 @@ describe('App', () => {
       global: { plugins: [vuetify, createPinia(), router, i18n] },
     })
 
-    expect(wrapper.text()).toContain('Patient, friendly help with your computer')
+    expect(wrapper.text()).toContain("Finally, technology help that's patient with you")
   })
 })

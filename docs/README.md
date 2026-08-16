@@ -17,7 +17,7 @@ Welcome! This vault contains all documentation for building Coachella Computer A
 
 #### **[02-Strategy](02-Strategy/README.md)**
 - **[Community Outreach](02-Strategy/Community-Outreach-Strategy.md)** — Services, workshops, and outreach channels
-- **[Business Model](02-Strategy/Business-Model.md)** — Pay-what-you-can model, sustainability
+- **[Business Model](02-Strategy/Business-Model.md)** *(Coming)* — Pay-what-you-can model, sustainability
 - **[Long-Term Roadmap](02-Strategy/Long-Term-Roadmap.md)** — Phases 1–5 and growth strategy
 
 #### **[03-Website-Design](03-Website-Design/README.md)**
@@ -26,9 +26,9 @@ Welcome! This vault contains all documentation for building Coachella Computer A
 - **[Website Experience & Implementation Vision](03-Website-Design/Website-Experience-Vision.md)** — Guiding principles for building the experience
 - **[Website Roadmap](03-Website-Design/Website-Roadmap.md)** — Feature phases and rollout plan
 - **[Homepage Blueprint](03-Website-Design/Homepage/)** — Detailed homepage sections and features
-  - [[Homepage/Sections.md|Sections]] — Hero, Mission, Services, etc.
-  - [[Homepage/Features.md|Features]] — Interactive elements and user stories
-  - [[Homepage/User-Stories.md|User Stories]] — Feature requirements by audience
+  - [[Homepage/Sections.md|Sections]] — Hero, Mission, Services, etc. (Navbar & Hero now built)
+  - [[Homepage/Features.md|Features]] *(Coming)* — Interactive elements and user stories
+  - [[Homepage/User-Stories.md|User Stories]] *(Coming)* — Feature requirements by audience
 
 #### **[04-Visual-System](04-Visual-System/README.md)**
 - **[Illustration Strategy](04-Visual-System/Illustration-Strategy.md)** — Philosophy, approach, and asset roadmap
@@ -39,8 +39,8 @@ Welcome! This vault contains all documentation for building Coachella Computer A
 
 #### **[05-Technical](05-Technical/README.md)**
 - **[Tech Stack](05-Technical/Tech-Stack.md)** — Vue 3, TypeScript, Vite, Vuetify, Supabase, etc.
-- **[Folder Structure](05-Technical/Folder-Structure.md)** — Recommended project layout
-- **[Development Plan](05-Technical/Development-Plan.md)** — Implementation strategy and best practices
+- **[Architecture Reference](06-Assets/Architecture-Reference.md)** — Actual `src/` folder structure (supersedes the old "Folder Structure (Coming)" placeholder)
+- **[Development Plan](05-Technical/Development-Plan.md)** *(Coming)* — Implementation strategy and best practices
 
 #### **[06-Assets](06-Assets/README.md)**
 - Illustrations
@@ -75,8 +75,8 @@ Welcome! This vault contains all documentation for building Coachella Computer A
 
 ### For Developers
 - Read **[Tech Stack](05-Technical/Tech-Stack.md)** first
-- Review **[Folder Structure](05-Technical/Folder-Structure.md)**
-- Follow **[Development Plan](05-Technical/Development-Plan.md)**
+- Review **[Architecture Reference](06-Assets/Architecture-Reference.md)** for the actual `src/` layout (the app is scaffolded and buildable — `npm run dev`/`build`/`test` all work)
+- Follow **[Development Plan](05-Technical/Development-Plan.md)** *(Coming)*
 - Reference **[Design Language](03-Website-Design/Design-Language.md)** for component requirements
 
 ---
@@ -89,9 +89,11 @@ Welcome! This vault contains all documentation for building Coachella Computer A
 - ✅ Design Language (visual principles, tone)
 - 🔄 Visual System (illustration library, characters, backgrounds)
 - 🔄 Vuetify Design System (theme, components)
-- 🔄 Homepage Blueprint (sections, wireframes)
+- 🔄 Homepage Blueprint (sections, wireframes) — Navbar and Hero are built (copy-reviewed EN/ES, accessibility-audited PASS); remaining sections still planned
 
-**Next:** Design System Implementation → Component Library → Development
+**Now in Development:** The Vue 3 + Vuetify 4 app is scaffolded and buildable. First two components shipped: `AppNavbar.vue` and `HeroSection.vue`, wired into the homepage.
+
+**Next:** Remaining homepage sections (Mission, Who We Help, Services, CTA, Footer) → Component Library → Full site
 
 ---
 
@@ -112,7 +114,7 @@ Welcome! This vault contains all documentation for building Coachella Computer A
 | **Background specs** | [[06-Assets/Background-Assets.md\|Background Assets]] |
 | **Source code structure** | [[06-Assets/Architecture-Reference.md\|Architecture Reference]] |
 | **What tech do we use?** | [[05-Technical/Tech-Stack.md\|Tech Stack]] |
-| **How do we build it?** | [[05-Technical/Development-Plan.md\|Development Plan]] |
+| **How do we build it?** | [[05-Technical/Development-Plan.md\|Development Plan]] *(Coming)* |
 
 ---
 
@@ -177,6 +179,6 @@ When adding new documentation, place it in the appropriate folder and update the
 
 ---
 
-**Last Updated:** July 20, 2026  
+**Last Updated:** August 16, 2026  
 **Maintained By:** Soren (Coachella Computer Aid)  
-**Status:** Active Development — Phase 1: Foundation
+**Status:** Active Development — Phase 1: Foundation (Navbar + Hero built)
