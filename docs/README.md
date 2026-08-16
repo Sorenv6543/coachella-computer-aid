@@ -22,19 +22,20 @@ Welcome! This vault contains all documentation for building Coachella Computer A
 
 #### **[03-Website-Design](03-Website-Design/README.md)**
 - **[Design Language](03-Website-Design/Design-Language.md)** — Visual principles, accessibility, tone
-- **[Website Roadmap](03-Website-Design/Website-Roadmap.md)** — Feature phases and rollout plan
 - **[Website Strategy](03-Website-Design/Website-Strategy.md)** — Content strategy and user experience
+- **[Website Experience & Implementation Vision](03-Website-Design/Website-Experience-Vision.md)** — Guiding principles for building the experience
+- **[Website Roadmap](03-Website-Design/Website-Roadmap.md)** — Feature phases and rollout plan
 - **[Homepage Blueprint](03-Website-Design/Homepage/)** — Detailed homepage sections and features
   - [[Homepage/Sections.md|Sections]] — Hero, Mission, Services, etc.
   - [[Homepage/Features.md|Features]] — Interactive elements and user stories
   - [[Homepage/User-Stories.md|User Stories]] — Feature requirements by audience
 
 #### **[04-Visual-System](04-Visual-System/README.md)**
-- **[Illustration System](04-Visual-System/Illustration-System.md)** — Character universe, style guide, asset roadmap
-- **[Characters](04-Visual-System/Characters.md)** — Robert, Maria, Ana, David, Helen, Carlos
-- **[Icons Guide](04-Visual-System/Icons-Guide.md)** — Icon library and usage
-- **[Backgrounds](04-Visual-System/Backgrounds.md)** — Mountain scenes, locations, environments
-- **[Service Graphics](04-Visual-System/Service-Graphics.md)** — Visual representations of services
+- **[Illustration Strategy](04-Visual-System/Illustration-Strategy.md)** — Philosophy, approach, and asset roadmap
+- **[Character Placement Guide](04-Visual-System/Character-Placement-Guide.md)** — Robert, Maria, Ana, David, Helen, Carlos usage
+- **[Illustration Catalog](06-Assets/Illustration-Catalog.md)** — Complete specifications for all illustrations
+- **[Icon Specifications](06-Assets/Icon-Specifications.md)** — 150+ icon library and design specs
+- **[Background Assets](06-Assets/Background-Assets.md)** — Mountain scenes, locations, environments
 
 #### **[05-Technical](05-Technical/README.md)**
 - **[Tech Stack](05-Technical/Tech-Stack.md)** — Vue 3, TypeScript, Vite, Vuetify, Supabase, etc.
@@ -55,8 +56,10 @@ Welcome! This vault contains all documentation for building Coachella Computer A
 ### For Claude (AI Assistant)
 - Start with **[Brand Bible](01-Project-Foundation/Brand-Bible.md)** for project context
 - Review **[Design Language](03-Website-Design/Design-Language.md)** before creating visual content
-- Check **[Illustration System](04-Visual-System/Illustration-System.md)** for character/visual consistency
-- Reference **[Tech Stack](05-Technical/Tech-Stack.md)** for development guidance
+- Check **[Illustration Strategy](04-Visual-System/Illustration-Strategy.md)** and **[Character Placement Guide](04-Visual-System/Character-Placement-Guide.md)** for character/visual consistency
+- Reference **[Illustration Catalog](06-Assets/Illustration-Catalog.md)** for detailed asset specifications
+- Explore **[Icon Specifications](06-Assets/Icon-Specifications.md)** and **[Background Assets](06-Assets/Background-Assets.md)** for visual assets
+- Check **[Tech Stack](05-Technical/Tech-Stack.md)** for development guidance
 - Use **[Community Outreach](02-Strategy/Community-Outreach-Strategy.md)** for content understanding
 
 ### For Content Writers
@@ -66,8 +69,8 @@ Welcome! This vault contains all documentation for building Coachella Computer A
 
 ### For Designers
 - Start with **[Design Language](03-Website-Design/Design-Language.md)**
-- Review **[Illustration System](04-Visual-System/Illustration-System.md)**
-- Study [[04-Visual-System/Characters.md|Characters]] and [[04-Visual-System/Backgrounds.md|Backgrounds]]
+- Review **[Illustration Strategy](04-Visual-System/Illustration-Strategy.md)** and **[Character Placement Guide](04-Visual-System/Character-Placement-Guide.md)**
+- Study **[Illustration Catalog](06-Assets/Illustration-Catalog.md)**, **[Icon Specifications](06-Assets/Icon-Specifications.md)**, and **[Background Assets](06-Assets/Background-Assets.md)**
 - Check **[Homepage Blueprint](03-Website-Design/Homepage/Sections.md)** for layout requirements
 
 ### For Developers
@@ -99,9 +102,15 @@ Welcome! This vault contains all documentation for building Coachella Computer A
 | **What is CCA?** | [[01-Project-Foundation/Brand-Bible.md\|Brand Bible]] |
 | **Who do we serve?** | [[02-Strategy/Community-Outreach-Strategy.md\|Outreach Strategy]] |
 | **What's the timeline?** | [[02-Strategy/Long-Term-Roadmap.md\|Long-Term Roadmap]] |
-| **How does the website work?** | [[03-Website-Design/Website-Strategy.md\|Website Strategy]] |
-| **What does it look like?** | [[03-Website-Design/Design-Language.md\|Design Language]] |
-| **Who are the characters?** | [[04-Visual-System/Characters.md\|Characters]] |
+| **Website feel & approach** | [[03-Website-Design/Website-Experience-Vision.md\|Experience Vision]] |
+| **Website content strategy** | [[03-Website-Design/Website-Strategy.md\|Website Strategy]] |
+| **Website visual specs** | [[03-Website-Design/Design-Language.md\|Design Language]] |
+| **Illustration strategy** | [[04-Visual-System/Illustration-Strategy.md\|Illustration Strategy]] |
+| **Character usage** | [[04-Visual-System/Character-Placement-Guide.md\|Character Placement]] |
+| **Illustration specifications** | [[06-Assets/Illustration-Catalog.md\|Illustration Catalog]] |
+| **Icon library** | [[06-Assets/Icon-Specifications.md\|Icon Specifications]] |
+| **Background specs** | [[06-Assets/Background-Assets.md\|Background Assets]] |
+| **Source code structure** | [[06-Assets/Architecture-Reference.md\|Architecture Reference]] |
 | **What tech do we use?** | [[05-Technical/Tech-Stack.md\|Tech Stack]] |
 | **How do we build it?** | [[05-Technical/Development-Plan.md\|Development Plan]] |
 

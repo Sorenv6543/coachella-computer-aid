@@ -26,12 +26,15 @@ This folder stores all visual and media assets for the Coachella Computer Aid pr
     └── Templates/           (Email, social, flyers)
 ```
 
-## 🎨 Illustration Guidelines
+## 📚 Asset Documentation
 
-Before adding any illustrations, review:
-- [[../04-Visual-System/Illustration-System.md|Illustration System]]
-- [[../04-Visual-System/Characters.md|Characters]]
-- [[../01-Project-Foundation/Brand-Bible.md|Brand Bible]]
+Before adding any illustrations or assets, review:
+- [[../04-Visual-System/Illustration-Strategy.md|Illustration Strategy]] — Philosophy and approach
+- [[Illustration-Catalog.md|Illustration Catalog]] — Complete specifications by section
+- [[../04-Visual-System/Character-Placement-Guide.md|Character Placement Guide]] — How to use characters
+- [[Icon-Specifications.md|Icon Specifications]] — Icon design requirements
+- [[Background-Assets.md|Background Assets]] — Background specifications
+- [[../01-Project-Foundation/Brand-Bible.md|Brand Bible]] — Brand colors and identity
 
 ### File Format
 - **SVG:** Preferred (scalable, animatable)
@@ -124,10 +127,10 @@ Before using any asset in the website:
 ### Before You Start
 1. Check existing assets — don't duplicate
 2. Review guidelines for the type:
-   - [[../04-Visual-System/Illustration-System.md|Illustrations]]
-   - [[../04-Visual-System/Characters.md|Characters]]
-   - [[../04-Visual-System/Icons-Guide.md|Icons]]
-   - [[../04-Visual-System/Backgrounds.md|Backgrounds]]
+   - [[../04-Visual-System/Illustration-Strategy.md|Illustrations]]
+   - [[../04-Visual-System/Character-Placement-Guide.md|Characters]]
+   - [[Icon-Specifications.md|Icons]]
+   - [[Background-Assets.md|Backgrounds]]
 3. Get approval on design/concept
 4. Create in appropriate software (Figma, Adobe, etc.)
 
@@ -142,7 +145,7 @@ Before using any asset in the website:
 ## 📞 Questions?
 
 For questions about asset creation, usage, or organization:
-- Check the style guide: [[../04-Visual-System/Illustration-System.md|Illustration System]]
+- Check the style guide: [[../04-Visual-System/Illustration-Strategy.md|Illustration Strategy]]
 - Review existing assets for examples
 - Ask the design lead or project manager
 

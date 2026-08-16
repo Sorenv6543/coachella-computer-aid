@@ -125,7 +125,7 @@ Claude has live access to Vuetify documentation via MCP. When building component
 ## 📚 Document Structure
 
 ```
-ccc/
+docs/
 ├── README.md (START HERE)
 ├── CLAUDE.md (this file)
 │
@@ -144,10 +144,14 @@ ccc/
 │   ├── Design-Language.md
 │   ├── Website-Strategy.md
 │   ├── Website-Roadmap.md
+│   ├── Website-Experience-Vision.md
+│   ├── DetailedAppAssetLocations.md
 │   ├── Homepage/Sections.md
 │   └── README.md
 │
 ├── 04-Visual-System/
+│   ├── Illustration-Strategy.md
+│   ├── Character-Placement-Guide.md
 │   └── README.md
 │
 ├── 05-Technical/
@@ -155,6 +159,10 @@ ccc/
 │   └── README.md
 │
 └── 06-Assets/
+    ├── Illustration-Catalog.md
+    ├── Architecture-Reference.md
+    ├── Background-Assets.md
+    ├── Icon-Specifications.md
     └── README.md
 ```
 
@@ -198,6 +206,6 @@ This project has everything documented. Use it. Reference it. Build with confide
 
 ---
 
-**Last Updated:** July 20, 2026  
 **Status:** Ready for development  
+**Keeping this current:** Use the `docs-sync` subagent after adding, moving, or renaming docs — it fixes broken wikilinks and updates this structure.  
 **Your next task:** Check [[README.md|the README]] for what you're building

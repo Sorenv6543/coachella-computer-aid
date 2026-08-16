@@ -306,6 +306,12 @@ The website should feel alive and current:
 
 ---
 
+## 🎨 Section Illustrations
+
+Each homepage section deserves its own illustration: Hero, Mission, Who We Help, Services, Workshops, Survey, Testimonials, CTA, Footer. See [[../04-Visual-System/Illustration-Strategy.md|Illustration Strategy]] for the full approach and [[Homepage/Sections.md|Homepage Sections]] for per-section specs.
+
+---
+
 ## 🔗 Related Documents
 
 - [[Design-Language.md|Design Language]] — Detailed design specifications
