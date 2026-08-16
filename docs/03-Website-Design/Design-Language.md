@@ -150,7 +150,7 @@ All website colors derive from our [[../../01-Project-Foundation/Brand-Bible.md|
 - **Max Size:** 1920×1440px
 
 ### Illustrations
-- **Style:** Per [[../../04-Visual-System/Illustration-System.md|Illustration System]]
+- **Style:** Per [[../../04-Visual-System/Illustration-Strategy.md|Illustration Strategy]]
 - **Colors:** Only brand palette colors
 - **Format:** SVG (preferred) or WebP
 - **Size:** Responsive, scales with container
@@ -303,7 +303,7 @@ If implemented:
 
 - [[../../01-Project-Foundation/Brand-Bible.md|Brand Bible]] — Color palette, typography, brand
 - [[Website-Strategy.md|Website Strategy]] — Tone and principles
-- [[../../04-Visual-System/Illustration-System.md|Illustration System]] — Image usage
+- [[../../04-Visual-System/Illustration-Strategy.md|Illustration Strategy]] — Image usage
 - [[../../05-Technical/Tech-Stack.md|Tech Stack]] — Implementation details
 
 ---

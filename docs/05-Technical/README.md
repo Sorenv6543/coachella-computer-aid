@@ -14,8 +14,9 @@ Complete technology choices:
 - Security & compliance
 - Performance targets
 
-### [Folder Structure](Folder-Structure.md) *(Coming)*
-Recommended project organization:
+### [Architecture Reference](../06-Assets/Architecture-Reference.md)
+The actual `src/` folder structure now shipping in the repo (supersedes the
+old "Folder Structure (Coming)" placeholder that used to live here):
 - Component structure
 - File naming conventions
 - Asset organization
@@ -43,8 +44,8 @@ They translate the design specifications ([[../../03-Website-Design/|Website Des
 ## 👨‍💻 For Developers
 
 1. **First read:** [[Tech-Stack.md|Tech Stack]] to understand technology choices
-2. **Then reference:** [[Folder-Structure.md|Folder Structure]] for how to organize code
-3. **Finally follow:** [[Development-Plan.md|Development Plan]] for step-by-step implementation
+2. **Then reference:** [[../06-Assets/Architecture-Reference.md|Architecture Reference]] for how the code is organized
+3. **Finally follow:** [[Development-Plan.md|Development Plan]] *(Coming)* for step-by-step implementation
 
 ### 📚 Claude Has Vuetify MCP Access!
 
@@ -65,12 +66,16 @@ Claude can look up live Vuetify documentation — no need to search!
 - Git
 - GitHub account
 
-### Setup (Coming Soon)
-- Clone repository
-- Install dependencies
-- Create .env file
-- Run local development server
-- Confirm setup with test
+### Setup
+The app is scaffolded and buildable — `package.json` has real scripts:
+- `npm run dev` — local development server (Vite)
+- `npm run build` — type-check (`vue-tsc`) + production build
+- `npm run test` — unit tests (Vitest)
+- `npm run lint` / `npm run format` — ESLint / Prettier
+
+See [[../06-Assets/Architecture-Reference.md|Architecture Reference]] for the
+`src/` layout. A full setup walkthrough (env vars, Supabase config, etc.) is
+still pending — see [[Development-Plan.md|Development Plan]] *(Coming)*.
 
 ### Development
 - Create feature branch

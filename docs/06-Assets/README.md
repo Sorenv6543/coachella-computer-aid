@@ -34,6 +34,7 @@ Before adding any illustrations or assets, review:
 - [[../04-Visual-System/Character-Placement-Guide.md|Character Placement Guide]] — How to use characters
 - [[Icon-Specifications.md|Icon Specifications]] — Icon design requirements
 - [[Background-Assets.md|Background Assets]] — Background specifications
+- [[Architecture-Reference.md|Architecture Reference]] — Actual `src/` folder structure and where assets land in code
 - [[../01-Project-Foundation/Brand-Bible.md|Brand Bible]] — Brand colors and identity
 
 ### File Format

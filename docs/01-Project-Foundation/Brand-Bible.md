@@ -253,7 +253,7 @@ Instead of random stock photos, we've created a recurring cast of characters. Pe
 
 ## 🖼️ Illustration System
 
-See [[04-Visual-System/Illustration-System.md|Illustration System]] for detailed guidelines.
+See [[04-Visual-System/Illustration-Strategy.md|Illustration Strategy]] for detailed guidelines.
 
 ### Illustration Style
 
@@ -430,8 +430,8 @@ If the answer isn't yes, redesign it.
 
 - [[01-Project-Foundation/Mission-Vision-Values.md|Mission & Vision (Detailed)]]
 - [[03-Website-Design/Design-Language.md|Design Language & Web Implementation]]
-- [[04-Visual-System/Illustration-System.md|Complete Illustration System]]
-- [[04-Visual-System/Characters.md|Character Profiles & Visual Specs]]
+- [[04-Visual-System/Illustration-Strategy.md|Complete Illustration Strategy]]
+- [[04-Visual-System/Character-Placement-Guide.md|Character Profiles & Visual Specs]]
 - [[05-Technical/Tech-Stack.md|Technical Implementation]]
 
 ---

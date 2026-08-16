@@ -353,8 +353,8 @@ src/
 
 ## 🔗 Related Documents
 
-- [[Folder-Structure.md|Folder Structure]] — Project organization
-- [[Development-Plan.md|Development Plan]] — How to build
+- [[../06-Assets/Architecture-Reference.md|Architecture Reference]] — Actual `src/` folder structure
+- [[Development-Plan.md|Development Plan]] *(Coming)* — How to build
 - [[../../03-Website-Design/Design-Language.md|Design Language]] — Visual specs
 - [[../../01-Project-Foundation/Brand-Bible.md|Brand Bible]] — Brand guidelines
 
