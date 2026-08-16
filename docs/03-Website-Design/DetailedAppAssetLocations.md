@@ -1,5 +1,7 @@
 # App Folder Structure
 
-The full `src/` folder structure is documented in the Architecture Reference.
+The authoritative source for the application's folder structure is:
 
-See [[../../06-Assets/Architecture-Reference.md|Architecture Reference]] for the complete, authoritative breakdown of all source directories, components, stores, router, composables, plugins, types, and utilities.
+**[`docs/06-Assets/Architecture-Reference.md`](../06-Assets/Architecture-Reference.md)**
+
+Refer to that document for the complete and up-to-date `src/` directory layout. Keeping a single source of truth prevents the two documents from drifting out of sync.
