@@ -22,7 +22,6 @@ const { t } = useI18n()
               rounded="8"
               size="large"
               min-height="48"
-              href="#get-help"
               class="cca-hero__cta-primary"
             >
               {{ t('home.hero.ctaPrimary') }}
@@ -33,7 +32,6 @@ const { t } = useI18n()
               rounded="8"
               size="large"
               min-height="48"
-              href="#services"
               class="cca-hero__cta-secondary"
             >
               {{ t('home.hero.ctaSecondary') }}
