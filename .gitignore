@@ -10,3 +10,11 @@ docs/.claudian/
 .env
 # Node modules
 node_modules/
+
+# Vite build output
+dist/
+dist-ssr/
+coverage/
+*.local
+.vite/
+*.tsbuildinfo

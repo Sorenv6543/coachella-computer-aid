@@ -1,0 +1,29 @@
+// Vuetify 4 turns CSS cascade layers on by default; unlayered rules always
+// beat layered ones regardless of import order, so plain overrides here
+// reliably win without @layer gymnastics or !important.
+.v-application {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+.v-card-title,
+.v-app-bar-title,
+.cca-display {
+  font-family: 'Archivo', sans-serif !important;
+  letter-spacing: -0.01em;
+}
+
+:root {
+  --cca-space-1: 4px;
+  --cca-space-2: 8px;
+  --cca-space-3: 12px;
+  --cca-space-4: 16px;
+  --cca-space-5: 24px;
+  --cca-space-6: 32px;
+  --cca-space-7: 48px;
+  --cca-space-8: 64px;
+  --cca-container-max: 1200px;
+}
