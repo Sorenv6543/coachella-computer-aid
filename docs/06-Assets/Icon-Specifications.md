@@ -11,7 +11,7 @@ All custom icons follow the same visual language:
 - **Consistent stroke weight** — All strokes same thickness
 - **Rounded corners** — Match the soft, approachable brand
 - **Flat design** — No gradients or shadows
-- **Brand colors only** — Use palette from [[../../01-Project-Foundation/Brand-Bible.md|Brand Bible]]
+- **Color application** — Design with the brand palette, but export SVGs as monochrome using `currentColor` so the UI can apply brand colors via CSS/theme.
 - **Scalable** — Works at 16px, 24px, 32px, 48px, and larger
 - **Meaningful** — Clear visual metaphor for what they represent
 - **Accessible** — Sufficient contrast, clear at all sizes
