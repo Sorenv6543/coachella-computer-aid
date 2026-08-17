@@ -20,8 +20,8 @@ export default defineConfig({
     middlewareMode: false,
   },
   build: {
-    sourcemap: true,
-  },
+    sourcemap: process.env.VITE_SOURCEMAP === 'true',
+  }
   test: {
     environment: 'happy-dom',
     css: true,
