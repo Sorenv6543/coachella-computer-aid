@@ -28,6 +28,12 @@
       "ctaPrimary": "Get Help Today",
       "ctaSecondary": "Explore Services",
       "imageAlt": "Two smiling seniors sitting together outdoors, using tablets, with the desert mountains glowing warmly behind them."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "quote": "Technology should connect people, not leave them behind.",
+      "body": "We take the time to explain things clearly, and we never rush you or make you feel silly for asking a question twice. Every session moves at your own pace, and every question is welcome.",
+      "imageAlt": "The six Coachella Computer Aid regulars standing together smiling: two older women, an older man, a veteran, a young volunteer, and a man using a wheelchair, all warmly lit against a desert backdrop."
     }
   }
 }
