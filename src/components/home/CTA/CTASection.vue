@@ -13,7 +13,7 @@ const { t } = useI18n()
         </h2>
         <p class="cca-cta__body">{{ t('home.cta.body') }}</p>
         <div class="cca-cta__ctas">
-          <v-btn
+          <v-btn href="#cca-services-heading"
             color="surface"
             variant="flat"
             rounded="8"
