@@ -18,3 +18,10 @@ coverage/
 *.local
 .vite/
 *.tsbuildinfo
+
+# Illustration pipeline scratch output — reproducible from manifest.json +
+# picks.json, never final assets. See tools/illustrations/prompts/README.md.
+tools/illustrations/prompts/candidates/
+tools/illustrations/prompts/prompts-all-*.md
+tools/illustrations/**/*.generated.js
+tools/illustrations/**/*.generated.json
