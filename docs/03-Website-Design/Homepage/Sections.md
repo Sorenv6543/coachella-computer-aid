@@ -156,6 +156,8 @@ Each card includes:
 
 ## 5️⃣ Services Section
 
+**Status:** ✅ Built — `src/components/home/Services/ServicesSection.vue` + `ServiceCard.vue`
+
 **Purpose:** Explain what we do (in human terms, not technical)
 
 ### Layout
@@ -509,7 +511,7 @@ Each workshop card shows:
 2. Hero ✅ Built
 3. Mission ✅ Built
 4. Who We Help ✅ Built
-5. Services
+5. Services ✅ Built
 6. CTA
 7. Footer
 
@@ -533,5 +535,5 @@ Each workshop card shows:
 
 ---
 
-**Status:** Homepage Specifications — Navbar, Hero, Mission & Who We Help built  
+**Status:** Homepage Specifications — Navbar, Hero, Mission, Who We Help & Services built  
 **Last Updated:** August 16, 2026
