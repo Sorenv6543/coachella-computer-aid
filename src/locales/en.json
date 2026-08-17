@@ -86,6 +86,28 @@
           "description": "Help when your devices need fixing — Wi-Fi problems, printer setup, and getting a slow computer running smoothly again."
         }
       }
+    },
+    "howItWorks": {
+      "title": "How It Works",
+      "intro": "Getting help is simple — just four friendly steps, and we're with you the whole way.",
+      "steps": {
+        "contactUs": {
+          "title": "Contact Us",
+          "description": "Call, fill out a form, or visit us in person. No complicated process."
+        },
+        "weListen": {
+          "title": "We Listen",
+          "description": "We ask about what you're trying to learn and what makes you comfortable."
+        },
+        "weTeach": {
+          "title": "We Teach",
+          "description": "Patient, judgment-free help at your pace. We explain clearly."
+        },
+        "youSucceed": {
+          "title": "You Succeed",
+          "description": "Learn skills you can use forever. Feel confident with your devices."
+        }
+      }
     }
   }
 }

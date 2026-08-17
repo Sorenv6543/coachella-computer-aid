@@ -86,6 +86,28 @@
           "description": "Ayuda cuando sus dispositivos necesitan reparación: problemas de Wi-Fi, instalación de impresoras y hacer que una computadora lenta vuelva a funcionar bien otra vez."
         }
       }
+    },
+    "howItWorks": {
+      "title": "Cómo funciona",
+      "intro": "Pedir ayuda es muy sencillo: son solo cuatro pasos, y le acompañamos en todo el camino.",
+      "steps": {
+        "contactUs": {
+          "title": "Contáctenos",
+          "description": "Llámenos, llene un formulario o visítenos en persona. Sin trámites complicados."
+        },
+        "weListen": {
+          "title": "Le escuchamos",
+          "description": "Le preguntamos qué le gustaría aprender y qué le hace sentir más a gusto."
+        },
+        "weTeach": {
+          "title": "Le enseñamos",
+          "description": "Ayuda paciente y sin juicios, a su propio ritmo. Le explicamos con claridad."
+        },
+        "youSucceed": {
+          "title": "Usted lo logra",
+          "description": "Aprenda destrezas que le durarán toda la vida y siéntase seguro con sus dispositivos."
+        }
+      }
     }
   }
 }
