@@ -21,7 +21,7 @@ export default defineConfig({
   },
   build: {
     sourcemap: process.env.VITE_SOURCEMAP === 'true',
-  }
+  },
   test: {
     environment: 'happy-dom',
     css: true,
