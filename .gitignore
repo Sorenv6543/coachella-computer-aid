@@ -18,3 +18,4 @@ coverage/
 *.local
 .vite/
 *.tsbuildinfo
+*.generated.js
