@@ -3,6 +3,7 @@ import HeroSection from '@/components/home/Hero/HeroSection.vue'
 import MissionSection from '@/components/home/Mission/MissionSection.vue'
 import WhoWeHelpSection from '@/components/home/Audience/WhoWeHelpSection.vue'
 import ServicesSection from '@/components/home/Services/ServicesSection.vue'
+import HowItWorksSection from '@/components/home/HowItWorks/HowItWorksSection.vue'
 import CTASection from '@/components/home/CTA/CTASection.vue'
 </script>
 
@@ -11,5 +12,6 @@ import CTASection from '@/components/home/CTA/CTASection.vue'
   <MissionSection />
   <WhoWeHelpSection />
   <ServicesSection />
+  <HowItWorksSection />
   <CTASection />
 </template>
