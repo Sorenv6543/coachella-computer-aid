@@ -86,6 +86,12 @@
           "description": "Ayuda cuando sus dispositivos necesitan reparación: problemas de Wi-Fi, instalación de impresoras y hacer que una computadora lenta vuelva a funcionar bien otra vez."
         }
       }
+    },
+    "cta": {
+      "title": "¿Listo para comenzar?",
+      "body": "Cuando esté listo, estamos a solo un mensaje o llamada de distancia.",
+      "ctaPrimary": "Obtenga ayuda hoy",
+      "ctaSecondary": "Explore los servicios"
     }
   }
 }

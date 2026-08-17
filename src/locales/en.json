@@ -86,6 +86,12 @@
           "description": "Help when your devices need fixing — Wi-Fi problems, printer setup, and getting a slow computer running smoothly again."
         }
       }
+    },
+    "cta": {
+      "title": "Ready to Get Started?",
+      "body": "Whenever you're ready, we're just a message or call away.",
+      "ctaPrimary": "Get Help Today",
+      "ctaSecondary": "Explore Services"
     }
   }
 }
