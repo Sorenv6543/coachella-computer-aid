@@ -34,6 +34,36 @@
       "quote": "La tecnología debe unir a las personas, no dejarlas atrás.",
       "body": "Nos tomamos el tiempo para explicarle las cosas con claridad, y nunca le apuramos ni le hacemos sentir pena por preguntar lo mismo dos veces. Cada sesión avanza a su propio ritmo, y aquí toda pregunta es bienvenida.",
       "imageAlt": "Los seis integrantes habituales de Coachella Computer Aid de pie juntos y sonriendo: dos mujeres mayores, un hombre mayor, un veterano, una joven voluntaria y un hombre que usa silla de ruedas, todos iluminados cálidamente frente a un paisaje desértico."
+    },
+    "whoWeHelp": {
+      "title": "A quién ayudamos",
+      "intro": "No importa desde dónde empiece, aquí hay un lugar para usted.",
+      "audiences": {
+        "seniors": {
+          "title": "Adultos mayores",
+          "description": "Manténgase en contacto con su familia, evite fraudes y aprenda a su propio ritmo."
+        },
+        "disabilities": {
+          "title": "Personas con discapacidad",
+          "description": "Tecnología accesible y herramientas adaptadas, configuradas de la manera que mejor le funcione."
+        },
+        "spanishSpeakingFamilies": {
+          "title": "Familias de habla hispana",
+          "description": "Reciba ayuda completamente en español, con el respeto y cariño que su cultura merece."
+        },
+        "veterans": {
+          "title": "Veteranos",
+          "description": "Le ayudamos con sus beneficios de VA en línea, sus citas médicas por video y cualquier duda de tecnología en el camino."
+        },
+        "lowIncomeFamilies": {
+          "title": "Familias de bajos recursos",
+          "description": "Pague lo que pueda, y le ayudamos a encontrar dispositivos económicos, porque el costo nunca debe ser un obstáculo."
+        },
+        "everyone": {
+          "title": "Cualquiera que necesite ayuda",
+          "description": "Tenga 18 o 98 años, si la tecnología le resulta confusa, aquí estamos para ayudarle."
+        }
+      }
     }
   }
 }

@@ -118,6 +118,8 @@ The homepage is structured as a continuous story that guides visitors from aware
 
 ## 4️⃣ Who We Help Section
 
+**Status:** ✅ Built — `src/components/home/Audience/WhoWeHelpSection.vue` + `AudienceCard.vue`
+
 **Purpose:** Help visitors see themselves in the message
 
 ### Layout
@@ -129,7 +131,7 @@ The homepage is structured as a continuous story that guides visitors from aware
 Each card includes:
 - **Icon or small illustration**
 - **Title:** (20px, bold)
-- **Description:** (14px, lighter)
+- **Description:** (16px — matches [[../Design-Language.md|Design Language]]'s general Body row; kept at the 16px floor rather than a smaller caption size for readability with CCA's older/low-vision audience, confirmed correct by accessibility audit)
 - Example: "Seniors learning video calls"
 
 ### Audiences
@@ -506,7 +508,7 @@ Each workshop card shows:
 1. Navbar ✅ Built
 2. Hero ✅ Built
 3. Mission ✅ Built
-4. Who We Help
+4. Who We Help ✅ Built
 5. Services
 6. CTA
 7. Footer
@@ -531,5 +533,5 @@ Each workshop card shows:
 
 ---
 
-**Status:** Homepage Specifications — Navbar, Hero & Mission built  
+**Status:** Homepage Specifications — Navbar, Hero, Mission & Who We Help built  
 **Last Updated:** August 16, 2026

@@ -34,6 +34,36 @@
       "quote": "Technology should connect people, not leave them behind.",
       "body": "We take the time to explain things clearly, and we never rush you or make you feel silly for asking a question twice. Every session moves at your own pace, and every question is welcome.",
       "imageAlt": "The six Coachella Computer Aid regulars standing together smiling: two older women, an older man, a veteran, a young volunteer, and a man using a wheelchair, all warmly lit against a desert backdrop."
+    },
+    "whoWeHelp": {
+      "title": "Who We Help",
+      "intro": "Wherever you're starting from, there's a place for you here.",
+      "audiences": {
+        "seniors": {
+          "title": "Senior Citizens",
+          "description": "Stay connected with family, avoid scams, and learn at a comfortable pace."
+        },
+        "disabilities": {
+          "title": "People with Disabilities",
+          "description": "Accessible technology and adaptive tools, set up the way that works for you."
+        },
+        "spanishSpeakingFamilies": {
+          "title": "Spanish-Speaking Families",
+          "description": "Bilingual support that respects your language and your culture."
+        },
+        "veterans": {
+          "title": "Veterans",
+          "description": "Help navigating your VA benefits online, video doctor visits, and any technology questions along the way."
+        },
+        "lowIncomeFamilies": {
+          "title": "Low-Income Families",
+          "description": "Pay what you can, plus help finding affordable devices — because cost should never be the barrier."
+        },
+        "everyone": {
+          "title": "Anyone Needing Help",
+          "description": "Whether you're 18 or 98, if technology feels confusing, we're here to help."
+        }
+      }
     }
   }
 }

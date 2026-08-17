@@ -56,10 +56,23 @@ All website colors derive from our [[../../01-Project-Foundation/Brand-Bible.md|
 | **H1** | 48px | 700 | 1.2 | Page titles, hero headlines |
 | **H2** | 36px | 700 | 1.3 | Section headings |
 | **H3** | 28px | 600 | 1.4 | Subsection headings |
-| **H4** | 24px | 600 | 1.4 | Card titles |
+| **H4** | 24px | 600 | 1.4 | Card titles (cards nested two levels below an H1 — see note) |
 | **Body** | 16px | 400 | 1.6 | Main text content |
 | **Small** | 14px | 400 | 1.5 | Captions, labels |
 | **Tiny** | 12px | 400 | 1.4 | Footnotes, metadata |
+
+> **Note on card-title heading level (2026-08-16):** The table's "H4 = 24px"
+> row is generic guidance and assumes a card is nested two levels below the
+> page H1 (e.g., H1 > H2 section > H3 subsection > H4 card). Where a card
+> grid sits *directly* inside a homepage section's H2 (no intervening H3),
+> the card title should be an H3 to avoid skipping a heading level — and at
+> that shallower nesting depth, 20px/700 is the correct size/weight, not
+> 24px/600. This is what's actually implemented for the Who We Help section
+> cards (`AudienceCard.vue`, `<h3>` at 20px/700, directly under the section's
+> `<h2>`), matching the section-specific spec in
+> [[Homepage/Sections.md|Homepage Sections]]. Use judgment on nesting depth
+> per section rather than reading H4/24px as a universal rule for all card
+> titles.
 
 ### Responsive Typography
 - **Mobile (320px):** Scale down to 14px body, 36px H1
@@ -116,7 +129,7 @@ All website colors derive from our [[../../01-Project-Foundation/Brand-Bible.md|
 
 ### Cards
 - **Background:** White (#FFFFFF)
-- **Border:** 1px Sand (#F8E9D5)
+- **Border:** 1px Clay (#B95E23) — *Decision (2026-08-16):* Sand (#F8E9D5) was the original spec, but it measures only ~1.1–1.2:1 contrast against both the white card and cream page background (effectively invisible), failing WCAG 1.4.11's 3:1 non-text minimum. Clay measures 4.48:1 on white and is the canonical replacement, first shipped in `AudienceCard.vue`.
 - **Border Radius:** 12px
 - **Shadow:** 0px 4px 12px rgba(0,0,0,0.08)
 - **Hover Shadow:** 0px 8px 20px rgba(0,0,0,0.12)
@@ -310,4 +323,4 @@ If implemented:
 
 **Status:** Design Language Active  
 **Compliance:** WCAG AA  
-**Last Updated:** July 20, 2026
+**Last Updated:** August 16, 2026
