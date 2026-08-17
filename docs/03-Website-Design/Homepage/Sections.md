@@ -84,6 +84,8 @@ The homepage is structured as a continuous story that guides visitors from aware
 
 ## 3️⃣ Mission Section
 
+**Status:** ✅ Built — `src/components/home/Mission/MissionSection.vue`
+
 **Purpose:** Build trust by explaining why we exist
 
 ### Layout
@@ -503,7 +505,7 @@ Each workshop card shows:
 ### MVP (Must Have For Launch)
 1. Navbar ✅ Built
 2. Hero ✅ Built
-3. Mission
+3. Mission ✅ Built
 4. Who We Help
 5. Services
 6. CTA
@@ -529,5 +531,5 @@ Each workshop card shows:
 
 ---
 
-**Status:** Homepage Specifications — Navbar & Hero built  
+**Status:** Homepage Specifications — Navbar, Hero & Mission built  
 **Last Updated:** August 16, 2026

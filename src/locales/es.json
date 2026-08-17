@@ -28,6 +28,12 @@
       "ctaPrimary": "Obtenga ayuda hoy",
       "ctaSecondary": "Explore los servicios",
       "imageAlt": "Dos personas mayores sonriendo, sentadas juntas al aire libre, usando tabletas, con las montañas del desierto brillando cálidamente detrás de ellas."
+    },
+    "mission": {
+      "title": "Nuestra Misión",
+      "quote": "La tecnología debe unir a las personas, no dejarlas atrás.",
+      "body": "Nos tomamos el tiempo para explicarle las cosas con claridad, y nunca le apuramos ni le hacemos sentir pena por preguntar lo mismo dos veces. Cada sesión avanza a su propio ritmo, y aquí toda pregunta es bienvenida.",
+      "imageAlt": "Los seis integrantes habituales de Coachella Computer Aid de pie juntos y sonriendo: dos mujeres mayores, un hombre mayor, un veterano, una joven voluntaria y un hombre que usa silla de ruedas, todos iluminados cálidamente frente a un paisaje desértico."
     }
   }
 }
