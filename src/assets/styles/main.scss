@@ -22,10 +22,20 @@ h4,
 // miss for a low-vision user tabbing through the page. Replace it with a
 // solid, high-contrast outline everywhere a Vuetify button/list-item can
 // receive focus, rather than patching it per-component.
+//
+// Charcoal (on-surface) clears 3:1 against every brand background
+// (cream/sand/white/orange all measure 6:1+), so it's a safe single color
+// site-wide — but our buttons already carry a 2px charcoal border, so a
+// ring drawn flush against that edge is indistinguishable from "nothing
+// happened." `outline-offset` pushes the ring 3px clear of the button so
+// the background shows through as a visible gap, making it read as an
+// added indicator rather than blending into the button's own border.
 .v-btn:focus-visible::after,
 .v-list-item:focus-visible::after {
   opacity: 1;
-  border: 2px solid rgb(var(--v-theme-clay));
+  border: none;
+  outline: 2px solid rgb(var(--v-theme-on-surface));
+  outline-offset: 3px;
 }
 
 @media (prefers-reduced-motion: reduce) {
