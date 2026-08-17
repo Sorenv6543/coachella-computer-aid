@@ -64,6 +64,28 @@
           "description": "Tenga 18 o 98 años, si la tecnología le resulta confusa, aquí estamos para ayudarle."
         }
       }
+    },
+    "services": {
+      "title": "Nuestros servicios",
+      "intro": "Cuatro maneras en que le ayudamos, explicadas en términos sencillos y sin palabras técnicas complicadas.",
+      "items": {
+        "learn": {
+          "title": "Aprenda tecnología",
+          "description": "Le enseñamos uno a uno, a su propio ritmo: lo básico del teléfono, los fundamentos de la computadora y cómo sentirse a gusto en línea."
+        },
+        "stayConnected": {
+          "title": "Manténgase en contacto",
+          "description": "Le ayudamos a mantenerse en contacto con sus seres queridos: videollamadas, correo electrónico y redes sociales."
+        },
+        "staySafe": {
+          "title": "Protéjase",
+          "description": "Protección contra estafas y fraudes: cómo reconocer correos electrónicos sospechosos, mantener sus contraseñas seguras y proteger su identidad."
+        },
+        "deviceSupport": {
+          "title": "Ayuda con sus dispositivos",
+          "description": "Ayuda cuando sus dispositivos necesitan reparación: problemas de Wi-Fi, instalación de impresoras y hacer que una computadora lenta vuelva a funcionar bien otra vez."
+        }
+      }
     }
   }
 }

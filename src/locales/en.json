@@ -64,6 +64,28 @@
           "description": "Whether you're 18 or 98, if technology feels confusing, we're here to help."
         }
       }
+    },
+    "services": {
+      "title": "Our Services",
+      "intro": "Four ways we support you, explained in plain terms — not tech jargon.",
+      "items": {
+        "learn": {
+          "title": "Learn Technology",
+          "description": "One-on-one teaching at your own pace — phone basics, computer fundamentals, and getting comfortable online."
+        },
+        "stayConnected": {
+          "title": "Stay Connected",
+          "description": "Help connecting with loved ones — video calls, email, and social media."
+        },
+        "staySafe": {
+          "title": "Stay Safe",
+          "description": "Protection from scams and fraud — spotting scam emails, keeping passwords safe, and protecting your identity."
+        },
+        "deviceSupport": {
+          "title": "Device Support",
+          "description": "Help when your devices need fixing — Wi-Fi problems, printer setup, and getting a slow computer running smoothly again."
+        }
+      }
     }
   }
 }
