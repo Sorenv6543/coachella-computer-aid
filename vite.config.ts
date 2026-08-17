@@ -16,6 +16,12 @@ export default defineConfig({
     __VUE_I18N_LEGACY_API__: false,
     __INTLIFY_PROD_DEVTOOLS__: false,
   },
+  server: {
+    middlewareMode: false,
+  },
+  build: {
+    sourcemap: process.env.VITE_SOURCEMAP === 'true',
+  },
   test: {
     environment: 'happy-dom',
     css: true,
