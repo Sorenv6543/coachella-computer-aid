@@ -109,6 +109,14 @@
         }
       }
     },
+    "payWhatYouCan": {
+      "title": "Todos merecen ayuda",
+      "subheading": "Pague lo que pueda",
+      "intro": "La tecnología no debería ser un lujo. Así es como funciona:",
+      "perSessionLabel": "por sesión",
+      "sliderAriaLabel": "Elija la cantidad que desea pagar por sesión, de $0 a $75 dólares.",
+      "supportingText": "Si puede contribuir, gracias — nos ayuda a seguir aquí para nuestros vecinos. Si no puede, de todas formas estamos aquí para usted. Esto es apoyo comunitario, no caridad."
+    },
     "cta": {
       "title": "¿Listo para comenzar?",
       "body": "Cuando esté listo, estamos a solo un mensaje o llamada de distancia.",

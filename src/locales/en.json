@@ -109,6 +109,14 @@
         }
       }
     },
+    "payWhatYouCan": {
+      "title": "Everyone Deserves Help",
+      "subheading": "Pay What You Can",
+      "intro": "Technology shouldn't be a luxury. Here's how it works:",
+      "perSessionLabel": "per session",
+      "sliderAriaLabel": "Choose the amount you'd like to pay per session, from $0 to $75.",
+      "supportingText": "If you're able to contribute, thank you — it helps us stay here for our neighbors. If not, we're still here for you. This is community care, not charity."
+    },
     "cta": {
       "title": "Ready to Get Started?",
       "body": "Whenever you're ready, we're just a message or call away.",
