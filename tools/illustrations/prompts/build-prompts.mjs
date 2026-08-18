@@ -40,6 +40,11 @@ const FRAME = {
 };
 const AR = {characters:'1:1',hero:'16:9',service:'4:3',community:'4:3',workshop:'4:3',device:'1:1',background:'16:9',marketing:'4:3',ui:'4:3',icon:'1:1'};
 
+// short comma-tag form of FRAME.icon for Midjourney — the Gemini version above is
+// prose (sentences, ALL-CAPS emphasis) that reads fine as natural-language
+// instructions but breaks Midjourney's terse comma-separated tag convention
+const FRAME_MJ_ICON = 'single simple icon glyph on a solid warm card background (cream, sand, or orange), never transparent, never checkerboard, never black, no scene or props beyond the symbol, thick rounded strokes, one or two palette colors, flat';
+
 let items = manifest;
 if (CAT) items = items.filter(i=>i.category===CAT);
 if (LIMIT) items = items.slice(0, Number(LIMIT));
@@ -50,7 +55,9 @@ function gemini(it){
 }
 function midjourney(it){
   const v = VARIANTS>1 ? '' : ''; // MJ always returns 4
-  return `${it.description}, ${FRAME[it.category]}, warm flat vector illustration, rounded soft shapes, warm golden lighting, palette cream F4A259 F8E9D5 B95E23 78B8D9 8BAE7B, flat design --ar ${AR[it.category]} --no text logo photorealism dark`;
+  const frame = it.category === 'icon' ? FRAME_MJ_ICON : FRAME[it.category];
+  const noList = it.category === 'icon' ? 'text logo photorealism dark transparency checkerboard' : 'text logo photorealism dark';
+  return `${it.description}, ${frame}, warm flat vector illustration, rounded soft shapes, warm golden lighting, palette cream F4A259 F8E9D5 B95E23 78B8D9 8BAE7B, flat design --ar ${AR[it.category]} --no ${noList}`;
 }
 const fmt = TOOL==='midjourney'?midjourney:gemini;
 

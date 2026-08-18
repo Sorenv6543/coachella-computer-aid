@@ -1,5 +1,5 @@
 # CCA Illustration Prompts — gemini
-# 300 prompts · style per STYLE-LOCK.md spec (hardcoded in this script) · generated 2026-08-17
+# 304 prompts · style per STYLE-LOCK.md spec (hardcoded in this script) · generated 2026-08-18
 
 
 ## CHARACTERS
@@ -155,6 +155,26 @@ Warm friendly flat vector illustration, rounded soft shapes, gentle flat shading
 ### #110 · About page · mission
 ```
 Warm friendly flat vector illustration, rounded soft shapes, gentle flat shading, warm golden lighting, uncluttered. Palette only: cream #FDF6EC, sand #F8E9D5, orange #F4A259, clay #B95E23, sky #78B8D9, sage #8BAE7B, charcoal #343434. No text, no logos, not photorealistic, no dark or cold tones. Subject: The patience-while-teaching moment. Ana with Maria at table. wide 16:9 cinematic scene with San Jacinto mountains and desert light, space for overlay text. Generate 3 distinct variations.
+```
+
+### #111 · San Jacinto Mountains · alt
+```
+Warm friendly flat vector illustration, rounded soft shapes, gentle flat shading, warm golden lighting, uncluttered. Palette only: cream #FDF6EC, sand #F8E9D5, orange #F4A259, clay #B95E23, sky #78B8D9, sage #8BAE7B, charcoal #343434. No text, no logos, not photorealistic, no dark or cold tones. Subject: Desert panorama, golden hour, winding path, saguaros and palms flanking both sides. No characters. wide 16:9 cinematic scene with San Jacinto mountains and desert light, space for overlay text. Generate 3 distinct variations.
+```
+
+### #112 · Palm + cactus frame
+```
+Warm friendly flat vector illustration, rounded soft shapes, gentle flat shading, warm golden lighting, uncluttered. Palette only: cream #FDF6EC, sand #F8E9D5, orange #F4A259, clay #B95E23, sky #78B8D9, sage #8BAE7B, charcoal #343434. No text, no logos, not photorealistic, no dark or cold tones. Subject: Coconut palms framing left and right, cactus in foreground, mountains centered beyond a sandy path. Ultra-wide crop. wide 16:9 cinematic scene with San Jacinto mountains and desert light, space for overlay text. Generate 3 distinct variations.
+```
+
+### #113 · Palms lining the path
+```
+Warm friendly flat vector illustration, rounded soft shapes, gentle flat shading, warm golden lighting, uncluttered. Palette only: cream #FDF6EC, sand #F8E9D5, orange #F4A259, clay #B95E23, sky #78B8D9, sage #8BAE7B, charcoal #343434. No text, no logos, not photorealistic, no dark or cold tones. Subject: Row of palms on both sides of a winding desert path, flowering cacti in foreground, soft mountains beyond. No characters. wide 16:9 cinematic scene with San Jacinto mountains and desert light, space for overlay text. Generate 3 distinct variations.
+```
+
+### #114 · Desert dunes · sunset
+```
+Warm friendly flat vector illustration, rounded soft shapes, gentle flat shading, warm golden lighting, uncluttered. Palette only: cream #FDF6EC, sand #F8E9D5, orange #F4A259, clay #B95E23, sky #78B8D9, sage #8BAE7B, charcoal #343434. No text, no logos, not photorealistic, no dark or cold tones. Subject: Warm sand dunes at sunset, sun low between mountain silhouettes, scattered palms and rocks. No characters. wide 16:9 cinematic scene with San Jacinto mountains and desert light, space for overlay text. Generate 3 distinct variations.
 ```
 
 

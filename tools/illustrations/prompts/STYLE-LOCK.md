@@ -40,6 +40,7 @@ desaturated tones, cluttered busy backgrounds, off-palette colors.
 - background → wide, minimal, no characters, usable behind text
 - marketing / ui → 4:3, clean composition with clear focal point
 - icon → 1:1, single simple icon glyph only (isolated pictogram like an app icon) on a
-  plain flat solid-color or transparent background — no scene, landscape, room,
-  background illustration, characters, or props beyond the symbol; thick rounded
-  strokes, one or two palette colors
+  solid warm card background (cream, sand, or orange) that fills the frame edge-to-edge
+  — never transparent, never a checkerboard pattern, never black, never pure white; no
+  scene, landscape, room, background illustration, characters, or props beyond the
+  symbol; thick rounded strokes, one or two palette colors
