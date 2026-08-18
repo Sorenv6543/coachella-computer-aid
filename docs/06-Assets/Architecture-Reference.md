@@ -46,13 +46,14 @@ Low-level components used throughout the site:
 Each section becomes its own component:
 
 - **`Hero/`** — Hero section with large illustration
+- **`Mission/`** — Mission statement section
 - **`Audience/`** — Who we help cards (audience segments)
 - **`Services/`** — Service offerings organized by goals
 - **`HowItWorks/`** — Step-by-step how service works
-- **`Workshops/`** — Upcoming workshops and locations
-- **`Pricing/`** — Pay-what-you-can pricing section
-- **`Testimonials/`** — Success stories and reviews
-- **`Survey/`** — Community feedback/survey component
+- **`PayWhatYouCan/`** — Pay-what-you-can pricing slider section
+- **`Workshops/`** *(planned)* — Upcoming workshops and locations
+- **`Testimonials/`** *(planned)* — Success stories and reviews
+- **`Survey/`** *(planned)* — Community feedback/survey component
 - **`CTA/`** — Call-to-action section
 
 ### `src/components/shared/` — Cross-Page Components

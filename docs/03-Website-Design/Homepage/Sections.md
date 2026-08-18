@@ -205,6 +205,8 @@ Each card includes:
 
 ## 6️⃣ How It Works Section
 
+**Status:** ✅ Built — `src/components/home/HowItWorks/HowItWorksSection.vue`
+
 **Purpose:** Reduce anxiety by explaining the process
 
 ### Layout
@@ -240,6 +242,8 @@ Each card includes:
 ---
 
 ## 7️⃣ Pay What You Can Section
+
+**Status:** ✅ Built — `src/components/home/PayWhatYouCan/PayWhatYouCanSection.vue`
 
 **Purpose:** Remove financial barriers and build community
 
@@ -401,6 +405,8 @@ Each workshop card shows:
 
 ## 1️⃣1️⃣ Call To Action Section
 
+**Status:** ✅ Built — `src/components/home/CTA/CTASection.vue`
+
 **Purpose:** Final push to get help
 
 ### Layout
@@ -512,12 +518,12 @@ Each workshop card shows:
 3. Mission ✅ Built
 4. Who We Help ✅ Built
 5. Services ✅ Built
-6. CTA
+6. CTA ✅ Built
 7. Footer
 
 ### Phase 2 (Add Soon After)
-8. How It Works
-9. Pay What You Can
+8. How It Works ✅ Built
+9. Pay What You Can ✅ Built
 10. Workshops
 
 ### Phase 3+ (Later Enhancements)
@@ -535,5 +541,5 @@ Each workshop card shows:
 
 ---
 
-**Status:** Homepage Specifications — Navbar, Hero, Mission, Who We Help & Services built  
-**Last Updated:** August 16, 2026
+**Status:** Homepage Specifications — Navbar, Hero, Mission, Who We Help, Services, How It Works, Pay What You Can & CTA built  
+**Last Updated:** August 17, 2026

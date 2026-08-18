@@ -26,7 +26,7 @@ Welcome! This vault contains all documentation for building Coachella Computer A
 - **[Website Experience & Implementation Vision](03-Website-Design/Website-Experience-Vision.md)** — Guiding principles for building the experience
 - **[Website Roadmap](03-Website-Design/Website-Roadmap.md)** — Feature phases and rollout plan
 - **[Homepage Blueprint](03-Website-Design/Homepage/)** — Detailed homepage sections and features
-  - [[Homepage/Sections.md|Sections]] — Hero, Mission, Services, etc. (Navbar, Hero, Mission, Who We Help & Services now built)
+  - [[Homepage/Sections.md|Sections]] — Hero, Mission, Services, etc. (Navbar, Hero, Mission, Who We Help, Services, How It Works, Pay What You Can & CTA now built)
   - [[Homepage/Features.md|Features]] *(Coming)* — Interactive elements and user stories
   - [[Homepage/User-Stories.md|User Stories]] *(Coming)* — Feature requirements by audience
 
@@ -89,11 +89,11 @@ Welcome! This vault contains all documentation for building Coachella Computer A
 - ✅ Design Language (visual principles, tone)
 - 🔄 Visual System (illustration library, characters, backgrounds)
 - 🔄 Vuetify Design System (theme, components)
-- 🔄 Homepage Blueprint (sections, wireframes) — Navbar, Hero, Mission, Who We Help, and Services are built (copy-reviewed EN/ES, accessibility-audited PASS); remaining sections still planned
+- 🔄 Homepage Blueprint (sections, wireframes) — Navbar, Hero, Mission, Who We Help, Services, How It Works, Pay What You Can, and CTA are built (copy-reviewed EN/ES, accessibility-audited PASS); remaining sections still planned
 
-**Now in Development:** The Vue 3 + Vuetify 4 app is scaffolded and buildable. First five components shipped: `AppNavbar.vue`, `HeroSection.vue`, `MissionSection.vue`, `WhoWeHelpSection.vue` (with `AudienceCard.vue`), and `ServicesSection.vue` (with `ServiceCard.vue`), wired into the homepage — 5 of 7 MVP sections built.
+**Now in Development:** The Vue 3 + Vuetify 4 app is scaffolded and buildable. Eight components shipped: `AppNavbar.vue`, `HeroSection.vue`, `MissionSection.vue`, `WhoWeHelpSection.vue` (with `AudienceCard.vue`), `ServicesSection.vue` (with `ServiceCard.vue`), `HowItWorksSection.vue` (with `StepCard.vue`), `PayWhatYouCanSection.vue`, and `CTASection.vue`, wired into the homepage — 6 of 7 MVP sections built, plus 2 of 3 Phase 2 sections (How It Works, Pay What You Can).
 
-**Next:** Remaining homepage sections (CTA, Footer) → Component Library → Full site
+**Next:** Remaining homepage sections (Footer) → Component Library → Full site
 
 ---
 
@@ -179,6 +179,6 @@ When adding new documentation, place it in the appropriate folder and update the
 
 ---
 
-**Last Updated:** August 16, 2026  
+**Last Updated:** August 17, 2026  
 **Maintained By:** Soren (Coachella Computer Aid)  
-**Status:** Active Development — Phase 1: Foundation (Navbar + Hero + Mission + Who We Help + Services built)
+**Status:** Active Development — Phase 1: Foundation (Navbar + Hero + Mission + Who We Help + Services + CTA built); Phase 2: How It Works + Pay What You Can built
