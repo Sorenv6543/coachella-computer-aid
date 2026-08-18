@@ -145,19 +145,37 @@ Helper functions and utilities:
 
 ## 🎨 Theme Configuration
 
-Vuetify theme lives in `src/plugins/vuetify.ts`:
+Vuetify theme lives in `src/plugins/vuetify.ts`, named `cca` (set as `defaultTheme` — Vuetify 4 no longer defaults to `light`). Colors are pulled from `ccaColors` in `src/utils/colors.ts` rather than hardcoded inline:
 
-```javascript
-// Colors defined in theme
-const light = {
-  primary: '#F4A259',      // Warm Orange
-  secondary: '#78B8D9',    // Sky Blue
-  accent: '#8BAE7B',       // Sage Green
-  background: '#FDF6EC',   // Cream
-  surface: '#F8E9D5',      // Sand
-  text: '#343434',         // Charcoal
+```typescript
+// src/plugins/vuetify.ts (theme 'cca'), resolved against src/utils/colors.ts
+const cca = {
+  dark: false,
+  colors: {
+    background: '#FDF6EC',        // ccaColors.cream
+    surface: '#FFFFFF',           // ccaColors.white
+    primary: '#F4A259',           // ccaColors.orange
+    'on-primary': '#343434',      // ccaColors.charcoal (verified ~6:1 contrast on orange)
+    secondary: '#78B8D9',         // ccaColors.sky
+    'on-secondary': '#173544',    // literal, not in ccaColors
+    error: '#DC3545',             // ccaColors.error
+    success: '#8BAE7B',           // ccaColors.sage
+    info: '#78B8D9',              // ccaColors.sky
+    warning: '#E0A458',           // literal, not in ccaColors
+    'on-surface': '#343434',      // ccaColors.charcoal
+    'on-background': '#343434',   // ccaColors.charcoal
+    sage: '#8BAE7B',              // ccaColors.sage
+    'sage-darken-1': '#5E7E4F',   // ccaColors.sageDark
+    sky: '#78B8D9',               // ccaColors.sky
+    'sky-darken-1': '#3B7A9B',    // ccaColors.skyDark
+    clay: '#B95E23',              // ccaColors.clay
+    sand: '#F8E9D5',              // ccaColors.sand
+    'sand-darken-1': '#EED9BC',   // ccaColors.sandDark
+  },
 }
 ```
+
+Note: there is no `accent` key in the real theme (removed/never added) and `text` isn't a Vuetify color key — `on-surface`/`on-background` serve that role.
 
 ---
 
@@ -180,4 +198,4 @@ After `npm run build`:
 ---
 
 **Status:** Architecture Reference  
-**Last Updated:** August 15, 2026
+**Last Updated:** August 17, 2026
