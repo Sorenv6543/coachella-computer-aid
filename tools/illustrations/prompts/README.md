@@ -11,8 +11,9 @@ pick the keepers — *before* the site is built. Everything is driven off
    node build-prompts.mjs --tool gemini --variants 3
    ```
    → `prompts-all-gemini.md`: 300 prompts, each self-contained and style-locked,
-   each asking Gemini for 3 variations. (Style lives in `STYLE-LOCK.md` — edit there,
-   rerun, all prompts update.)
+   each asking Gemini for 3 variations. (Style spec is documented in `STYLE-LOCK.md`,
+   but the actual `STYLE`/`FRAME` text lives hardcoded in `build-prompts.mjs` — edit
+   the script, keep `STYLE-LOCK.md` in sync by hand, then rerun.)
 
 2. **Generate in Gemini.** Paste each prompt (Nano Banana / Gemini image, or Imagen
    with sampleCount = 3). You get ~3 candidates per slot, ~900 total.
@@ -53,8 +54,8 @@ pick the keepers — *before* the site is built. Everything is driven off
 ## Files
 | File | Role |
 |---|---|
-| `STYLE-LOCK.md` | The one-world style spec (from the Brand Bible). Edit to restyle everything. |
-| `build-prompts.mjs` | Catalog → paste-ready prompts. `--tool gemini\|midjourney` `--cat` `--limit` `--variants N` |
+| `STYLE-LOCK.md` | The one-world style spec (from the Brand Bible), documentation only — not read by any script. |
+| `build-prompts.mjs` | Catalog → paste-ready prompts. Actual style text lives in its `STYLE`/`FRAME` constants (mirror edits into `STYLE-LOCK.md`). `--tool gemini\|midjourney` `--cat` `--limit` `--variants N` |
 | `prompts-all-gemini.md` | The full 300, 3 variations each (generated). |
 | `scan-candidates.mjs` | Indexes `candidates/` → `picker-data.generated.js`. |
 | `picker.html` | Review 3 candidates per slot, pick winners, export `picks.json`. |
@@ -104,5 +105,5 @@ regenerating the identity-drift failures (`robert-001`, `robert-003`,
 `--no-ref` to fall back to the old text-only behavior.
 
 **Heads up:** 900 images is a real API spend and will take a while — do `--limit 5`
-first, eyeball the style, tweak `STYLE-LOCK.md` and rerun `npm run prompts` if needed,
-then let the full run go.
+first, eyeball the style, tweak `STYLE`/`FRAME` in `build-prompts.mjs` (mirroring into
+`STYLE-LOCK.md`) and rerun `npm run prompts` if needed, then let the full run go.

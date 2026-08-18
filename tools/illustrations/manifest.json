@@ -230,6 +230,34 @@
     "designed": false
   },
   {
+    "id": 111,
+    "category": "hero",
+    "name": "San Jacinto Mountains · alt",
+    "description": "Desert panorama, golden hour, winding path, saguaros and palms flanking both sides. No characters.",
+    "designed": false
+  },
+  {
+    "id": 112,
+    "category": "hero",
+    "name": "Palm + cactus frame",
+    "description": "Coconut palms framing left and right, cactus in foreground, mountains centered beyond a sandy path. Ultra-wide crop.",
+    "designed": false
+  },
+  {
+    "id": 113,
+    "category": "hero",
+    "name": "Palms lining the path",
+    "description": "Row of palms on both sides of a winding desert path, flowering cacti in foreground, soft mountains beyond. No characters.",
+    "designed": false
+  },
+  {
+    "id": 114,
+    "category": "hero",
+    "name": "Desert dunes · sunset",
+    "description": "Warm sand dunes at sunset, sun low between mountain silhouettes, scattered palms and rocks. No characters.",
+    "designed": false
+  },
+  {
     "id": 201,
     "category": "service",
     "name": "Stay connected · icon",
@@ -1822,7 +1850,7 @@
     "id": 918,
     "category": "icon",
     "name": "Warning triangle",
-    "description": "Gentle alert. Not alarming.",
+    "description": "A rounded triangle outline with a single exclamation mark centered inside it — a soft, gentle caution symbol, not sharp or alarming.",
     "designed": false
   },
   {
@@ -1885,7 +1913,7 @@
     "id": 927,
     "category": "icon",
     "name": "Email + check",
-    "description": "Envelope with checkmark. Sent.",
+    "description": "Envelope pictogram with a checkmark badge overlapping its corner, symbol only, no caption or lettering of any kind.",
     "designed": false
   },
   {
@@ -1948,7 +1976,7 @@
     "id": 936,
     "category": "icon",
     "name": "Person",
-    "description": "Single person. Profile.",
+    "description": "Generic person pictogram: a simple rounded head-and-shoulders silhouette shape, like a standard avatar/account icon — not a realistic portrait or face.",
     "designed": false
   },
   {
@@ -2004,7 +2032,7 @@
     "id": 944,
     "category": "icon",
     "name": "Photo",
-    "description": "Image frame. Gallery.",
+    "description": "Simple picture pictogram: a rounded square frame containing a small mountain-and-sun glyph, like a standard 'image' icon — not a real photograph or a room interior.",
     "designed": false
   },
   {

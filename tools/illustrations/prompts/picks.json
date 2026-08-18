@@ -1437,19 +1437,19 @@
     "id": 901,
     "name": "Computer",
     "category": "icon",
-    "pick": "candidates/901-2.png"
+    "pick": "candidates/901-1.png"
   },
   {
     "id": 902,
     "name": "Laptop",
     "category": "icon",
-    "pick": "candidates/902-2.png"
+    "pick": "candidates/902-3.png"
   },
   {
     "id": 903,
     "name": "Tablet",
     "category": "icon",
-    "pick": "candidates/903-3.png"
+    "pick": "candidates/903-1.png"
   },
   {
     "id": 904,
@@ -1473,7 +1473,7 @@
     "id": 907,
     "name": "Smart TV",
     "category": "icon",
-    "pick": "candidates/907-1.png"
+    "pick": "candidates/907-2.png"
   },
   {
     "id": 908,
@@ -1521,7 +1521,7 @@
     "id": 915,
     "name": "Shield · basic",
     "category": "icon",
-    "pick": "candidates/915-3.png"
+    "pick": "candidates/915-1.png"
   },
   {
     "id": 916,
@@ -1593,7 +1593,7 @@
     "id": 927,
     "name": "Email + check",
     "category": "icon",
-    "pick": "candidates/927-1.png"
+    "pick": "candidates/927-2.png"
   },
   {
     "id": 928,
@@ -1605,7 +1605,7 @@
     "id": 929,
     "name": "Calendar",
     "category": "icon",
-    "pick": "candidates/929-1.png"
+    "pick": "candidates/929-2.png"
   },
   {
     "id": 930,
@@ -1617,49 +1617,49 @@
     "id": 931,
     "name": "Map pin",
     "category": "icon",
-    "pick": "candidates/931-2.png"
+    "pick": "candidates/931-3.png"
   },
   {
     "id": 932,
     "name": "Home",
     "category": "icon",
-    "pick": "candidates/932-2.png"
+    "pick": "candidates/932-1.png"
   },
   {
     "id": 933,
     "name": "Heart",
     "category": "icon",
-    "pick": "candidates/933-2.png"
+    "pick": "candidates/933-1.png"
   },
   {
     "id": 934,
     "name": "Star",
     "category": "icon",
-    "pick": "candidates/934-1.png"
+    "pick": "candidates/934-3.png"
   },
   {
     "id": 935,
     "name": "People group",
     "category": "icon",
-    "pick": "candidates/935-2.png"
+    "pick": "candidates/935-1.png"
   },
   {
     "id": 936,
     "name": "Person",
     "category": "icon",
-    "pick": "candidates/936-1.png"
+    "pick": "candidates/936-2.png"
   },
   {
     "id": 937,
     "name": "Accessibility wheelchair",
     "category": "icon",
-    "pick": "candidates/937-3.png"
+    "pick": "candidates/937-1.png"
   },
   {
     "id": 938,
     "name": "Book / guide",
     "category": "icon",
-    "pick": "candidates/938-3.png"
+    "pick": "candidates/938-1.png"
   },
   {
     "id": 939,
@@ -1677,7 +1677,7 @@
     "id": 941,
     "name": "Microphone",
     "category": "icon",
-    "pick": "candidates/941-1.png"
+    "pick": "candidates/941-2.png"
   },
   {
     "id": 942,
@@ -1689,7 +1689,7 @@
     "id": 943,
     "name": "Camera",
     "category": "icon",
-    "pick": "candidates/943-1.png"
+    "pick": "candidates/943-3.png"
   },
   {
     "id": 944,
@@ -1701,7 +1701,7 @@
     "id": 945,
     "name": "Checkmark",
     "category": "icon",
-    "pick": "candidates/945-1.png"
+    "pick": "candidates/945-2.png"
   },
   {
     "id": 946,
@@ -1719,7 +1719,7 @@
     "id": 948,
     "name": "Arrow right",
     "category": "icon",
-    "pick": "candidates/948-2.png"
+    "pick": "candidates/948-1.png"
   },
   {
     "id": 949,
@@ -1731,7 +1731,7 @@
     "id": 950,
     "name": "External link",
     "category": "icon",
-    "pick": "candidates/950-2.png"
+    "pick": "candidates/950-1.png"
   },
   {
     "id": 951,
@@ -1779,7 +1779,7 @@
     "id": 958,
     "name": "Certificate",
     "category": "icon",
-    "pick": "candidates/958-2.png"
+    "pick": "candidates/958-1.png"
   },
   {
     "id": 959,
@@ -1791,6 +1791,6 @@
     "id": 960,
     "name": "CCA logo mark",
     "category": "icon",
-    "pick": "candidates/960-2.png"
+    "pick": "candidates/960-3.png"
   }
 ]
