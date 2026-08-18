@@ -55,3 +55,38 @@ h4,
   --cca-space-8: 64px;
   --cca-container-max: 1200px;
 }
+
+// Vuetify's VLabel defaults to `opacity: var(--v-medium-emphasis-opacity)`
+// (0.6) — on-surface charcoal at 60% opacity over this app's light
+// backgrounds composites to ~3.85:1, under WCAG AA's 4.5:1 floor for the
+// 16px labels v-checkbox/v-radio render. Full opacity + explicit on-surface
+// color fixes every selection-control label site-wide. Same "unlayered
+// beats Vuetify's @layer'd component CSS" pattern as the focus-ring
+// override above.
+.v-label {
+  opacity: 1;
+  color: rgb(var(--v-theme-on-surface));
+}
+
+// Vuetify's default selection-control touch target is 40px
+// (`--v-selection-control-size`, density="default") — 8px short of this
+// app's 48x48px minimum for elderly/low-dexterity users. Same override
+// pattern as PayWhatYouCanSection's slider-thumb touch-target fix.
+.v-selection-control {
+  --v-selection-control-size: 48px;
+}
+
+// Standard visually-hidden utility: keeps content in the accessibility
+// tree (screen readers, aria-live announcements) while removing it from
+// visual layout entirely.
+.cca-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
