@@ -36,7 +36,7 @@ const FRAME = {
   background:'wide minimal background, no characters, usable behind text',
   marketing:'4:3 clean composition with one clear focal point',
   ui:'4:3 clean UI-friendly composition with clear focal point',
-  icon:'1:1 single simple icon glyph ONLY — isolated pictogram like an app icon, filling most of the frame, on a single FLAT SOLID warm card color (cream #FDF6EC or sand #F8E9D5 or orange #F4A259) that completely fills the square edge-to-edge. Never transparent, never a checkerboard pattern, never black, never pure white. No scene, no landscape, no room, no background illustration, no characters, no props beyond the symbol itself. Thick rounded strokes, one or two palette colors, flat.',
+  icon:'1:1 single simple icon glyph ONLY — isolated pictogram like an app icon, filling most of the frame, on a single FLAT SOLID warm card color (cream #FDF6EC or sand #F8E9D5 or orange #F4A259) that completely fills the square edge-to-edge. Never transparent, never a checkerboard pattern, never black, never pure white. No scene, no landscape, no room, no background illustration, no characters, no props beyond the symbol itself. Thick rounded strokes, one or two palette colors, flat',
 };
 const AR = {characters:'1:1',hero:'16:9',service:'4:3',community:'4:3',workshop:'4:3',device:'1:1',background:'16:9',marketing:'4:3',ui:'4:3',icon:'1:1'};
 
