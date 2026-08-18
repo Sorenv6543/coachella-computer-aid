@@ -19,3 +19,10 @@ coverage/
 .vite/
 *.tsbuildinfo
 *.generated.js
+
+# Git worktree checkouts for isolated feature work
+.worktrees/
+
+# Superpowers subagent-driven-development scratch (ledgers, briefs, reports)
+.superpowers/
+
