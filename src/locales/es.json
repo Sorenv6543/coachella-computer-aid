@@ -117,6 +117,69 @@
       "sliderAriaLabel": "Elija la cantidad que desea pagar por sesión, de $0 a $75 dólares.",
       "supportingText": "Si puede contribuir, gracias — nos ayuda a seguir aquí para nuestros vecinos. Si no puede, de todas formas estamos aquí para usted. Esto es apoyo comunitario, no caridad."
     },
+    "workshops": {
+      "title": "Talleres Comunitarios",
+      "comingSoon": "Próximamente en comunidades de todo el Valle de Coachella.",
+      "body": "Estamos planificando nuestros primeros talleres y nos encantaría escucharle. ¿Con qué retos de tecnología le gustaría que le ayudáramos a usted o a alguien que quiere?",
+      "ctaButton": "Cuéntenos Qué Necesita",
+      "survey": {
+        "stepOfLabel": "Paso {current} de {total}",
+        "backButton": "Atrás",
+        "nextButton": "Siguiente",
+        "submitButton": "Enviar",
+        "closeLabel": "Cerrar encuesta",
+        "who": {
+          "question": "¿Para quién está completando esto?",
+          "options": {
+            "self": "Para mí",
+            "parentGrandparent": "Un padre o abuelo",
+            "familyMember": "Un familiar",
+            "friendNeighbor": "Un amigo o vecino",
+            "workColleague": "Alguien a quien apoyo o con quien trabajo"
+          }
+        },
+        "needs": {
+          "question": "¿Con qué le gustaría recibir ayuda?",
+          "hint": "Seleccione todas las que correspondan",
+          "options": {
+            "smartphone": "Usar un teléfono inteligente",
+            "computer": "Usar una computadora",
+            "tablet": "Usar una tableta",
+            "email": "Correo electrónico",
+            "videoCalls": "Videollamadas con la familia",
+            "internet": "Conectarse a internet",
+            "wifi": "Wi-Fi",
+            "smartTv": "Televisor inteligente / transmisión (streaming)",
+            "healthcare": "Portales de salud en línea",
+            "government": "Sitios web / solicitudes del gobierno",
+            "safety": "Seguridad en línea y estafas",
+            "passwords": "Contraseñas y cuentas",
+            "accessibility": "Funciones de accesibilidad",
+            "printing": "Imprimir / escanear",
+            "somethingElse": "Algo más"
+          }
+        },
+        "preference": {
+          "question": "¿Qué preferiría?",
+          "options": {
+            "group": "Un taller en grupo pequeño",
+            "oneOnOne": "Ayuda individual",
+            "atHome": "Ayuda en casa",
+            "online": "Ayuda en línea / por video",
+            "notSure": "No estoy seguro/a"
+          }
+        },
+        "details": {
+          "question": "¿Cuál es el mayor problema de tecnología que está enfrentando?",
+          "placeholder": "Cuéntenos un poco más — no hay una respuesta incorrecta."
+        },
+        "thankYou": {
+          "title": "¡Gracias!",
+          "body": "Le escuchamos. Esto nos ayuda a saber exactamente qué cubrir mientras planificamos nuestros primeros talleres. Nos pondremos en contacto cuando estén listos.",
+          "closeButton": "Cerrar"
+        }
+      }
+    },
     "cta": {
       "title": "¿Listo para comenzar?",
       "body": "Cuando esté listo, estamos a solo un mensaje o llamada de distancia.",

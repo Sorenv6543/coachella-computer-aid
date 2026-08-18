@@ -117,6 +117,69 @@
       "sliderAriaLabel": "Choose the amount you'd like to pay per session, from $0 to $75.",
       "supportingText": "If you're able to contribute, thank you — it helps us stay here for our neighbors. If not, we're still here for you. This is community care, not charity."
     },
+    "workshops": {
+      "title": "Community Workshops",
+      "comingSoon": "Coming soon to communities throughout the Coachella Valley.",
+      "body": "We're planning our first workshops, and we'd like to hear from you. What technology challenges would you or someone you love like help with?",
+      "ctaButton": "Tell Us What You Need",
+      "survey": {
+        "stepOfLabel": "Step {current} of {total}",
+        "backButton": "Back",
+        "nextButton": "Next",
+        "submitButton": "Submit",
+        "closeLabel": "Close survey",
+        "who": {
+          "question": "Who are you filling this out for?",
+          "options": {
+            "self": "Myself",
+            "parentGrandparent": "A parent or grandparent",
+            "familyMember": "A family member",
+            "friendNeighbor": "A friend or neighbor",
+            "workColleague": "Someone I work with or support"
+          }
+        },
+        "needs": {
+          "question": "What would you like help with?",
+          "hint": "Select all that apply",
+          "options": {
+            "smartphone": "Using a smartphone",
+            "computer": "Using a computer",
+            "tablet": "Using a tablet",
+            "email": "Email",
+            "videoCalls": "Video calls with family",
+            "internet": "Getting connected to the internet",
+            "wifi": "Wi-Fi",
+            "smartTv": "Smart TV / streaming",
+            "healthcare": "Online healthcare",
+            "government": "Government websites / applications",
+            "safety": "Online safety & scams",
+            "passwords": "Passwords & accounts",
+            "accessibility": "Accessibility features",
+            "printing": "Printing / scanning",
+            "somethingElse": "Something else"
+          }
+        },
+        "preference": {
+          "question": "What would you prefer?",
+          "options": {
+            "group": "A small group workshop",
+            "oneOnOne": "One-on-one help",
+            "atHome": "Help at home",
+            "online": "Online/video help",
+            "notSure": "I'm not sure"
+          }
+        },
+        "details": {
+          "question": "What is the biggest technology problem you're dealing with?",
+          "placeholder": "Tell us a little about it — there's no wrong answer."
+        },
+        "thankYou": {
+          "title": "Thank You!",
+          "body": "We've heard you. As we plan our first workshops, this helps us know exactly what to cover. We'll be in touch when workshops are ready.",
+          "closeButton": "Close"
+        }
+      }
+    },
     "cta": {
       "title": "Ready to Get Started?",
       "body": "Whenever you're ready, we're just a message or call away.",
