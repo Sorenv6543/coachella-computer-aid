@@ -153,7 +153,7 @@ const light = {
   primary: '#F4A259',      // Warm Orange
   secondary: '#78B8D9',    // Sky Blue
   accent: '#8BAE7B',       // Sage Green
-  background: '#FDF6EC',   // Cream
+  background: '#F8E9D5',   // Cream
   surface: '#F8E9D5',      // Sand
   text: '#343434',         // Charcoal
 }
