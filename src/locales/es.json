@@ -120,7 +120,7 @@
     "workshops": {
       "title": "Talleres Comunitarios",
       "comingSoon": "Próximamente en comunidades de todo el Valle de Coachella.",
-      "body": "Estamos planificando nuestros primeros talleres y nos encantaría escucharle. ¿Con qué retos de tecnología le gustaría que le ayudáramos a usted o a alguien que quiere?",
+      "body": "Estamos planificando nuestros primeros talleres y nos encantaría escucharle. ¿Con qué retos de tecnología le gustaría que le ayudáramos a usted o a un ser querido?",
       "ctaButton": "Cuéntenos Qué Necesita",
       "survey": {
         "stepOfLabel": "Paso {current} de {total}",
@@ -132,7 +132,7 @@
           "question": "¿Para quién está completando esto?",
           "options": {
             "self": "Para mí",
-            "parentGrandparent": "Un padre o abuelo",
+            "parentGrandparent": "Un padre, madre o abuelo/a",
             "familyMember": "Un familiar",
             "friendNeighbor": "Un amigo o vecino",
             "workColleague": "Alguien a quien apoyo o con quien trabajo"
