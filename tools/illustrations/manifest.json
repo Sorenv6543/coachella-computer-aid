@@ -1822,7 +1822,7 @@
     "id": 918,
     "category": "icon",
     "name": "Warning triangle",
-    "description": "Gentle alert. Not alarming.",
+    "description": "A rounded triangle outline with a single exclamation mark centered inside it — a soft, gentle caution symbol, not sharp or alarming.",
     "designed": false
   },
   {
@@ -1885,7 +1885,7 @@
     "id": 927,
     "category": "icon",
     "name": "Email + check",
-    "description": "Envelope with checkmark. Sent.",
+    "description": "Envelope pictogram with a checkmark badge overlapping its corner, symbol only, no caption or lettering of any kind.",
     "designed": false
   },
   {
@@ -1948,7 +1948,7 @@
     "id": 936,
     "category": "icon",
     "name": "Person",
-    "description": "Single person. Profile.",
+    "description": "Generic person pictogram: a simple rounded head-and-shoulders silhouette shape, like a standard avatar/account icon — not a realistic portrait or face.",
     "designed": false
   },
   {
@@ -2004,7 +2004,7 @@
     "id": 944,
     "category": "icon",
     "name": "Photo",
-    "description": "Image frame. Gallery.",
+    "description": "Simple picture pictogram: a rounded square frame containing a small mountain-and-sun glyph, like a standard 'image' icon — not a real photograph or a room interior.",
     "designed": false
   },
   {
