@@ -127,13 +127,35 @@ Replace it with (inserting the new `workshops` block before `cta`):
 
 - [ ] **Step 2: Insert the matching Spanish keys**
 
-In `src/locales/es.json`, find the equivalent `payWhatYouCan` → `cta` boundary (same structure as `en.json`) and insert:
+In `src/locales/es.json`, the `home` object currently reads (line ~112-120):
 
 ```json
+    "payWhatYouCan": {
+      "title": "Todos merecen ayuda",
+      "subheading": "Pague lo que pueda",
+      "intro": "La tecnología no debería ser un lujo. Así es como funciona:",
+      "perSessionLabel": "por sesión",
+      "sliderAriaLabel": "Elija la cantidad que desea pagar por sesión, de $0 a $75 dólares.",
+      "supportingText": "Si puede contribuir, gracias — nos ayuda a seguir aquí para nuestros vecinos. Si no puede, de todas formas estamos aquí para usted. Esto es apoyo comunitario, no caridad."
+    },
+    "cta": {
+```
+
+Replace it with (inserting the new `workshops` block before `cta`, same position as `en.json`):
+
+```json
+    "payWhatYouCan": {
+      "title": "Todos merecen ayuda",
+      "subheading": "Pague lo que pueda",
+      "intro": "La tecnología no debería ser un lujo. Así es como funciona:",
+      "perSessionLabel": "por sesión",
+      "sliderAriaLabel": "Elija la cantidad que desea pagar por sesión, de $0 a $75 dólares.",
+      "supportingText": "Si puede contribuir, gracias — nos ayuda a seguir aquí para nuestros vecinos. Si no puede, de todas formas estamos aquí para usted. Esto es apoyo comunitario, no caridad."
+    },
     "workshops": {
       "title": "Talleres Comunitarios",
       "comingSoon": "Próximamente en comunidades de todo el Valle de Coachella.",
-      "body": "Estamos planificando nuestros primeros talleres y nos encantaría escucharle. ¿Con qué retos de tecnología le gustaría que le ayudáramos a usted o a alguien que quiere?",
+      "body": "Estamos planificando nuestros primeros talleres y nos encantaría escucharle. ¿Con qué retos de tecnología le gustaría que le ayudáramos a usted o a un ser querido?",
       "ctaButton": "Cuéntenos Qué Necesita",
       "survey": {
         "stepOfLabel": "Paso {current} de {total}",
@@ -145,7 +167,7 @@ In `src/locales/es.json`, find the equivalent `payWhatYouCan` → `cta` boundary
           "question": "¿Para quién está completando esto?",
           "options": {
             "self": "Para mí",
-            "parentGrandparent": "Un padre o abuelo",
+            "parentGrandparent": "Un padre, madre o abuelo/a",
             "familyMember": "Un familiar",
             "friendNeighbor": "Un amigo o vecino",
             "workColleague": "Alguien a quien apoyo o con quien trabajo"
