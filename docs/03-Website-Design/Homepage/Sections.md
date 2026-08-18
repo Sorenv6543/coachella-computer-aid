@@ -287,38 +287,29 @@ Each card includes:
 
 ## 8️⃣ Community Workshops Section
 
-**Purpose:** Show upcoming learning opportunities
+**Purpose:** Announce upcoming workshops are coming, and collect a needs-assessment survey to inform what the first workshops should cover
+
+**Status:** No workshops are scheduled yet — this section is a "coming soon" teaser, not a calendar/listing (that's a future section once workshops exist to list).
 
 ### Layout
-- 2-3 columns (desktop), 1 column (mobile)
-- Card-based
-- Filter by location (optional)
+- Centered single-column teaser (headline, coming-soon line, body copy, CTA button) — matches CTASection/PayWhatYouCanSection's layout
+- "Tell Us What You Need" button opens a modal survey dialog
 
-### Content
-Each workshop card shows:
-- **Date:** Month, day, time
-- **Title:** Workshop name
-- **Location:** Where it's held
-- **Description:** 1-2 sentences
-- **CTA Button:** "Learn More" or "Register"
+### Survey
+A 4-question wizard, one question per screen (not a single long form), reached via the teaser's CTA button:
+1. Who are you filling this out for? (single-select)
+2. What would you like help with? (multi-select, 15 options)
+3. What would you prefer? (single-select: group/one-on-one/at home/online/not sure)
+4. What is the biggest technology problem you're dealing with? (free text)
 
-### Example Workshops
-- Senior Tech Mondays (Library)
-- Smartphone Basics (Senior Center)
-- Scam Awareness (Church)
-- Video Calling Class (Community Center)
-
-### Visual
-- Event icon
-- Location indicator
-- Date/time clear
-- Responsive cards
+Back navigation is allowed; nothing is required to advance. Submission is stubbed (no backend wired up yet) and ends on a thank-you confirmation screen.
 
 ### Components
-- Workshop card (custom)
-- Calendar icon
-- Location icon
-- Registration button
+- `CommunityWorkshops.vue` (teaser section)
+- `WorkshopsSurveyDialog.vue` (wizard orchestrator)
+- `survey-steps/SurveyStepWho.vue`, `SurveyStepNeeds.vue`, `SurveyStepPreference.vue`, `SurveyStepDetails.vue`, `SurveyStepThankYou.vue`
+
+See `docs/superpowers/specs/2026-08-18-community-workshops-section-design.md` for the full design.
 
 ---
 
