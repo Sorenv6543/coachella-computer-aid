@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
-import heroImage from '@/assets/images/illustrations/hero/hero-106-senior-center-outdoor.png'
+import heroImage from '@/assets/images/illustrations/characters/all-017-full-cast-group.png'
 
 const { t } = useI18n()
 </script>
@@ -111,6 +111,7 @@ const { t } = useI18n()
 .cca-hero__image-card {
   box-shadow: 0px 20px 46px -22px rgba(var(--v-theme-clay), 0.34) !important;
   overflow: hidden;
+  margin-bottom: var(--cca-space-16);
 }
 
 .cca-hero__image {
