@@ -30,6 +30,7 @@ export default defineConfig({
   test: {
     environment: 'happy-dom',
     css: true,
+    setupFiles: ['./src/vitest.setup.ts'],
     server: {
       // Vitest externalizes node_modules packages to Node's raw ESM loader
       // by default, which can't handle vuetify's side-effect .css imports —
