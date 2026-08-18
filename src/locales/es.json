@@ -118,10 +118,10 @@
       "supportingText": "Si puede contribuir, gracias — nos ayuda a seguir aquí para nuestros vecinos. Si no puede, de todas formas estamos aquí para usted. Esto es apoyo comunitario, no caridad."
     },
     "workshops": {
-      "title": "Talleres Comunitarios",
+      "title": "Talleres comunitarios",
       "comingSoon": "Próximamente en comunidades de todo el Valle de Coachella.",
       "body": "Estamos planificando nuestros primeros talleres y nos encantaría escucharle. ¿Con qué retos de tecnología le gustaría que le ayudáramos a usted o a un ser querido?",
-      "ctaButton": "Cuéntenos Qué Necesita",
+      "ctaButton": "Cuéntenos qué necesita",
       "survey": {
         "stepOfLabel": "Paso {current} de {total}",
         "backButton": "Atrás",

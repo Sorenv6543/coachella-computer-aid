@@ -63,6 +63,9 @@ h4,
 // color fixes every selection-control label site-wide. Same "unlayered
 // beats Vuetify's @layer'd component CSS" pattern as the focus-ring
 // override above.
+// NB: this also beats Vuetify's @layer'd error-state label color, since
+// unlayered always wins. Once form validation lands, an error-state label
+// override will need the same unlayered treatment here.
 .v-label {
   opacity: 1;
   color: rgb(var(--v-theme-on-surface));

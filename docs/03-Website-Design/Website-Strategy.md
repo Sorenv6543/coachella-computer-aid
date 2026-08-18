@@ -179,7 +179,7 @@ This is one of the most important differentiators.
 5. **Our Services** — Organized by goals, not technical terms
 6. **How It Works** — Simple 3-4 step process
 7. **Pay What You Can** — Pricing/contribution section
-8. **Community Workshops** — Upcoming events, locations
+8. **Community Workshops** — "Coming soon" teaser + needs-assessment survey (no workshops scheduled yet)
 9. **Testimonials** — Real stories from people we've helped
 10. **Community Survey** — Input form (help shape services)
 11. **Call To Action** — "Get Help Today" button
