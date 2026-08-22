@@ -64,10 +64,9 @@ h4,
 // beats Vuetify's @layer'd component CSS" pattern as the focus-ring
 // override above.
 // NB: this also beats Vuetify's @layer'd error-state label color, since
-// unlayered always wins — confirmed still holding now that form validation
-// (StayInformedSection.vue) is live: labels stay legible charcoal rather
-// than switching to Vuetify's default error red, with the error itself
-// still conveyed via message text and border, not color alone.
+// unlayered always wins — error fields stay legible charcoal rather than
+// switching to Vuetify's default red, so error state must be conveyed via
+// message text and field border, not color alone.
 .v-label {
   opacity: 1;
   color: rgb(var(--v-theme-on-surface));
@@ -75,16 +74,17 @@ h4,
 
 // VField's outlined-variant border inherits `currentColor` from whatever
 // `color` prop the field uses (primary/orange on this app's text fields);
-// at Vuetify's default idle opacity (0.38) that measures ~2.1:1 against a
-// white/cream surface, and even at full focused opacity (1) orange only
+// at Vuetify's default idle opacity (0.38) orange-on-white composites to
+// well under 2:1, and even undiluted at full focused opacity orange only
 // reaches ~2.1:1 — both under WCAG 1.4.11's 3:1 floor for non-text UI, so
 // a low-vision/keyboard user can't reliably see field boundaries or tell
 // which field currently has focus. Override to on-surface (charcoal,
-// already proven 12.45:1 elsewhere in this file); the field's own `color`
-// prop still tints the label and cursor. 0.6 idle opacity is the minimum
-// that clears 3:1 for charcoal-on-white (computed, not eyeballed); focused
-// state goes to full opacity plus an outer outline, matching the
-// button focus-ring treatment above.
+// 12.45:1 on white — see the button-focus-ring comment above for the
+// general 6:1+ floor across brand backgrounds); the field's own `color`
+// prop still tints the label and cursor. 0.6 idle opacity clears 3:1 for
+// charcoal-on-white with margin (true crossover is ~0.53; computed, not
+// eyeballed); focused state goes to full opacity plus an outer outline,
+// matching the button focus-ring treatment above.
 .v-field--variant-outlined .v-field__outline {
   color: rgb(var(--v-theme-on-surface));
 }

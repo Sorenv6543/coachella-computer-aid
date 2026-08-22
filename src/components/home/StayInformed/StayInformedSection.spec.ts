@@ -63,11 +63,22 @@ describe('StayInformedSection', () => {
 
   it('marks the email field invalid only after a failed submit attempt', async () => {
     const wrapper = mountSection()
+    wrapper.vm.email = 'not-an-email'
     expect(wrapper.vm.emailInvalid).toBe(false)
 
-    wrapper.vm.email = 'not-an-email'
     await wrapper.vm.handleSubmit()
 
     expect(wrapper.vm.emailInvalid).toBe(true)
+  })
+
+  it('clears the invalid flag as soon as the email is corrected, without resubmitting', async () => {
+    const wrapper = mountSection()
+    wrapper.vm.email = 'not-an-email'
+    await wrapper.vm.handleSubmit()
+    expect(wrapper.vm.emailInvalid).toBe(true)
+
+    wrapper.vm.email = 'fixed@example.com'
+
+    expect(wrapper.vm.emailInvalid).toBe(false)
   })
 })
