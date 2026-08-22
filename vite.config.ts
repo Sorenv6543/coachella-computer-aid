@@ -1,6 +1,5 @@
-/// <reference types="vitest/config" />
 import { fileURLToPath, URL } from 'node:url'
-import { defineConfig } from 'vite'
+import { configDefaults, defineConfig } from 'vitest/config'
 import vue from '@vitejs/plugin-vue'
 import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 import vueDevTools from 'vite-plugin-vue-devtools'
@@ -35,7 +34,7 @@ export default defineConfig({
     // worktrees (.worktrees/, worktrees/) — without this, running the
     // suite from the main checkout while a worktree is checked out nested
     // inside it double-collects every spec file from both locations.
-    exclude: ['**/node_modules/**', '**/.worktrees/**', '**/worktrees/**'],
+    exclude: [...configDefaults.exclude, '**/.worktrees/**', '**/worktrees/**'],
     server: {
       // Vitest externalizes node_modules packages to Node's raw ESM loader
       // by default, which can't handle vuetify's side-effect .css imports —
