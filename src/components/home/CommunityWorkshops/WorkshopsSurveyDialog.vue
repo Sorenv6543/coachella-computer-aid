@@ -40,7 +40,11 @@ function resetSurvey() {
 // enough to survive an accidental close, and stale answers would be
 // confusing to land back on.
 watch(dialogOpen, (isOpen) => {
-  if (isOpen) resetSurvey()
+  if (!isOpen) return
+  resetSurvey()
+  nextTick(() => {
+    document.getElementById('cca-survey-heading')?.focus()
+  })
 })
 
 // Move focus to the new step's heading on every change so keyboard and
@@ -75,7 +79,7 @@ function submitSurvey() {
     details: answers.details,
   }
   // TODO: wire to backend once Supabase (or another store) is connected
-  console.log('Workshop survey submitted:', payload)
+  if (import.meta.env.DEV) console.log('Workshop survey submitted:', payload)
   currentStep.value = THANK_YOU_STEP
 }
 

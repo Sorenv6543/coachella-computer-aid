@@ -18,8 +18,10 @@ const visualViewportStub = {
   dispatchEvent: () => false,
 }
 
-Object.defineProperty(window, 'visualViewport', {
-  value: visualViewportStub as unknown as VisualViewport,
-  configurable: true,
-  writable: true,
-})
+if (!('visualViewport' in window)) {
+  Object.defineProperty(window, 'visualViewport', {
+    value: visualViewportStub as unknown as VisualViewport,
+    configurable: true,
+    writable: true,
+  })
+}
