@@ -51,7 +51,7 @@ Detailed breakdown of every homepage section:
 7. Pay What You Can
 8. Workshops
 9. Testimonials
-10. Community Survey
+10. Stay Informed (built in reduced scope, formerly "Community Survey")
 11. Call To Action
 12. Footer
 

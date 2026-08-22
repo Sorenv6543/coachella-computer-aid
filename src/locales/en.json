@@ -188,6 +188,17 @@
         }
       }
     },
+    "stayInformed": {
+      "title": "We'll Let You Know",
+      "body": "Share your email and we'll send you a friendly note the moment workshops open — no survey, no commitment.",
+      "nameLabel": "Name (optional)",
+      "emailLabel": "Email (required)",
+      "emailRequiredError": "Please enter your email address so we know where to reach you.",
+      "emailInvalidError": "That email address doesn't look quite right — could you check it once more?",
+      "submitButton": "Yes, Let Me Know",
+      "successTitle": "You're all set!",
+      "successBody": "Thank you — we'll reach out the moment workshops are ready, and there's nothing else you need to do."
+    },
     "cta": {
       "title": "Ready to Get Started?",
       "body": "Whenever you're ready, we're just a message or call away.",

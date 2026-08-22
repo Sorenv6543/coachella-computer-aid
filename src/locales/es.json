@@ -188,6 +188,17 @@
         }
       }
     },
+    "stayInformed": {
+      "title": "Le Avisaremos",
+      "body": "Déjenos su correo electrónico y le enviaremos un mensaje amable en cuanto abran los talleres — sin encuesta, sin compromiso.",
+      "nameLabel": "Nombre (opcional)",
+      "emailLabel": "Correo (requerido)",
+      "emailRequiredError": "Por favor ingrese su correo electrónico para poder avisarle.",
+      "emailInvalidError": "Ese correo no se ve del todo correcto — ¿podría revisarlo una vez más?",
+      "submitButton": "Sí, Avíseme",
+      "successTitle": "¡Todo listo!",
+      "successBody": "Gracias — nos pondremos en contacto en cuanto los talleres estén listos, y no necesita hacer nada más."
+    },
     "cta": {
       "title": "¿Listo para comenzar?",
       "body": "Cuando esté listo, estamos a solo un mensaje o llamada de distancia.",

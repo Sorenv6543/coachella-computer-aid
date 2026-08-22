@@ -363,47 +363,42 @@ See `docs/superpowers/specs/2026-08-18-community-workshops-section-design.md` fo
 
 ---
 
-## 🔟 Community Survey / Call To Action
+## 🔟 Stay Informed (Community Survey / Call To Action)
+
+**Status:** ✅ Built — `src/components/home/StayInformed/StayInformedSection.vue`
+
+**Purpose:** Let visitors opt in to hear when workshops open
+
+**Scope note:** This section replaces the "3-5 question community survey" originally spec'd below (kept for reference in "Original Spec"). We built a plain two-field email signup instead: name (optional) + email (required), stubbed submission, inline success state — no survey questions. Reason: the Community Workshops section above (§8) already runs a 4-question needs-assessment survey (`WorkshopsSurveyDialog.vue`) with the same "help us understand what you need" intent as the original spec's "What services are most needed? / What barriers prevent you from getting help?" questions. Building a second survey immediately below it would have put three feedback/CTA prompts back to back on the homepage (Workshops survey CTA → another survey → final CTA section), which fights this doc's own "Clear CTAs — easy to know what to do next" design principle. Stay Informed instead serves a distinct, narrower purpose — "notify me" rather than "tell us your needs" — so it doesn't duplicate the Workshops survey.
+
+### Content (as built)
+**Headline:** "We'll Let You Know"
+
+**Body:** "Share your email and we'll send you a friendly note the moment workshops open — no survey, no commitment."
+
+**Fields:** Name (optional), Email (required, validated)
+
+**Submit button:** "Yes, Let Me Know"
+
+**Success state:** Inline confirmation ("You're all set!") replacing the form, focus moved to the confirmation heading for screen reader users — no navigation/page change.
+
+i18n keys: `home.stayInformed.*` in `src/locales/en.json` / `es.json`. Submission is currently stubbed (no backend wired up yet — see the component's TODO for Supabase).
+
+### Original Spec (superseded by the above — kept for reference)
 
 **Purpose:** Involve community in shaping services
 
-### Layout
-- Full width
-- Cream or sand background
-- Centered content
+**Layout:** Full width, cream or sand background, centered content
 
-### Content
-**Headline:** (36px, bold)
-> Help Shape Technology Support in the Coachella Valley
+**Headline:** (36px, bold) "Help Shape Technology Support in the Coachella Valley"
 
-**Description:** (16px)
-> Most nonprofits don't ask their community what they need. We do. Your feedback helps us build better programs.
+**Description:** (16px) "Most nonprofits don't ask their community what they need. We do. Your feedback helps us build better programs."
 
-**Survey Form:**
-- 3-5 quick questions
-- Focus on: What services are most needed?
-- Short free-response option
-- Email optional (for follow-up)
+**Survey Form:** 3-5 quick questions, focused on "What services are most needed?", short free-response option, email optional (for follow-up)
 
-**Examples:**
-- What technology topics interest you?
-- What barriers prevent you from getting help?
-- Would you be interested in workshops?
+**Examples:** What technology topics interest you? / What barriers prevent you from getting help? / Would you be interested in workshops?
 
-### CTA
-- **Button:** "Take the 2-Minute Survey"
-- **Alternative:** "Share Your Ideas" (email form)
-
-### Visual
-- Warm, inviting design
-- Community photos (if available)
-- Illustration: Diverse group contributing
-
-### Components
-- Survey form (custom or Typeform embed)
-- Heading
-- Description
-- Submit button
+**CTA:** Button "Take the 2-Minute Survey" / Alternative "Share Your Ideas" (email form)
 
 ---
 
@@ -535,8 +530,8 @@ See `docs/superpowers/specs/2026-08-18-community-workshops-section-design.md` fo
 10. Workshops ✅ Built
 
 ### Phase 3+ (Later Enhancements)
-11. Testimonials
-12. Survey
+11. Stay Informed (reduced-scope Community Survey/CTA slot) ✅ Built
+12. Testimonials
 
 ---
 
@@ -549,5 +544,5 @@ See `docs/superpowers/specs/2026-08-18-community-workshops-section-design.md` fo
 
 ---
 
-**Status:** Homepage Specifications — Navbar, Hero, Mission, Who We Help, Services, How It Works, Pay What You Can, CTA, Community Workshops & Footer built  
+**Status:** Homepage Specifications — Navbar, Hero, Mission, Who We Help, Services, How It Works, Pay What You Can, CTA, Community Workshops, Stay Informed & Footer built; Testimonials still planned  
 **Last Updated:** August 22, 2026

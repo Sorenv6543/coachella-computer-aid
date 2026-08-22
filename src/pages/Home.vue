@@ -6,6 +6,7 @@ import ServicesSection from '@/components/home/Services/ServicesSection.vue'
 import HowItWorksSection from '@/components/home/HowItWorks/HowItWorksSection.vue'
 import PayWhatYouCanSection from '@/components/home/PayWhatYouCan/PayWhatYouCanSection.vue'
 import CommunityWorkshops from '@/components/home/CommunityWorkshops/CommunityWorkshops.vue'
+import StayInformedSection from '@/components/home/StayInformed/StayInformedSection.vue'
 import CTASection from '@/components/home/CTA/CTASection.vue'
 </script>
 
@@ -17,5 +18,6 @@ import CTASection from '@/components/home/CTA/CTASection.vue'
   <HowItWorksSection />
   <PayWhatYouCanSection />
   <CommunityWorkshops />
+  <StayInformedSection />
   <CTASection />
 </template>
