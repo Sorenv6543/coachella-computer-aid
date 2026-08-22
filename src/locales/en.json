@@ -194,5 +194,16 @@
       "ctaPrimary": "Get Help Today",
       "ctaSecondary": "Explore Services"
     }
+  },
+  "footer": {
+    "ariaLabel": "Site footer",
+    "about": {
+      "tagline": "Patient, one-on-one technology help for the Coachella Valley — in person, by video, or over the phone."
+    },
+    "quickLinksHeading": "Quick Links",
+    "comingSoon": "(coming soon)",
+    "contactHeading": "Get in Touch",
+    "location": "Serving the Coachella Valley",
+    "copyright": "© {year} Coachella Computer Aid. All rights reserved."
   }
 }

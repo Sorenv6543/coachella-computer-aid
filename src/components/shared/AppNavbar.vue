@@ -2,6 +2,7 @@
 import { computed, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
 import logoMark from '@/assets/images/illustrations/icon/icon-960-cca-logo-mark.png'
+import { navLinks } from '@/config/navLinks'
 
 const { t, locale } = useI18n()
 
@@ -11,19 +12,6 @@ const navToggleRef = ref<{ $el: HTMLElement }>()
 const menuToggleLabel = computed(() =>
   drawerOpen.value ? t('nav.menuClose') : t('nav.menuToggle'),
 )
-
-// Only "/" is a registered route today (see src/router/index.ts). The rest
-// are placeholders for pages that don't exist yet — hash targets are omitted
-// until the corresponding sections land so clicking them doesn't silently
-// no-op while changing the URL hash.
-const navLinks = [
-  { key: 'nav.links.home', href: '/' },
-  { key: 'nav.links.services', href: null },
-  { key: 'nav.links.workshops', href: null },
-  { key: 'nav.links.resources', href: null },
-  { key: 'nav.links.community', href: null },
-  { key: 'nav.links.contact', href: null },
-]
 
 const toggleLabel = computed(() => t('common.toggleLanguage'))
 

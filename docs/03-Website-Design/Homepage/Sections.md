@@ -298,9 +298,11 @@ Each card includes:
 
 ## 8️⃣ Community Workshops Section
 
+**Status:** ✅ Built — `src/components/home/CommunityWorkshops/CommunityWorkshops.vue`
+
 **Purpose:** Announce upcoming workshops are coming, and collect a needs-assessment survey to inform what the first workshops should cover
 
-**Status:** No workshops are scheduled yet — this section is a "coming soon" teaser, not a calendar/listing (that's a future section once workshops exist to list).
+**Note:** No workshops are scheduled yet — this section is a "coming soon" teaser, not a calendar/listing (that's a future section once workshops exist to list).
 
 ### Layout
 - Centered single-column teaser (headline, coming-soon line, body copy, CTA button) — matches CTASection/PayWhatYouCanSection's layout
@@ -445,6 +447,10 @@ See `docs/superpowers/specs/2026-08-18-community-workshops-section-design.md` fo
 
 ## 1️⃣2️⃣ Footer
 
+**Status:** ✅ Built — `src/components/shared/AppFooter.vue`
+
+**Scope note:** Shipped with 3 columns (About / Quick Links / Contact), not the 4 below — the "Follow Us" column and the Legal sub-links (Privacy Policy, Terms of Service, Accessibility Statement) were dropped because no real social accounts or legal pages exist yet. Contact info is real (phone 760-406-7770, email help@coachellacomputeraid.com), not a placeholder.
+
 **Purpose:** Navigation, contact, trust signals, legal
 
 ### Layout
@@ -521,12 +527,12 @@ See `docs/superpowers/specs/2026-08-18-community-workshops-section-design.md` fo
 4. Who We Help ✅ Built
 5. Services ✅ Built
 6. CTA ✅ Built
-7. Footer
+7. Footer ✅ Built
 
 ### Phase 2 (Add Soon After)
 8. How It Works ✅ Built
 9. Pay What You Can ✅ Built
-10. Workshops
+10. Workshops ✅ Built
 
 ### Phase 3+ (Later Enhancements)
 11. Testimonials
@@ -543,5 +549,5 @@ See `docs/superpowers/specs/2026-08-18-community-workshops-section-design.md` fo
 
 ---
 
-**Status:** Homepage Specifications — Navbar, Hero, Mission, Who We Help, Services, How It Works, Pay What You Can & CTA built  
-**Last Updated:** August 17, 2026
+**Status:** Homepage Specifications — Navbar, Hero, Mission, Who We Help, Services, How It Works, Pay What You Can, CTA, Community Workshops & Footer built  
+**Last Updated:** August 22, 2026

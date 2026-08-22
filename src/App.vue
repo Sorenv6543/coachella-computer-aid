@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
 import AppNavbar from '@/components/shared/AppNavbar.vue'
+import AppFooter from '@/components/shared/AppFooter.vue'
 
 const { t } = useI18n()
 </script>
@@ -12,6 +13,7 @@ const { t } = useI18n()
     <v-main id="cca-main-content">
       <router-view />
     </v-main>
+    <AppFooter />
   </v-app>
 </template>
 
