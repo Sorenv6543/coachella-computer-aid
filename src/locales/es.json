@@ -67,7 +67,7 @@
     },
     "services": {
       "title": "Nuestros servicios",
-      "intro": "Cuatro maneras en que le ayudamos, explicadas en términos sencillos y sin palabras técnicas complicadas.",
+      "intro": "Seis maneras en que le ayudamos, explicadas en términos sencillos y sin palabras técnicas complicadas.",
       "items": {
         "learn": {
           "title": "Aprenda tecnología",
@@ -77,13 +77,21 @@
           "title": "Manténgase en contacto",
           "description": "Le ayudamos a mantenerse en contacto con sus seres queridos: videollamadas, correo electrónico y redes sociales."
         },
+        "getConnected": {
+          "title": "Conéctese a internet",
+          "description": "Le ayudamos a conectarse a internet: instalación de Wi-Fi, cómo entender sus opciones de internet y cómo encontrar recursos económicos."
+        },
         "staySafe": {
           "title": "Protéjase",
           "description": "Protección contra estafas y fraudes: cómo reconocer correos electrónicos sospechosos, mantener sus contraseñas seguras y proteger su identidad."
         },
         "deviceSupport": {
-          "title": "Ayuda con sus dispositivos",
+          "title": "Arregle sus dispositivos",
           "description": "Ayuda cuando sus dispositivos necesitan reparación: problemas de Wi-Fi, instalación de impresoras y hacer que una computadora lenta vuelva a funcionar bien otra vez."
+        },
+        "navigateOnline": {
+          "title": "Use los servicios en línea",
+          "description": "Le ayudamos a usar portales de salud, sitios web del gobierno, beneficios, solicitudes y citas en línea."
         }
       }
     },
@@ -106,6 +114,77 @@
         "youSucceed": {
           "title": "Usted lo logra",
           "description": "Aprenda destrezas que le durarán toda la vida y siéntase seguro con sus dispositivos."
+        }
+      }
+    },
+    "payWhatYouCan": {
+      "title": "Todos merecen ayuda",
+      "subheading": "Pague lo que pueda",
+      "intro": "La tecnología no debería ser un lujo. Así es como funciona:",
+      "perSessionLabel": "por sesión",
+      "sliderAriaLabel": "Elija la cantidad que desea pagar por sesión, de $0 a $75 dólares.",
+      "supportingText": "Si puede contribuir, gracias — nos ayuda a seguir aquí para nuestros vecinos. Si no puede, de todas formas estamos aquí para usted. Esto es apoyo comunitario, no caridad."
+    },
+    "workshops": {
+      "title": "Talleres comunitarios",
+      "comingSoon": "Próximamente en comunidades de todo el Valle de Coachella.",
+      "body": "Estamos planificando nuestros primeros talleres y nos encantaría escucharle. ¿Con qué retos de tecnología le gustaría que le ayudáramos a usted o a un ser querido?",
+      "ctaButton": "Cuéntenos qué necesita",
+      "survey": {
+        "stepOfLabel": "Paso {current} de {total}",
+        "backButton": "Atrás",
+        "nextButton": "Siguiente",
+        "submitButton": "Enviar",
+        "closeLabel": "Cerrar encuesta",
+        "who": {
+          "question": "¿Para quién está completando esto?",
+          "options": {
+            "self": "Para mí",
+            "parentGrandparent": "Un padre, madre o abuelo/a",
+            "familyMember": "Un familiar",
+            "friendNeighbor": "Un amigo o vecino",
+            "workColleague": "Alguien a quien apoyo o con quien trabajo"
+          }
+        },
+        "needs": {
+          "question": "¿Con qué le gustaría recibir ayuda?",
+          "hint": "Seleccione todas las que correspondan",
+          "options": {
+            "smartphone": "Usar un teléfono inteligente",
+            "computer": "Usar una computadora",
+            "tablet": "Usar una tableta",
+            "email": "Correo electrónico",
+            "videoCalls": "Videollamadas con la familia",
+            "internet": "Conectarse a internet",
+            "wifi": "Wi-Fi",
+            "smartTv": "Televisor inteligente / transmisión (streaming)",
+            "healthcare": "Portales de salud en línea",
+            "government": "Sitios web / solicitudes del gobierno",
+            "safety": "Seguridad en línea y estafas",
+            "passwords": "Contraseñas y cuentas",
+            "accessibility": "Funciones de accesibilidad",
+            "printing": "Imprimir / escanear",
+            "somethingElse": "Algo más"
+          }
+        },
+        "preference": {
+          "question": "¿Qué preferiría?",
+          "options": {
+            "group": "Un taller en grupo pequeño",
+            "oneOnOne": "Ayuda individual",
+            "atHome": "Ayuda en casa",
+            "online": "Ayuda en línea / por video",
+            "notSure": "No estoy seguro/a"
+          }
+        },
+        "details": {
+          "question": "¿Cuál es el mayor problema de tecnología que está enfrentando?",
+          "placeholder": "Cuéntenos un poco más — no hay una respuesta incorrecta."
+        },
+        "thankYou": {
+          "title": "¡Gracias!",
+          "body": "Le escuchamos. Esto nos ayuda a saber exactamente qué cubrir mientras planificamos nuestros primeros talleres. Nos pondremos en contacto cuando estén listos.",
+          "closeButton": "Cerrar"
         }
       }
     },

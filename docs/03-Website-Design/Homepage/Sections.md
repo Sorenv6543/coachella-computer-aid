@@ -161,10 +161,10 @@ Each card includes:
 **Purpose:** Explain what we do (in human terms, not technical)
 
 ### Layout
-- 3-4 columns (desktop), 1 column (mobile)
+- 3 columns (desktop), 1 column (mobile)
 - Organized by goals, not technology
 
-### Four Main Services
+### Six Main Services
 
 **1. Learn Technology**
 - Description: One-on-one teaching at your pace
@@ -176,15 +176,26 @@ Each card includes:
 - Examples: Video calls, email, social media
 - Icon: Heart or connection symbol
 
-**3. Stay Safe**
+**3. Get Connected**
+- Description: Help getting online
+- Examples: Setting up Wi-Fi, understanding internet options, finding affordable resources
+- Icon: Wi-Fi signal
+
+**4. Stay Safe**
 - Description: Protect yourself from scams and fraud
 - Examples: Password protection, phishing awareness, identity theft prevention
 - Icon: Shield
 
-**4. Device Support**
+**5. Get Your Devices Working**
 - Description: Help when your devices need fixing
 - Examples: Wi-Fi troubleshooting, virus removal, printer setup
 - Icon: Device or tools
+
+**6. Navigate Online Services**
+- Description: Help using healthcare portals, government websites, benefits, applications, and appointments
+- Examples: Healthcare portals, government websites, benefits applications, appointment scheduling
+- Icon: Clipboard or calendar check
+- Illustration not yet produced — catalog #841 (planned), card renders a placeholder block until art ships
 
 ### Additional Services
 - Remote Assistance
@@ -204,6 +215,8 @@ Each card includes:
 ---
 
 ## 6️⃣ How It Works Section
+
+**Status:** ✅ Built — `src/components/home/HowItWorks/HowItWorksSection.vue`
 
 **Purpose:** Reduce anxiety by explaining the process
 
@@ -240,6 +253,8 @@ Each card includes:
 ---
 
 ## 7️⃣ Pay What You Can Section
+
+**Status:** ✅ Built — `src/components/home/PayWhatYouCan/PayWhatYouCanSection.vue`
 
 **Purpose:** Remove financial barriers and build community
 
@@ -283,38 +298,29 @@ Each card includes:
 
 ## 8️⃣ Community Workshops Section
 
-**Purpose:** Show upcoming learning opportunities
+**Purpose:** Announce upcoming workshops are coming, and collect a needs-assessment survey to inform what the first workshops should cover
+
+**Status:** No workshops are scheduled yet — this section is a "coming soon" teaser, not a calendar/listing (that's a future section once workshops exist to list).
 
 ### Layout
-- 2-3 columns (desktop), 1 column (mobile)
-- Card-based
-- Filter by location (optional)
+- Centered single-column teaser (headline, coming-soon line, body copy, CTA button) — matches CTASection/PayWhatYouCanSection's layout
+- "Tell Us What You Need" button opens a modal survey dialog
 
-### Content
-Each workshop card shows:
-- **Date:** Month, day, time
-- **Title:** Workshop name
-- **Location:** Where it's held
-- **Description:** 1-2 sentences
-- **CTA Button:** "Learn More" or "Register"
+### Survey
+A 4-question wizard, one question per screen (not a single long form), reached via the teaser's CTA button:
+1. Who are you filling this out for? (single-select)
+2. What would you like help with? (multi-select, 15 options)
+3. What would you prefer? (single-select: group/one-on-one/at home/online/not sure)
+4. What is the biggest technology problem you're dealing with? (free text)
 
-### Example Workshops
-- Senior Tech Mondays (Library)
-- Smartphone Basics (Senior Center)
-- Scam Awareness (Church)
-- Video Calling Class (Community Center)
-
-### Visual
-- Event icon
-- Location indicator
-- Date/time clear
-- Responsive cards
+Back navigation is allowed; nothing is required to advance. Submission is stubbed (no backend wired up yet) and ends on a thank-you confirmation screen.
 
 ### Components
-- Workshop card (custom)
-- Calendar icon
-- Location icon
-- Registration button
+- `CommunityWorkshops.vue` (teaser section)
+- `WorkshopsSurveyDialog.vue` (wizard orchestrator)
+- `survey-steps/SurveyStepWho.vue`, `SurveyStepNeeds.vue`, `SurveyStepPreference.vue`, `SurveyStepDetails.vue`, `SurveyStepThankYou.vue`
+
+See `docs/superpowers/specs/2026-08-18-community-workshops-section-design.md` for the full design.
 
 ---
 
@@ -400,6 +406,8 @@ Each workshop card shows:
 ---
 
 ## 1️⃣1️⃣ Call To Action Section
+
+**Status:** ✅ Built — `src/components/home/CTA/CTASection.vue`
 
 **Purpose:** Final push to get help
 
@@ -512,12 +520,12 @@ Each workshop card shows:
 3. Mission ✅ Built
 4. Who We Help ✅ Built
 5. Services ✅ Built
-6. CTA
+6. CTA ✅ Built
 7. Footer
 
 ### Phase 2 (Add Soon After)
-8. How It Works
-9. Pay What You Can
+8. How It Works ✅ Built
+9. Pay What You Can ✅ Built
 10. Workshops
 
 ### Phase 3+ (Later Enhancements)
@@ -535,5 +543,5 @@ Each workshop card shows:
 
 ---
 
-**Status:** Homepage Specifications — Navbar, Hero, Mission, Who We Help & Services built  
-**Last Updated:** August 16, 2026
+**Status:** Homepage Specifications — Navbar, Hero, Mission, Who We Help, Services, How It Works, Pay What You Can & CTA built  
+**Last Updated:** August 17, 2026

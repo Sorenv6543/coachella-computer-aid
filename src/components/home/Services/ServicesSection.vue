@@ -6,18 +6,22 @@ import stayConnectedImage from '@/assets/images/illustrations/ui/ui-810-services
 import staySafeImage from '@/assets/images/illustrations/ui/ui-811-services-stay-safe-card.png'
 import learnImage from '@/assets/images/illustrations/ui/ui-812-services-learn-card.png'
 import repairImage from '@/assets/images/illustrations/ui/ui-813-services-repair-card.png'
+import getConnectedImage from '@/assets/images/illustrations/ui/ui-814-services-wi-fi-card.png'
 
 const { t } = useI18n()
 
-// 4 core services per Homepage/Sections.md. "Additional Services" (remote
+// 6 core services per Homepage/Sections.md. "Additional Services" (remote
 // assistance, workshops, internet access resources) are out of scope for
-// this section — ui-814 (wi-fi) and ui-815 (remote) are left for a future
-// section rather than expanded into here.
+// this section — ui-815 (remote) is left for a future section rather than
+// expanded into here. "navigateOnline" has no illustration yet (catalog
+// #841, planned) so it renders ServiceCard's placeholder block.
 const services = computed(() => [
   { key: 'learn', image: learnImage },
   { key: 'stayConnected', image: stayConnectedImage },
+  { key: 'getConnected', image: getConnectedImage },
   { key: 'staySafe', image: staySafeImage },
   { key: 'deviceSupport', image: repairImage },
+  { key: 'navigateOnline', image: undefined },
 ])
 </script>
 
@@ -32,7 +36,7 @@ const services = computed(() => [
       </div>
 
       <v-row class="cca-services__grid">
-        <v-col v-for="service in services" :key="service.key" cols="12" sm="6" md="3">
+        <v-col v-for="service in services" :key="service.key" cols="12" sm="6" md="4">
           <ServiceCard
             :image-src="service.image"
             :title="t(`home.services.items.${service.key}.title`)"

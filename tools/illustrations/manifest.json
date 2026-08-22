@@ -1728,6 +1728,13 @@
     "designed": false
   },
   {
+    "id": 841,
+    "category": "ui",
+    "name": "Services · navigate online services card",
+    "description": "Clipboard + calendar check. Healthcare/government portal tile.",
+    "designed": false
+  },
+  {
     "id": 901,
     "category": "icon",
     "name": "Computer",
