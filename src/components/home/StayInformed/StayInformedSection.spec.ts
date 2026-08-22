@@ -11,7 +11,7 @@ function mountSection() {
 }
 
 describe('StayInformedSection', () => {
-  it('renders the coming-soon heading', () => {
+  it('renders the section heading', () => {
     const wrapper = mountSection()
     expect(wrapper.find('#cca-stay-informed-heading').exists()).toBe(true)
   })
