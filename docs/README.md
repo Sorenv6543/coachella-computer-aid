@@ -26,7 +26,7 @@ Welcome! This vault contains all documentation for building Coachella Computer A
 - **[Website Experience & Implementation Vision](03-Website-Design/Website-Experience-Vision.md)** — Guiding principles for building the experience
 - **[Website Roadmap](03-Website-Design/Website-Roadmap.md)** — Feature phases and rollout plan
 - **[Homepage Blueprint](03-Website-Design/Homepage/)** — Detailed homepage sections and features
-  - [[Homepage/Sections.md|Sections]] — Hero, Mission, Services, etc. (Navbar, Hero, Mission, Who We Help, Services, How It Works, Pay What You Can & CTA now built)
+  - [[Homepage/Sections.md|Sections]] — Hero, Mission, Services, etc. (Navbar, Hero, Mission, Who We Help, Services, How It Works, Pay What You Can, Community Workshops & CTA now built)
   - [[Homepage/Features.md|Features]] *(Coming)* — Interactive elements and user stories
   - [[Homepage/User-Stories.md|User Stories]] *(Coming)* — Feature requirements by audience
 
