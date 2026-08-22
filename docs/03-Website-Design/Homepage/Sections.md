@@ -367,22 +367,22 @@ See `docs/superpowers/specs/2026-08-18-community-workshops-section-design.md` fo
 
 **Status:** ✅ Built — `src/components/home/StayInformed/StayInformedSection.vue`
 
-**Purpose:** Let visitors opt in to hear when workshops open
+**Purpose:** Let visitors know online sign-up is coming, and give them a real, working way to reach out in the meantime
 
-**Scope note:** This section replaces the "3-5 question community survey" originally spec'd below (kept for reference in "Original Spec"). We built a plain two-field email signup instead: name (optional) + email (required), stubbed submission, inline success state — no survey questions. Reason: the Community Workshops section above (§8) already runs a 4-question needs-assessment survey (`WorkshopsSurveyDialog.vue`) with the same "help us understand what you need" intent as the original spec's "What services are most needed? / What barriers prevent you from getting help?" questions. Building a second survey immediately below it would have put three feedback/CTA prompts back to back on the homepage (Workshops survey CTA → another survey → final CTA section), which fights this doc's own "Clear CTAs — easy to know what to do next" design principle. Stay Informed instead serves a distinct, narrower purpose — "notify me" rather than "tell us your needs" — so it doesn't duplicate the Workshops survey.
+**Scope note:** This section replaces the "3-5 question community survey" originally spec'd below (kept for reference in "Original Spec"). It was first built as a two-field email signup form (name optional + email required, client-side validation, a fake "You're all set!" success state), but a PR review flagged that as dishonest: since Supabase isn't wired up yet, the "success" state would show in production with zero data actually persisted anywhere — misleading for a form promising "we'll notify you," aimed at CCA's audience of older/low-digital-literacy/anxiety-prone users. It was rebuilt as a static "coming soon" notice instead — see "Content (as built)" below. Separately, the original two-form-in-a-row concern still stands: the Community Workshops section above (§8) already runs a 4-question needs-assessment survey (`WorkshopsSurveyDialog.vue`) with the same "help us understand what you need" intent as the original spec's "What services are most needed? / What barriers prevent you from getting help?" questions, so Stay Informed was never meant to duplicate it — it serves the narrower, distinct purpose of keeping people posted, now handled honestly via real contact links rather than an unwired form.
 
 ### Content (as built)
-**Headline:** "We'll Let You Know"
+**Headline:** "Stay Informed"
 
-**Body:** "Share your email and we'll send you a friendly note the moment workshops open — no survey, no commitment."
+**Coming-soon line:** "Online sign-ups are coming soon."
 
-**Fields:** Name (optional), Email (required, validated)
+**Body:** "We're building a simple way to sign up for workshop updates right here on the site. Until then, call or email us directly and we'll gladly add you to the list."
 
-**Submit button:** "Yes, Let Me Know"
+**Contact links (real, functional):** "Call (760) 406-7770" (`tel:+17604067770`) and "Email help@coachellacomputeraid.com" (`mailto:help@coachellacomputeraid.com`) — same contact info as `AppFooter.vue`.
 
-**Success state:** Inline confirmation ("You're all set!") replacing the form, focus moved to the confirmation heading for screen reader users — no navigation/page change.
+No form, no data collection, no fake success state — every element on the page actually works.
 
-i18n keys: `home.stayInformed.*` in `src/locales/en.json` / `es.json`. Submission is currently stubbed (no backend wired up yet — see the component's TODO for Supabase).
+i18n keys: `home.stayInformed.title`, `.comingSoon`, `.body`, `.phoneCta`, `.emailCta` in `src/locales/en.json` / `es.json`.
 
 ### Original Spec (superseded by the above — kept for reference)
 

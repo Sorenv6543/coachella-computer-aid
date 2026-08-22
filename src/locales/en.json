@@ -189,15 +189,11 @@
       }
     },
     "stayInformed": {
-      "title": "We'll Let You Know",
-      "body": "Share your email and we'll send you a friendly note the moment workshops open — no survey, no commitment.",
-      "nameLabel": "Name (optional)",
-      "emailLabel": "Email (required)",
-      "emailRequiredError": "Please enter your email address so we know where to reach you.",
-      "emailInvalidError": "That email address doesn't look quite right — could you check it once more?",
-      "submitButton": "Yes, Let Me Know",
-      "successTitle": "You're all set!",
-      "successBody": "Thank you — we'll reach out the moment workshops are ready, and there's nothing else you need to do."
+      "title": "Stay Informed",
+      "comingSoon": "Online sign-ups are coming soon.",
+      "body": "We're building a simple way to sign up for workshop updates right here on the site. Until then, call or email us directly and we'll gladly add you to the list.",
+      "phoneCta": "Call (760) 406-7770",
+      "emailCta": "Email {email}"
     },
     "cta": {
       "title": "Ready to Get Started?",
