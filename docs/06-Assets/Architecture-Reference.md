@@ -50,8 +50,7 @@ Each section becomes its own component:
 - **`Audience/`** — Who we help cards (audience segments)
 - **`Services/`** — Service offerings organized by goals
 - **`HowItWorks/`** — Step-by-step how service works
-- **`PayWhatYouCan/`** — Pay-what-you-can pricing slider section
-- **`Workshops/`** *(planned)* — Upcoming workshops and locations
+- **`CommunityWorkshops/`** — Coming-soon teaser + needs-assessment survey wizard (modal dialog)
 - **`Testimonials/`** *(planned)* — Success stories and reviews
 - **`Survey/`** *(planned)* — Community feedback/survey component
 - **`CTA/`** — Call-to-action section
