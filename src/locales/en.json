@@ -188,6 +188,13 @@
         }
       }
     },
+    "stayInformed": {
+      "title": "Stay Informed",
+      "comingSoon": "Online sign-ups are coming soon.",
+      "body": "We're building a simple way to sign up for workshop updates right here on the site. Until then, call or email us directly and we'll gladly add you to the list.",
+      "phoneCta": "Call (760) 406-7770",
+      "emailCta": "Email {email}"
+    },
     "cta": {
       "title": "Ready to Get Started?",
       "body": "Whenever you're ready, we're just a message or call away.",

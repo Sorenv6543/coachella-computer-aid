@@ -363,47 +363,42 @@ See `docs/superpowers/specs/2026-08-18-community-workshops-section-design.md` fo
 
 ---
 
-## 🔟 Community Survey / Call To Action
+## 🔟 Stay Informed (Community Survey / Call To Action)
+
+**Status:** ✅ Built — `src/components/home/StayInformed/StayInformedSection.vue`
+
+**Purpose:** Let visitors know online sign-up is coming, and give them a real, working way to reach out in the meantime
+
+**Scope note:** This section replaces the "3-5 question community survey" originally spec'd below (kept for reference in "Original Spec"). It was first built as a two-field email signup form (name optional + email required, client-side validation, a fake "You're all set!" success state), but a PR review flagged that as dishonest: since Supabase isn't wired up yet, the "success" state would show in production with zero data actually persisted anywhere — misleading for a form promising "we'll notify you," aimed at CCA's audience of older/low-digital-literacy/anxiety-prone users. It was rebuilt as a static "coming soon" notice instead — see "Content (as built)" below. Separately, the original two-form-in-a-row concern still stands: the Community Workshops section above (§8) already runs a 4-question needs-assessment survey (`WorkshopsSurveyDialog.vue`) with the same "help us understand what you need" intent as the original spec's "What services are most needed? / What barriers prevent you from getting help?" questions, so Stay Informed was never meant to duplicate it — it serves the narrower, distinct purpose of keeping people posted, now handled honestly via real contact links rather than an unwired form.
+
+### Content (as built)
+**Headline:** "Stay Informed"
+
+**Coming-soon line:** "Online sign-ups are coming soon."
+
+**Body:** "We're building a simple way to sign up for workshop updates right here on the site. Until then, call or email us directly and we'll gladly add you to the list."
+
+**Contact links (real, functional):** "Call (760) 406-7770" (`tel:+17604067770`) and "Email help@coachellacomputeraid.com" (`mailto:help@coachellacomputeraid.com`) — same contact info as `AppFooter.vue`.
+
+No form, no data collection, no fake success state — every element on the page actually works.
+
+i18n keys: `home.stayInformed.title`, `.comingSoon`, `.body`, `.phoneCta`, `.emailCta` in `src/locales/en.json` / `es.json`.
+
+### Original Spec (superseded by the above — kept for reference)
 
 **Purpose:** Involve community in shaping services
 
-### Layout
-- Full width
-- Cream or sand background
-- Centered content
+**Layout:** Full width, cream or sand background, centered content
 
-### Content
-**Headline:** (36px, bold)
-> Help Shape Technology Support in the Coachella Valley
+**Headline:** (36px, bold) "Help Shape Technology Support in the Coachella Valley"
 
-**Description:** (16px)
-> Most nonprofits don't ask their community what they need. We do. Your feedback helps us build better programs.
+**Description:** (16px) "Most nonprofits don't ask their community what they need. We do. Your feedback helps us build better programs."
 
-**Survey Form:**
-- 3-5 quick questions
-- Focus on: What services are most needed?
-- Short free-response option
-- Email optional (for follow-up)
+**Survey Form:** 3-5 quick questions, focused on "What services are most needed?", short free-response option, email optional (for follow-up)
 
-**Examples:**
-- What technology topics interest you?
-- What barriers prevent you from getting help?
-- Would you be interested in workshops?
+**Examples:** What technology topics interest you? / What barriers prevent you from getting help? / Would you be interested in workshops?
 
-### CTA
-- **Button:** "Take the 2-Minute Survey"
-- **Alternative:** "Share Your Ideas" (email form)
-
-### Visual
-- Warm, inviting design
-- Community photos (if available)
-- Illustration: Diverse group contributing
-
-### Components
-- Survey form (custom or Typeform embed)
-- Heading
-- Description
-- Submit button
+**CTA:** Button "Take the 2-Minute Survey" / Alternative "Share Your Ideas" (email form)
 
 ---
 
@@ -535,8 +530,8 @@ See `docs/superpowers/specs/2026-08-18-community-workshops-section-design.md` fo
 10. Workshops ✅ Built
 
 ### Phase 3+ (Later Enhancements)
-11. Testimonials
-12. Survey
+11. Stay Informed (reduced-scope Community Survey/CTA slot) ✅ Built
+12. Testimonials
 
 ---
 
@@ -549,5 +544,5 @@ See `docs/superpowers/specs/2026-08-18-community-workshops-section-design.md` fo
 
 ---
 
-**Status:** Homepage Specifications — Navbar, Hero, Mission, Who We Help, Services, How It Works, Pay What You Can, CTA, Community Workshops & Footer built  
+**Status:** Homepage Specifications — Navbar, Hero, Mission, Who We Help, Services, How It Works, Pay What You Can, CTA, Community Workshops, Stay Informed & Footer built; Testimonials still planned  
 **Last Updated:** August 22, 2026

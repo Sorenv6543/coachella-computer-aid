@@ -89,11 +89,11 @@ Welcome! This vault contains all documentation for building Coachella Computer A
 - ✅ Design Language (visual principles, tone)
 - 🔄 Visual System (illustration library, characters, backgrounds)
 - 🔄 Vuetify Design System (theme, components)
-- 🔄 Homepage Blueprint (sections, wireframes) — Navbar, Hero, Mission, Who We Help, Services, How It Works, Pay What You Can, CTA, Community Workshops, and Footer are built (copy-reviewed EN/ES, accessibility-audited PASS); all MVP sections now built, Testimonials and Community Survey still planned
+- 🔄 Homepage Blueprint (sections, wireframes) — Navbar, Hero, Mission, Who We Help, Services, How It Works, Pay What You Can, CTA, Community Workshops, Stay Informed, and Footer are built (copy-reviewed EN/ES, accessibility-audited PASS); all MVP sections now built, only Testimonials still planned
 
-**Now in Development:** The Vue 3 + Vuetify 4 app is scaffolded and buildable. Ten components shipped: `AppNavbar.vue`, `HeroSection.vue`, `MissionSection.vue`, `WhoWeHelpSection.vue` (with `AudienceCard.vue`), `ServicesSection.vue` (with `ServiceCard.vue`), `HowItWorksSection.vue` (with `StepCard.vue`), `PayWhatYouCanSection.vue`, `CTASection.vue`, `CommunityWorkshops.vue` (with `WorkshopsSurveyDialog.vue`), and `AppFooter.vue`, wired into the homepage/app shell — 7 of 7 MVP sections built, plus all 3 Phase 2 sections (How It Works, Pay What You Can, Community Workshops).
+**Now in Development:** The Vue 3 + Vuetify 4 app is scaffolded and buildable. Eleven components shipped: `AppNavbar.vue`, `HeroSection.vue`, `MissionSection.vue`, `WhoWeHelpSection.vue` (with `AudienceCard.vue`), `ServicesSection.vue` (with `ServiceCard.vue`), `HowItWorksSection.vue` (with `StepCard.vue`), `PayWhatYouCanSection.vue`, `CTASection.vue`, `CommunityWorkshops.vue` (with `WorkshopsSurveyDialog.vue`), `StayInformedSection.vue`, and `AppFooter.vue`, wired into the homepage/app shell — 7 of 7 MVP sections built, plus all 3 Phase 2 sections (How It Works, Pay What You Can, Community Workshops) and a reduced-scope build of the Phase 3+ Community Survey/CTA slot (see [[03-Website-Design/Homepage/Sections.md|Homepage Sections]] §10).
 
-**Next:** Remaining Phase 3+ sections (Testimonials, Community Survey) → Component Library → Full site
+**Next:** Remaining Phase 3+ section (Testimonials) → Component Library → Full site
 
 ---
 

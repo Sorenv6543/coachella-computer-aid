@@ -188,6 +188,13 @@
         }
       }
     },
+    "stayInformed": {
+      "title": "Manténgase Informado",
+      "comingSoon": "Pronto podrá inscribirse en línea.",
+      "body": "Estamos creando una manera sencilla de inscribirse para recibir noticias sobre los talleres, aquí mismo en el sitio. Mientras tanto, llámenos o envíenos un correo electrónico y con gusto lo agregaremos a la lista.",
+      "phoneCta": "Llame al (760) 406-7770",
+      "emailCta": "Envíe un correo a {email}"
+    },
     "cta": {
       "title": "¿Listo para comenzar?",
       "body": "Cuando esté listo, estamos a solo un mensaje o llamada de distancia.",

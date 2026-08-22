@@ -181,7 +181,7 @@ This is one of the most important differentiators.
 7. **Pay What You Can** — Pricing/contribution section
 8. **Community Workshops** — "Coming soon" teaser + needs-assessment survey (no workshops scheduled yet)
 9. **Testimonials** — Real stories from people we've helped
-10. **Community Survey** — Input form (help shape services)
+10. **Stay Informed** — Static "coming soon" notice with real call/email contact links, since online sign-up isn't wired up yet (built in reduced scope; see [[Homepage/Sections.md|Homepage Sections]] §10 for why the original "Community Survey" input-form spec was scoped down, and why an earlier unwired-form version was replaced)
 11. **Call To Action** — "Get Help Today" button
 12. **Footer** — Contact, resources, links
 
