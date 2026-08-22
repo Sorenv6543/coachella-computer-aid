@@ -79,7 +79,7 @@ function submitSurvey() {
     details: answers.details,
   }
   // TODO: wire to backend once Supabase (or another store) is connected
-  console.log('Workshop survey submitted:', payload)
+  if (import.meta.env.DEV) console.log('Workshop survey submitted:', payload)
   currentStep.value = THANK_YOU_STEP
 }
 
