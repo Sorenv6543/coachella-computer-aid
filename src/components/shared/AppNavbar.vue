@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue'
 import { useI18n } from 'vue-i18n'
-import logoMark from '@/assets/images/illustrations/icon/icon-960-cca-logo-mark.png'
+import logoMark from '@/assets/images/illustrations/icon/icon-960-cca-logo-mark.webp'
 import { navLinks } from '@/config/navLinks'
 
 const { t, locale } = useI18n()

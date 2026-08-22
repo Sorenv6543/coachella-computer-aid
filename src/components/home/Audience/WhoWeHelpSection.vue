@@ -2,12 +2,12 @@
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import AudienceCard from './AudienceCard.vue'
-import seniorsImage from '@/assets/images/illustrations/ui/ui-804-audience-seniors-badge.png'
-import disabilitiesImage from '@/assets/images/illustrations/ui/ui-805-audience-disabilities-badge.png'
-import spanishSpeakingFamiliesImage from '@/assets/images/illustrations/ui/ui-806-audience-immigrant-families-badge.png'
-import veteransImage from '@/assets/images/illustrations/ui/ui-807-audience-veterans-badge.png'
-import lowIncomeFamiliesImage from '@/assets/images/illustrations/ui/ui-808-audience-low-income-families-badge.png'
-import everyoneImage from '@/assets/images/illustrations/ui/ui-809-audience-everyone-badge.png'
+import seniorsImage from '@/assets/images/illustrations/ui/ui-804-audience-seniors-badge.webp'
+import disabilitiesImage from '@/assets/images/illustrations/ui/ui-805-audience-disabilities-badge.webp'
+import spanishSpeakingFamiliesImage from '@/assets/images/illustrations/ui/ui-806-audience-immigrant-families-badge.webp'
+import veteransImage from '@/assets/images/illustrations/ui/ui-807-audience-veterans-badge.webp'
+import lowIncomeFamiliesImage from '@/assets/images/illustrations/ui/ui-808-audience-low-income-families-badge.webp'
+import everyoneImage from '@/assets/images/illustrations/ui/ui-809-audience-everyone-badge.webp'
 
 const { t } = useI18n()
 

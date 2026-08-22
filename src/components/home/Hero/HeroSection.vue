@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
-import heroImage from '@/assets/images/illustrations/characters/all-017-full-cast-group.png'
+import heroImage from '@/assets/images/illustrations/characters/all-017-full-cast-group.webp'
 
 const { t } = useI18n()
 </script>

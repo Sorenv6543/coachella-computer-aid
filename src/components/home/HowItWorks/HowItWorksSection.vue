@@ -2,10 +2,10 @@
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import StepCard from './StepCard.vue'
-import step1Image from '@/assets/images/illustrations/ui/ui-816-how-it-works-step-1.png'
-import step2Image from '@/assets/images/illustrations/ui/ui-817-how-it-works-step-2.png'
-import step3Image from '@/assets/images/illustrations/ui/ui-818-how-it-works-step-3.png'
-import step4Image from '@/assets/images/illustrations/ui/ui-819-how-it-works-step-4.png'
+import step1Image from '@/assets/images/illustrations/ui/ui-816-how-it-works-step-1.webp'
+import step2Image from '@/assets/images/illustrations/ui/ui-817-how-it-works-step-2.webp'
+import step3Image from '@/assets/images/illustrations/ui/ui-818-how-it-works-step-3.webp'
+import step4Image from '@/assets/images/illustrations/ui/ui-819-how-it-works-step-4.webp'
 
 const { t } = useI18n()
 

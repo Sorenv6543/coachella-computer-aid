@@ -2,11 +2,11 @@
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import ServiceCard from './ServiceCard.vue'
-import stayConnectedImage from '@/assets/images/illustrations/ui/ui-810-services-stay-connected-card.png'
-import staySafeImage from '@/assets/images/illustrations/ui/ui-811-services-stay-safe-card.png'
-import learnImage from '@/assets/images/illustrations/ui/ui-812-services-learn-card.png'
-import repairImage from '@/assets/images/illustrations/ui/ui-813-services-repair-card.png'
-import getConnectedImage from '@/assets/images/illustrations/ui/ui-814-services-wi-fi-card.png'
+import stayConnectedImage from '@/assets/images/illustrations/ui/ui-810-services-stay-connected-card.webp'
+import staySafeImage from '@/assets/images/illustrations/ui/ui-811-services-stay-safe-card.webp'
+import learnImage from '@/assets/images/illustrations/ui/ui-812-services-learn-card.webp'
+import repairImage from '@/assets/images/illustrations/ui/ui-813-services-repair-card.webp'
+import getConnectedImage from '@/assets/images/illustrations/ui/ui-814-services-wi-fi-card.webp'
 
 const { t } = useI18n()
 
