@@ -161,10 +161,10 @@ Each card includes:
 **Purpose:** Explain what we do (in human terms, not technical)
 
 ### Layout
-- 3-4 columns (desktop), 1 column (mobile)
+- 3 columns (desktop), 1 column (mobile)
 - Organized by goals, not technology
 
-### Four Main Services
+### Six Main Services
 
 **1. Learn Technology**
 - Description: One-on-one teaching at your pace
@@ -176,15 +176,26 @@ Each card includes:
 - Examples: Video calls, email, social media
 - Icon: Heart or connection symbol
 
-**3. Stay Safe**
+**3. Get Connected**
+- Description: Help getting online
+- Examples: Setting up Wi-Fi, understanding internet options, finding affordable resources
+- Icon: Wi-Fi signal
+
+**4. Stay Safe**
 - Description: Protect yourself from scams and fraud
 - Examples: Password protection, phishing awareness, identity theft prevention
 - Icon: Shield
 
-**4. Device Support**
+**5. Get Your Devices Working**
 - Description: Help when your devices need fixing
 - Examples: Wi-Fi troubleshooting, virus removal, printer setup
 - Icon: Device or tools
+
+**6. Navigate Online Services**
+- Description: Help using healthcare portals, government websites, benefits, applications, and appointments
+- Examples: Healthcare portals, government websites, benefits applications, appointment scheduling
+- Icon: Clipboard or calendar check
+- Illustration not yet produced — catalog #841 (planned), card renders a placeholder block until art ships
 
 ### Additional Services
 - Remote Assistance

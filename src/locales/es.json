@@ -67,7 +67,7 @@
     },
     "services": {
       "title": "Nuestros servicios",
-      "intro": "Cuatro maneras en que le ayudamos, explicadas en términos sencillos y sin palabras técnicas complicadas.",
+      "intro": "Seis maneras en que le ayudamos, explicadas en términos sencillos y sin palabras técnicas complicadas.",
       "items": {
         "learn": {
           "title": "Aprenda tecnología",
@@ -77,13 +77,21 @@
           "title": "Manténgase en contacto",
           "description": "Le ayudamos a mantenerse en contacto con sus seres queridos: videollamadas, correo electrónico y redes sociales."
         },
+        "getConnected": {
+          "title": "Conéctese a internet",
+          "description": "Le ayudamos a conectarse a internet: instalación de Wi-Fi, cómo entender sus opciones de internet y cómo encontrar recursos económicos."
+        },
         "staySafe": {
           "title": "Protéjase",
           "description": "Protección contra estafas y fraudes: cómo reconocer correos electrónicos sospechosos, mantener sus contraseñas seguras y proteger su identidad."
         },
         "deviceSupport": {
-          "title": "Ayuda con sus dispositivos",
+          "title": "Arregle sus dispositivos",
           "description": "Ayuda cuando sus dispositivos necesitan reparación: problemas de Wi-Fi, instalación de impresoras y hacer que una computadora lenta vuelva a funcionar bien otra vez."
+        },
+        "navigateOnline": {
+          "title": "Use los servicios en línea",
+          "description": "Le ayudamos a usar portales de salud, sitios web del gobierno, beneficios, solicitudes y citas en línea."
         }
       }
     },

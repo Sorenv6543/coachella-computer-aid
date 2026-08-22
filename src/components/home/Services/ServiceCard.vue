@@ -1,17 +1,15 @@
 <script setup lang="ts">
-withDefaults(
-  defineProps<{
-    imageSrc: string
-    title: string
-    description: string
-  }>(),
-  {},
-)
+defineProps<{
+  imageSrc?: string
+  title: string
+  description: string
+}>()
 </script>
 
 <template>
   <v-card class="cca-service-card" rounded="12" elevation="0">
     <v-img
+      v-if="imageSrc"
       :src="imageSrc"
       alt=""
       aria-hidden="true"
@@ -19,6 +17,17 @@ withDefaults(
       aspect-ratio="1.37"
       class="cca-service-card__image"
     />
+    <div
+      v-else
+      class="cca-service-card__image cca-service-card__image--placeholder"
+      aria-hidden="true"
+    >
+      <v-icon
+        icon="mdi-calendar-check-outline"
+        size="40"
+        class="cca-service-card__placeholder-icon"
+      />
+    </div>
     <div class="cca-service-card__body">
       <h3 class="cca-service-card__title">{{ title }}</h3>
       <p class="cca-service-card__description">{{ description }}</p>
@@ -46,6 +55,22 @@ withDefaults(
 
 .cca-service-card__image {
   border-radius: inherit;
+}
+
+.cca-service-card__image--placeholder {
+  aspect-ratio: 1.37;
+  background: rgb(var(--v-theme-sand));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Sand-on-white is ~1.2:1 (see the border rationale above) — a bare fill
+// would look broken rather than "art coming soon," so the icon carries a
+// clay-on-sand pairing (3.76:1, clears the 3:1 non-text minimum) as the
+// actual visual cue.
+.cca-service-card__placeholder-icon {
+  color: rgb(var(--v-theme-clay));
 }
 
 .cca-service-card__body {
