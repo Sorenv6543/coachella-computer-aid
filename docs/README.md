@@ -26,7 +26,7 @@ Welcome! This vault contains all documentation for building Coachella Computer A
 - **[Website Experience & Implementation Vision](03-Website-Design/Website-Experience-Vision.md)** — Guiding principles for building the experience
 - **[Website Roadmap](03-Website-Design/Website-Roadmap.md)** — Feature phases and rollout plan
 - **[Homepage Blueprint](03-Website-Design/Homepage/)** — Detailed homepage sections and features
-  - [[Homepage/Sections.md|Sections]] — Hero, Mission, Services, etc. (Navbar, Hero, Mission, Who We Help, Services, How It Works, Pay What You Can & CTA now built)
+  - [[Homepage/Sections.md|Sections]] — Hero, Mission, Services, etc. (Navbar, Hero, Mission, Who We Help, Services, How It Works, Pay What You Can, CTA, Community Workshops & Footer now built)
   - [[Homepage/Features.md|Features]] *(Coming)* — Interactive elements and user stories
   - [[Homepage/User-Stories.md|User Stories]] *(Coming)* — Feature requirements by audience
 
@@ -89,11 +89,11 @@ Welcome! This vault contains all documentation for building Coachella Computer A
 - ✅ Design Language (visual principles, tone)
 - 🔄 Visual System (illustration library, characters, backgrounds)
 - 🔄 Vuetify Design System (theme, components)
-- 🔄 Homepage Blueprint (sections, wireframes) — Navbar, Hero, Mission, Who We Help, Services, How It Works, Pay What You Can, and CTA are built (copy-reviewed EN/ES, accessibility-audited PASS); remaining sections still planned
+- 🔄 Homepage Blueprint (sections, wireframes) — Navbar, Hero, Mission, Who We Help, Services, How It Works, Pay What You Can, CTA, Community Workshops, and Footer are built (copy-reviewed EN/ES, accessibility-audited PASS); all MVP sections now built, Testimonials and Community Survey still planned
 
-**Now in Development:** The Vue 3 + Vuetify 4 app is scaffolded and buildable. Eight components shipped: `AppNavbar.vue`, `HeroSection.vue`, `MissionSection.vue`, `WhoWeHelpSection.vue` (with `AudienceCard.vue`), `ServicesSection.vue` (with `ServiceCard.vue`), `HowItWorksSection.vue` (with `StepCard.vue`), `PayWhatYouCanSection.vue`, and `CTASection.vue`, wired into the homepage — 6 of 7 MVP sections built, plus 2 of 3 Phase 2 sections (How It Works, Pay What You Can).
+**Now in Development:** The Vue 3 + Vuetify 4 app is scaffolded and buildable. Ten components shipped: `AppNavbar.vue`, `HeroSection.vue`, `MissionSection.vue`, `WhoWeHelpSection.vue` (with `AudienceCard.vue`), `ServicesSection.vue` (with `ServiceCard.vue`), `HowItWorksSection.vue` (with `StepCard.vue`), `PayWhatYouCanSection.vue`, `CTASection.vue`, `CommunityWorkshops.vue` (with `WorkshopsSurveyDialog.vue`), and `AppFooter.vue`, wired into the homepage/app shell — 7 of 7 MVP sections built, plus all 3 Phase 2 sections (How It Works, Pay What You Can, Community Workshops).
 
-**Next:** Remaining homepage sections (Footer) → Component Library → Full site
+**Next:** Remaining Phase 3+ sections (Testimonials, Community Survey) → Component Library → Full site
 
 ---
 

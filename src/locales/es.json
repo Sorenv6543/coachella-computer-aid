@@ -194,5 +194,16 @@
       "ctaPrimary": "Obtenga ayuda hoy",
       "ctaSecondary": "Explore los servicios"
     }
+  },
+  "footer": {
+    "ariaLabel": "Pie de página del sitio",
+    "about": {
+      "tagline": "Ayuda tecnológica paciente, uno a uno, para el Valle de Coachella — en persona, por video o por teléfono."
+    },
+    "quickLinksHeading": "Enlaces rápidos",
+    "comingSoon": "(próximamente)",
+    "contactHeading": "Comuníquese con nosotros",
+    "location": "Atendemos a todo el Valle de Coachella",
+    "copyright": "© {year} Coachella Computer Aid. Todos los derechos reservados."
   }
 }
